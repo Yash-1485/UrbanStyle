@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/Footwear.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: #333;
+        }
+        /* Ensure all cards have equal height and width */
+        .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Fix image size and make sure it fills the card */
+        .card-img-top {
+            height: 230px;
+            object-fit: cover;
+        }
+        .carousel-inner{
+            display: flex;
+        }
+        /* Set all cards to a consistent height */
+        .carousel-item {
+            max-width: 250px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pricing-card {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .carousel-item .card {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Each product card is placed inside a carousel item -->
+            <div class="carousel-item active">
+                <div class="pricing-card col-3">
+                    <div class="card h-100">
+                        <div class="card-image w-100 d-flex justify-content-center align-items-center"
+                            style="height: 230px;">
+                            <img src="assets/images/Footwear/Sneakers_Shoes/img5.png"
+                                class="card-img-top object-fit-cover" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sneakers</h5>
+                            <p class="card-text">Built for basketball, adopted by hip hop and skate, the classic leather
+                                Superstar changed the game the moment it stepped off the court.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <!-- Feedback Stars -->
+                                <span class="product-feedback-stars">
+                                    <span class="fa fa-star checked-star"></span>
+                                    <span class="fa fa-star checked-star"></span>
+                                    <span class="fa fa-star checked-star"></span>
+                                    <span class="fa fa-star checked-star"></span>
+                                    <span class="fa fa-star unchecked-star"></span>
+                                </span>
+                            </li>
+                            <li class="list-group-item rate">
+                                <!-- Price -->
+                                <p class="price">
+                                    Our Price: <ins>₹999</ins>
+                                </p>
+                                <p class="old_price">
+                                    MRP: <del>₹1,099</del>
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <button class="btn btn-outline-warning text-black" onclick="addToCart(0)">
+                                    Add to Cart
+                                </button>
+                                <!-- Button trigger modal for Product Page -->
+                                <button type="button" class="btn btn-warning product-btn" data-bs-toggle="modal"
+                                    data-bs-target="#productPage" data-id="1" data-title="Sneakers"
+                                    data-desc="Built for basketball..." data-price="999" data-type="Shoes"
+                                    data-subtype="Sneakers" data-old-price="1099"
+                                    data-image="assets/images/Footwear/Sneakers_Shoes/img5.png" data-feedback="4">
+                                    View More
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat the above div structure for each card -->
+            <div class="carousel-item">
+                <div class="pricing-card">
+                    <div class="card h-100">
+                        <div class="card-image w-100 d-flex justify-content-center align-items-center"
+                            style="height: 230px;">
+                            <img src="assets/images/Footwear/Sneakers_Shoes/img10.png"
+                                class="card-img-top object-fit-cover" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sneakers</h5>
+                            <p class="card-text">Built for basketball, adopted by hip hop and skate...</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <!-- Feedback Stars -->
+                                <span class="product-feedback-stars">
+                                    <span class="fa fa-star checked-star"></span>
+                                    <span class="fa fa-star checked-star"></span>
+                                    <span class="fa fa-star checked-star"></span>
+                                    <span class="fa fa-star checked-star"></span>
+                                    <span class="fa fa-star unchecked-star"></span>
+                                </span>
+                            </li>
+                            <li class="list-group-item rate">
+                                <!-- Price -->
+                                <p class="price">
+                                    Our Price: <ins>₹999</ins>
+                                </p>
+                                <p class="old_price">
+                                    MRP: <del>₹1,299</del>
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <button class="btn btn-outline-warning text-black" onclick="addToCart(1)">
+                                    Add to Cart
+                                </button>
+                                <!-- Button trigger modal for Product Page -->
+                                <button type="button" class="btn btn-warning product-btn" data-bs-toggle="modal"
+                                    data-bs-target="#productPage" data-id="2" data-title="Sneakers"
+                                    data-desc="Built for basketball..." data-price="999" data-type="Shoes"
+                                    data-subtype="Sneakers" data-old-price="1099"
+                                    data-image="assets/images/Footwear/Sneakers_Shoes/img5.png" data-feedback="4">
+                                    View More
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More carousel items as needed -->
+        </div>
+
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- <script src="assets/js/script.js"></script> -->
+    <script src="assets/js/Footwear.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

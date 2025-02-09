@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/Favicon/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="checkout container-fluid d-flex justify-content-center align-items-center flex-column">
+        <div id="logo container-fluid d-flex justify-content-center align-items-center">
+            <div class="logo-container">
+                <div class="logo-main">
+                    Urban
+                    <div class="logo-text">
+                        Style
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container checkout_cart d-flex justify-content-center align-items-center p-5">
+            <div class="checkout-cart-items w-50 d-flex justify-content-center align-items-center">
+                <ul class="checkout-cart-cards-list w-100 p-2" id="checkout-cart-cards"></ul>
+            </div>
+            <div class="checkout-cart-form w-50 d-flex justify-content-center align-items-center flex-column">
+                <div class="total">
+                    <label for="total">Total: ₹</label>
+                    <p id="total"></p>
+                </div>
+                <div class="quantity">
+                    <label for="quantity">Quantity: </label>
+                    <p id="quantity"></p>
+                </div>
+                <div class="checkout-btn">
+                    <button type="button" class="btn btn-warning text-white" onclick="checkout();">
+                        Place Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/checkout.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

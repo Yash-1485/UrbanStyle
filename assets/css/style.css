@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* Common Styles */
+:root {
+    --block-padding: 1rem 25rem;
+    --font-family-1: "Rubik", serif;
+    --font-family-2: "Lato", serif;
+    --font-family-3: "Montserrat", serif;
+    --tr: all 0.5s;
+    --bs: 0 0 5px 5px #ddd;
+    --bs-1: 0 0 10px 5px #ddd;
+}
+
+/* Body */
+body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+    Home Page
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*
+======================================================================
+                        Common Elements
+====================================================================== 
+ */
+/* Navbar */
+nav{
+    font-family: var(--font-family-3);
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.navbar-brand{
+    margin: 0 2.5rem !important;
+}
+
+.navbar-brand .navbar-brand-main{
+    font-family: var(--font-family-1);
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.navbar-brand .navbar-brand-text{
+    font-family: var(--font-family-1);
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: relative;
+    top: -0.9rem;
+    left: 3.5rem;
+}
+
+/* Shopping Cart Icon */
+.shopping .cart-btn{
+    text-decoration: none !important;
+}
+
+.shopping i{
+    display: block;
+    padding: 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: var(--tr) ease;
+}
+
+.shopping .shopping-quantity{
+    font-size: 0.8rem;
+    position: absolute;
+    display: block;
+    background-color: #ddd;
+    padding: 0.1rem 0.4rem;
+    border-radius: 100%;
+    left: 35px;
+    bottom: 35px;
+}
+
+/* Cart */
+.checkout span{
+    font-family: var(--font-family-1);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.checkout .total{
+    height: 3rem;
+    overflow-y: hidden;
+}
+
+.checkout .cart-total{
+    display: inline-block;
+    font-family: var(--font-family-1);
+    font-size: 2rem;
+    font-weight: 600;
+    position: fixed;
+    width: 100%;
+}
+
+/* Cart Card */
+.list-card{
+    overflow-y: auto;
+}
+
+.list-card .cart-card-item{
+    list-style-type: none;
+}
+
+.list-card .cart-card-item .card-image img{
+    display: block;
+    width: 100%;
+}
+
+.list-card .cart-card-body .card-title{
+    font-family: var(--font-family-1);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.list-card .cart-card-body .rate{
+    font-family: var(--font-family-2);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.list-card .cart-card-body .price{
+    font-family: var(--font-family-2);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.list-card .cart-card-body .cart-qty-count{
+    display: inline-block;    
+}
+
+/* Product Modal */
+.modal-body .modal-main-content{
+    display: flex;    
+}
+
+.modal-body .modal-main-content .product-img-container{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body .modal-main-content .product-img-container img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.modal-body .modal-main-content .product-content-container #productTitle{
+    font-family: var(--font-family-1);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.modal-body .modal-main-content .product-price-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-content-container strong{
+    font-family: var(--font-family-2);
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.product-price-container #productPrice{
+    font-family: var(--font-family-2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.product-price-container #productOldPrice{
+    font-family: var(--font-family-2);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.product-content-container #productDescription{
+    font-family: var(--font-family-3);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.product-content-container #productType,.product-content-container #productSubtype,.product-content-container #productCategory{
+    font-family: var(--font-family-3);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.product-content-container #productStars{
+    font-family: var(--font-family-3);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Feedback Stars */
+.fa {
+    font-size: 20px;
+}
+
+.checked-star{
+    color: gold;
+}
+
+.unchecked-star{
+    color: grey;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+    Footer Section
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer .row h3{
+    font-family: var(--font-family-1);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.footer .row span,.footer .row div:not(.navbar-brand,.navbar-brand-main,.navbar-brand-text),.footer-bottom .row span,.footer-bottom .row div{
+    font-family: var(--font-family-3);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.legal,.copyright{
+    font-family: var(--font-family-1) !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+}
+
+.footer .row a,.footer-bottom .row a{
+    transition: var(--tr);
+}
+
+.footer .row a:hover,.footer-bottom .row a:hover{
+    text-decoration: underline !important;
+    transform: scale(1.08);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+    Swiper Slider Section
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.swiper-outer-container{
+    width: 80vw !important;
+    height: auto;
+    /* cursor: pointer; */
+}
+
+/* Swiper class */
+.swiper-button-prev,
+.swiper-button-next {
+    font-size: 2rem;
+    color: var(--bg-3);
+}
+
+.swiper-pagination-bullet {
+    transform: scale(1);
+    background-color: var(--bg-2);
+    opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--bg-3);
+    opacity: 1;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+    Carousel Slides
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.carousel-data-container{
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.carousel-data-parts{
+    width: 50% !important;
+    height: 100% !important;
+}
+
+.carousel-data-image,.carousel-data-content{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-data-container .carousel-data-image img{
+    display: block !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.carousel-data-heading{
+    font-family: var(--font-family-1);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.carousel-data-text{
+    font-family: var(--font-family-2);
+    font-size: 1.5rem;
+    font-weight: 500;
+}

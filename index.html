@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Style</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Fontawesome Icon Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Remix Icon Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <section class="header container-fluid sticky-top p-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <div class="navbar-brand-main">
+            Urban
+            <div class="navbar-brand-text">
+              Style
+            </div>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Clothing</a></li>
+                <li><a class="dropdown-item" href="#">Watches</a></li>
+                <li><a class="dropdown-item" href="#">Handbags</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#" onclick="redirect('Footwear.html');">Footwear</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">Contact</a>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+              </form>
+            </li>
+          </ul>
+          <div class="shopping position-relative">
+            <!-- <i class="ri-shopping-cart-line" onmouseover="this.classList.add('ri-shopping-cart-fill');this.classList.remove('ri-shopping-cart-line')" onmouseout="this.classList.add('ri-shopping-cart-line');this.classList.remove('ri-shopping-cart-fill')"></i> -->
+            <a href="#cart" data-bs-toggle="offcanvas" data-bs-target="#cart" class="cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <span class="shopping-quantity">0</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Offcanvas for Cart -->
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="cart"
+    aria-labelledby="offcanvasWithBothOptionsLabel" data-bs-backdrop="true">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body overflow-hidden">
+      <div class="checkout">
+        <div class="total">
+          <span>Total: ₹</span>
+          <div class="cart-total" onchange="checkCart()"> 0 </div>
+        </div>
+        <div class="close-Shopping"></div>
+      </div>
+    </div>
+    <ul class="list-card position-relative"></ul>
+    <div class="d-grid col-12 cart-order w-100 bottom-0 mt-2 mb-2 p-3">
+      <button type="button" class="btn btn-warning text-white fw-bolder fs-5" id="placeOrder" onclick="redirect('Checkout.html');">Place
+        Order</button>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
