@@ -114,7 +114,7 @@ nav{
 
 .list-card .cart-card-item .card-image img{
     display: block;
-    width: 100%;
+    max-width: 100%;
 }
 
 .list-card .cart-card-body .card-title{
@@ -137,6 +137,70 @@ nav{
 
 .list-card .cart-card-body .cart-qty-count{
     display: inline-block;    
+}
+
+/* Pricing Section */
+.pricing .text-content .category-heading{
+    font-family: var(--font-family-1);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.pricing .text-content .category-text{
+    font-family: var(--font-family-2);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Pricing Cards */
+.pricing-card-list .pricing-card{
+    height: 100% !important;
+}
+
+.pricing-card-list .card{
+    box-shadow: var(--bs-1);
+    transition: var(--tr);
+    border: none;
+}
+
+.pricing-card-list .card:hover{
+    transform: scale(1.02);    
+}
+
+.pricing-card-list .card img{
+    display: block;
+    margin: auto;
+    width: 250px;
+    object-fit: cover !important;
+    z-index: 10;
+}
+
+.pricing-card-list .card .card-body .card-title{
+    font-family: var(--font-family-1);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.pricing-card .card .card-body .card-text,.pricing-card .card .list-group .list-group-item{
+    font-family: var(--font-family-3);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.pricing-card .card .rate .price{
+    font-family: var(--font-family-2);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.pricing-card .card .rate .price ins{
+    text-decoration: none;
+}
+
+.pricing-card .card .rate .old_price{
+    font-family: var(--font-family-2);
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 /* Product Modal */
@@ -282,8 +346,14 @@ nav{
     Carousel Slides
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .carousel-data-container{
+    position: relative !important;
     width: 100vw !important;
     height: 100vh !important;
+    background-color: #D1F8EF;
+    /* background-color: #A6F1E0; */
+    /* background: linear-gradient(rgb(0,0,255,0.5),rgb(255,255,0,0.5)), url('/assets/images/bg-carousel-texture.jpg') !important; */
+    background-position: center !important;
+    background-size: cover !important;
 }
 
 .carousel-data-parts{
@@ -294,22 +364,106 @@ nav{
 .carousel-data-image,.carousel-data-content{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .carousel-data-container .carousel-data-image img{
     display: block !important;
-    width: 100% !important;
+    max-width: 100% !important;
     object-fit: cover !important;
 }
 
 .carousel-data-heading{
     font-family: var(--font-family-1);
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
 }
 
 .carousel-data-text{
     font-family: var(--font-family-2);
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.carousel-data-img-bg{
+    width: 39rem;
+    height: 39rem;
+    border-radius: 100%;
+    background-color: #A6F1E0;
+    position: absolute;
+    top: 6rem;
+    right: 12rem;
+}
+
+/* Media Queries */
+@media screen and ((min-width:768px) and (max-width:992px)) {
+    /* Product Cards */
+    .pricing-card-list .card .card-body .card-title{
+        font-size: 1.12rem;
+    }
+    
+    .pricing-card .card .card-body .card-text,.pricing-card .card .list-group .list-group-item{
+        font-size: 0.8rem;
+    }
+    
+    .pricing-card .card .rate .price{
+        font-size: 1.1rem;
+    }
+    
+    .pricing-card .card .rate .old_price{
+        font-size: 1rem;
+    }
+
+    .pricing-card .card .btn{
+        font-size: 0.9rem !important;
+    }
+    
+
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+        Carousel Slides
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    .carousel-data-heading{
+        font-family: var(--font-family-1);
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .carousel-data-text{
+        font-family: var(--font-family-2);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .carousel-data-text a{
+        font-family: var(--font-family-2) !important;
+        font-size: 1.2rem !important;
+        font-weight: 600 !important;
+    }
+
+    .carousel-data-img-bg{
+        width: 20rem;
+        height: 20rem;        
+        border-radius: 100%;
+        background-color: #A6F1E0;
+        position: absolute;
+        top: 15rem;
+        left: 2rem; 
+    }
+
+    .carousel-data-img{
+        top: 0 !important;
+        right: 1rem !important;
+    }
+
+    .carousel-data-img-2{
+        top: 15rem !important;
+        right: 1rem !important;
+    }
+
+    .carousel-data-img-3{
+        top: 15rem !important;
+        left: 0 !important;
+        right: 5rem !important;
+    }
+
 }

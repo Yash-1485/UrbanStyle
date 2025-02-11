@@ -425,12 +425,12 @@ const swiperInitializer=(num)=>{
             spaceBetween: 10,
         },
         640: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 15,
         },
         768: {
-          slidesPerView: 3,
-          spaceBetween: 20,
+          slidesPerView: 2,
+          spaceBetween: 18,
         },
         1024: {
           slidesPerView: 4,

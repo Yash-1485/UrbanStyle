@@ -131,69 +131,6 @@ body{
     font-weight: 500;
 }
 
-/* Pricing Section */
-.pricing .text-content .category-heading{
-    font-family: var(--font-family-1);
-    font-size: 4rem;
-    font-weight: 700;
-}
-
-.pricing .text-content .category-text{
-    font-family: var(--font-family-2);
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-/* Pricing Cards */
-.pricing-card-list .pricing-card{
-    height: 100% !important;
-}
-
-.pricing-card-list .card{
-    box-shadow: var(--bs-1);
-    transition: var(--tr);
-    border: none;
-}
-
-.pricing-card-list .card:hover{
-    transform: scale(1.02);    
-}
-
-.pricing-card-list .card img{
-    display: block;
-    margin: auto;
-    width: 250px;
-    object-fit: cover !important;
-    z-index: 10;
-}
-
-.pricing-card-list .card .card-body .card-title{
-    font-family: var(--font-family-1);
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.pricing-card .card .card-body .card-text,.pricing-card .card .list-group .list-group-item{
-    font-family: var(--font-family-3);
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-.pricing-card .card .rate .price{
-    font-family: var(--font-family-2);
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.pricing-card .card .rate .price ins{
-    text-decoration: none;
-}
-
-.pricing-card .card .rate .old_price{
-    font-family: var(--font-family-2);
-    font-size: 0.9rem;
-    font-weight: 600;
-}
 
 /* Shopping Category Section */
 .category-section{
