@@ -3,6 +3,8 @@ const total = document.querySelector('.cart-total')
 const body = document.querySelector('body')
 const quantity = document.querySelector('.shopping-quantity')
 const placeOrder = document.getElementById('placeOrder')
+const resultAll = document.getElementById('result-container-all-pricing-cards')
+resultAll.style.display='none'
 
 let products = [
     // Men Footwear - 1
@@ -20,12 +22,12 @@ let products = [
             <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
             <br><strong>Net Quantity :</strong> 2 Count`,
         manufacturer: 'Adidas',
+        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK'],
         price: 1299,
         old_price: 1599,
         image: 'assets/images/Footwear/Sport_Shoes/img3.png',
         feedback: 5,
-        category: 'men',
-        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK']
+        category: 'men'
     },
     {
         id: 2,
@@ -33,6 +35,15 @@ let products = [
         type: 'Shoes',
         subtype: 'Sports Shoes',
         desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+        detailed_desc:`
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+            <br><strong>Date First Available : </strong>   18 July 2020
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 450 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+            <br><strong>Net Quantity :</strong> 2 Count`,
+        manufacturer: 'Adidas',
+        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK'],
         price: 999,
         old_price: 1099,
         image: 'assets/images/Footwear/Sport_Shoes/img4.png',
@@ -45,6 +56,15 @@ let products = [
         type: 'Shoes',
         subtype: 'Sports Shoes',
         desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+        detailed_desc:`
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+            <br><strong>Date First Available : </strong>   18 July 2020
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 450 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+            <br><strong>Net Quantity :</strong> 2 Count`,
+        manufacturer: 'Adidas',
+        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK'],
         price: 899,
         old_price: 1099,
         image: 'assets/images/Footwear/Sport_Shoes/img1.png',
@@ -57,6 +77,15 @@ let products = [
         type: 'Shoes',
         subtype: 'Sports Shoes',
         desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+        detailed_desc:`
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+            <br><strong>Date First Available : </strong>   18 July 2020
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 450 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+            <br><strong>Net Quantity :</strong> 2 Count`,
+        manufacturer: 'Adidas',
+        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK'],
         price: 1399,
         old_price: 1799,
         image: 'assets/images/Footwear/Sport_Shoes/img6.png',
@@ -69,6 +98,15 @@ let products = [
         type: 'Shoes',
         subtype: 'Sneakers',
         desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+        detailed_desc:`
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+            <br><strong>Date First Available : </strong>   18 July 2020
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 450 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+            <br><strong>Net Quantity :</strong> 2 Count`,
+        manufacturer: 'Adidas',
+        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK'],
         price: 2999,
         old_price: 3599,
         image: 'assets/images/Footwear/Sneakers_Shoes/img8.png',
@@ -81,6 +119,15 @@ let products = [
         type: 'Shoes',
         subtype: 'Sneakers',
         desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+        detailed_desc:`
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+            <br><strong>Date First Available : </strong>   18 July 2020
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 450 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+            <br><strong>Net Quantity :</strong> 2 Count`,
+        manufacturer: 'Adidas',
+        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK'],
         price: 2199,
         old_price: 3099,
         image: 'assets/images/Footwear/Sneakers_Shoes/img1.png',
@@ -93,6 +140,15 @@ let products = [
         type: 'Shoes',
         subtype: 'Sneakers',
         desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+        detailed_desc:`
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+            <br><strong>Date First Available : </strong>   18 July 2020
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 450 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+            <br><strong>Net Quantity :</strong> 2 Count`,
+        manufacturer: 'Adidas',
+        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK'],
         price: 3599,
         old_price: 4099,
         image: 'assets/images/Footwear/Sneakers_Shoes/img7.png',
@@ -105,6 +161,15 @@ let products = [
         type: 'Shoes',
         subtype: 'Cleats',
         desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+        detailed_desc:`
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+            <br><strong>Date First Available : </strong>   18 July 2020
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 450 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+            <br><strong>Net Quantity :</strong> 2 Count`,
+        manufacturer: 'Adidas',
+        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK'],
         price: 2799,
         old_price: 3199,
         image: 'assets/images/Footwear/Cleats/img1.jpg',
@@ -117,6 +182,15 @@ let products = [
         type: 'Shoes',
         subtype: 'Cleats',
         desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+        detailed_desc:`
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+            <br><strong>Date First Available : </strong>   18 July 2020
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 450 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+            <br><strong>Net Quantity :</strong> 2 Count`,
+        manufacturer: 'Adidas',
+        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK'],
         price: 1899,
         old_price: 2199,
         image: 'assets/images/Footwear/Cleats/img2.jpg',
@@ -129,6 +203,15 @@ let products = [
         type: 'Shoes',
         subtype: 'Crocs',
         desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+        detailed_desc:`
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+            <br><strong>Date First Available : </strong>   18 July 2020
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 450 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+            <br><strong>Net Quantity :</strong> 2 Count`,
+        manufacturer: 'Adidas',
+        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK'],
         price: 799,
         old_price: 999,
         image: 'assets/images/Footwear/Crocs/img2.jpg',
@@ -141,6 +224,15 @@ let products = [
         type: 'Sandals',
         subtype: 'Sandals',
         desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+        detailed_desc:`
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+            <br><strong>Date First Available : </strong>   18 July 2020
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 450 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+            <br><strong>Net Quantity :</strong> 2 Count`,
+        manufacturer: 'Adidas',
+        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK'],
         price: 659,
         old_price: 799,
         image: 'assets/images/Footwear/Sandals/img1.jpg',
@@ -414,6 +506,16 @@ const categoryMap = {
     kids: document.getElementById('kids'),
 };
 
+const subtypeMap = {
+    spshoes: document.getElementById('spshoes')
+};
+
+const manufacturerMap = {
+    men: document.getElementById('men'),
+    women: document.getElementById('women'),
+    kids: document.getElementById('kids'),
+};
+
 // Swiper Card Slider
 const swiperInitializer=(num)=>{
     new Swiper(`.slider-${num}`, {
@@ -480,13 +582,13 @@ const initApp = () =>{
                     <p class="old_price">
                         MRP: <del>₹${value.old_price.toLocaleString()}</del>
                     </p>
-                    <div id="sizeSelectList">
-                        <p>Sizes: </p>
-                        ${generateSelectList(value.availabel_sizes)}
+                    <div class="sizeSelectList" id="sizeSelectList">
+                        <p>Select size: </p>
+                        ${generateSelectList(value.availabel_sizes,value.id)}
                     </div>
                 </li>
                 <li class="list-group-item">
-                    <button class="btn btn-outline-warning text-black" onclick="addToCart(${key})">
+                    <button class="btn btn-outline-warning text-black" onclick="addToCart(${key});">
                         Add to Cart
                     </button>
                     <!-- Button trigger modal for Product Page -->
@@ -510,11 +612,168 @@ const initApp = () =>{
     })
 }
 
+const showAllCards = () => {
+    resultAll.style.display="block"
+    document.getElementById('pricing-section').style.display='none'
+    products.forEach((value,key) => {
+        let newDiv=document.createElement('div')
+        newDiv.classList.add('pricing-card')
+        newDiv.classList.add('col-2')
+        newDiv.style.width="20rem"
+        newDiv.style.height="fit-content"
+
+
+        newDiv.innerHTML=`
+        <div class="card h-100">
+            <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px;">
+                <img src="${value.image}" class="card-img-top object-fit-cover" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">${value.name}</h5>
+                <p class="card-text">${value.desc}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <!-- Feedback Stars -->
+                    <span class="product-feedback-stars">${getRating(value.feedback)}</span>
+                </li>
+                <li class="list-group-item rate">
+                    <!-- Price -->
+                    <p class="price">
+                        Our Price: <ins>₹${value.price.toLocaleString()}</ins>                
+                    </p>
+                    <p class="old_price">
+                        MRP: <del>₹${value.old_price.toLocaleString()}</del>
+                    </p>
+                    <div class="sizeSelectList" id="sizeSelectList">
+                        <p>Select size: </p>
+                        ${generateSelectList(value.availabel_sizes,value.id)}
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <button class="btn btn-outline-warning text-black" onclick="addToCart(${key});">
+                        Add to Cart
+                    </button>
+                    <!-- Button trigger modal for Product Page -->
+                    <button type="button" class="btn btn-warning product-btn" data-bs-toggle="modal" data-bs-target="#productPage" data-id="${value.id}" data-title="${value.name}" data-desc="${value.desc}" data-price="${value.price}" data-type="${value.type}" data-category="${value.category}" data-subtype="${value.subtype}" data-old-price="${value.old_price}" data-detailed-desc="${value.detailed_desc}"
+                    data-image="${value.image}" data-feedback="${value.feedback}" data-manufacturer="${value.manufacturer}" data-sizes="${value.availabel_sizes}">
+                        View More
+                    </button>
+                </li>
+            </ul>
+            <!-- <div class="card-body">
+                <a href="/detail.html?id=1" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div> -->
+        </div>
+        `
+
+        const targetContainer = document.getElementById('result-all-pricing-cards');
+        targetContainer.appendChild(newDiv);
+    })
+}
+
+const showTypeCards = (type,id) =>{
+    // resultAll.style.display="block"
+    products.filter(item=>item.subtype==type).forEach((value,key) => {
+        let newDiv=document.createElement('div')
+        newDiv.classList.add('pricing-card')
+        newDiv.classList.add('swiper-slide')
+        newDiv.style.width="20rem"
+        newDiv.style.height="22rem"
+
+
+        newDiv.innerHTML=`
+        <div class="card h-100">
+            <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px;">
+                <img src="${value.image}" class="card-img-top object-fit-cover" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">${value.name}</h5>
+                <p class="card-text">${value.desc}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <!-- Feedback Stars -->
+                    <span class="product-feedback-stars">${getRating(value.feedback)}</span>
+                </li>
+                <li class="list-group-item rate">
+                    <!-- Price -->
+                    <p class="price">
+                        Our Price: <ins>₹${value.price.toLocaleString()}</ins>                
+                    </p>
+                    <p class="old_price">
+                        MRP: <del>₹${value.old_price.toLocaleString()}</del>
+                    </p>
+                    <div class="sizeSelectList" id="sizeSelectList">
+                        <p>Select size: </p>
+                        ${generateSelectList(value.availabel_sizes,value.id)}
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <button class="btn btn-outline-warning text-black" onclick="addToCart(${key});">
+                        Add to Cart
+                    </button>
+                    <!-- Button trigger modal for Product Page -->
+                    <button type="button" class="btn btn-warning product-btn" data-bs-toggle="modal" data-bs-target="#productPage" data-id="${value.id}" data-title="${value.name}" data-desc="${value.desc}" data-price="${value.price}" data-type="${value.type}" data-category="${value.category}" data-subtype="${value.subtype}" data-old-price="${value.old_price}" data-detailed-desc="${value.detailed_desc}"
+                    data-image="${value.image}" data-feedback="${value.feedback}" data-manufacturer="${value.manufacturer}" data-sizes="${value.availabel_sizes}">
+                        View More
+                    </button>
+                </li>
+            </ul>
+            <!-- <div class="card-body">
+                <a href="/detail.html?id=1" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div> -->
+        </div>
+        `
+        const targetContainer = document.getElementById(id);
+        targetContainer.appendChild(newDiv);
+    })
+}
+
+const collapseShowAll=()=>{
+    let open=document.getElementById('pricing-section')
+    let close=document.getElementById('result-all-pricing-cards')
+    close.innerHTML=''
+    resultAll.style.display='none'
+    open.style.display="block"
+}
+
+const collapseAllOtherCards=(...args)=>{
+    args.forEach(item=>{
+        ele=document.getElementById(item)
+        if(ele.classList.contains('show')){
+            ele.classList.remove('show')
+        }
+    }) 
+}
+
+const show=(...args)=>{
+    args.forEach(item=>{
+        document.getElementById(item).style.display='block'
+    }) 
+}
+
+const onceClickedBtnDisable=(btn)=>{
+    btn.classList.add('disabled')
+}
+
+const onceClickedBtnEnable=(btn)=>{
+    btn.classList.remove('disabled')
+}
+
+const collapse=(...args)=>{
+    args.forEach(item=>{
+        document.getElementById(item).style.display='none'
+    })
+}
+
 function generateSelectList(optionsArray, selectId = "") {
     // Create select element
     if(optionsArray || optionsArray!=undefined){
-        let select = document.createElement("select");
-        if (selectId) select.id = selectId;
+        let select = document.createElement("select");        
+        if (selectId) select.id = String('product').concat(selectId);
 
         // Populate options
         optionsArray.forEach(optionValue => {
@@ -523,34 +782,54 @@ function generateSelectList(optionsArray, selectId = "") {
             option.textContent = optionValue;
             select.appendChild(option);
         });
-
         // Return innerHTML
         return select.outerHTML;
     }
 }
+
+function getSelectedValue(id) {
+    // console.log("Looking for ID:", id);
+    var selectElement = document.getElementById(id);
+    
+    if (!selectElement) {
+        console.error(`Element with ID '${id}' not found!`);
+        return null;
+    }
+
+    // console.log("Found select element:", selectElement);
+    // console.log("Selected value:", selectElement.value);
+    return selectElement.value;
+}
+
+
 
 if(window.location.href.includes('Footwear.html')||window.location.href.includes('Clothing.html')){
     initApp()
     swiperInitializer(1)
     swiperInitializer(2)
     swiperInitializer(3)
+    swiperInitializer(4)
+    swiperInitializer(5)
+    swiperInitializer(6)
+    swiperInitializer(7)
+    swiperInitializer(8)
 }
 
 // Add to Cart Method
 const addToCart = (key) => {
     // Check if the item is already in the cart using the product's id
-    const existingItem = listCards.find(item => item.id === products[key].id);
-    
-    if (existingItem) {
+    let check_id=products[key].id
+    let check_size=getSelectedValue('product'+products[key].id)
+    const existingItem = listCards.find(item => item.id === products[key].id && (item.size==check_size));
+    if (existingItem && (existingItem.size==check_size)) {
         // If the item exists, increase the quantity
         existingItem.quantity += 1;
         existingItem.price = existingItem.quantity * products[key].price;  // Update price based on quantity
     } else {
         // If the item doesn't exist, add it to the cart with quantity 1
-        let newItem = {...products[key], quantity: 1};
+        let newItem = {...products[key], quantity: 1,size:check_size};
         listCards.push(newItem);  // Add the new item to the list
     }
-    
     reloadCards();  // Reload the cart to reflect changes
 }
 
@@ -576,6 +855,9 @@ const reloadCards = () => {
                     <div class="col-md-8">
                         <div class="card-body cart-card-body">
                             <h5 class="card-title">${value.name}</h5>
+                            <p class="size">
+                                Size: ${value.size}
+                            </p>
                             <p class="rate">
                                 Rate: ₹${products[key].price}
                             </p>
