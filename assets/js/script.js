@@ -12,11 +12,20 @@ let products = [
         type: 'Shoes',
         subtype: 'Sports Shoes',
         desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+        detailed_desc:`
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+            <br><strong>Date First Available : </strong>   18 July 2020
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 450 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+            <br><strong>Net Quantity :</strong> 2 Count`,
+        manufacturer: 'Adidas',
         price: 1299,
         old_price: 1599,
         image: 'assets/images/Footwear/Sport_Shoes/img3.png',
         feedback: 5,
-        category: 'men'
+        category: 'men',
+        availabel_sizes: ['6UK','7UK','8UK','9UK','10UK']
     },
     {
         id: 2,
@@ -471,14 +480,18 @@ const initApp = () =>{
                     <p class="old_price">
                         MRP: <del>₹${value.old_price.toLocaleString()}</del>
                     </p>
+                    <div id="sizeSelectList">
+                        <p>Sizes: </p>
+                        ${generateSelectList(value.availabel_sizes)}
+                    </div>
                 </li>
                 <li class="list-group-item">
                     <button class="btn btn-outline-warning text-black" onclick="addToCart(${key})">
                         Add to Cart
                     </button>
                     <!-- Button trigger modal for Product Page -->
-                    <button type="button" class="btn btn-warning product-btn" data-bs-toggle="modal" data-bs-target="#productPage" data-id="${value.id}" data-title="${value.name}" data-desc="${value.desc}" data-price="${value.price}" data-type="${value.type}" data-category="${value.category}" data-subtype="${value.subtype}" data-old-price="${value.old_price}"
-                    data-image="${value.image}" data-feedback="${value.feedback}">
+                    <button type="button" class="btn btn-warning product-btn" data-bs-toggle="modal" data-bs-target="#productPage" data-id="${value.id}" data-title="${value.name}" data-desc="${value.desc}" data-price="${value.price}" data-type="${value.type}" data-category="${value.category}" data-subtype="${value.subtype}" data-old-price="${value.old_price}" data-detailed-desc="${value.detailed_desc}"
+                    data-image="${value.image}" data-feedback="${value.feedback}" data-manufacturer="${value.manufacturer}" data-sizes="${value.availabel_sizes}">
                         View More
                     </button>
                 </li>
@@ -495,6 +508,25 @@ const initApp = () =>{
             targetContainer.appendChild(newDiv);
         }
     })
+}
+
+function generateSelectList(optionsArray, selectId = "") {
+    // Create select element
+    if(optionsArray || optionsArray!=undefined){
+        let select = document.createElement("select");
+        if (selectId) select.id = selectId;
+
+        // Populate options
+        optionsArray.forEach(optionValue => {
+            let option = document.createElement("option");
+            option.value = optionValue;
+            option.textContent = optionValue;
+            select.appendChild(option);
+        });
+
+        // Return innerHTML
+        return select.outerHTML;
+    }
 }
 
 if(window.location.href.includes('Footwear.html')||window.location.href.includes('Clothing.html')){
@@ -588,12 +620,15 @@ const openProductModal=function(){
             const title = btn.getAttribute('data-title');
             const image = btn.getAttribute('data-image');
             const description = btn.getAttribute('data-desc');
+            const detailedDesc = btn.getAttribute('data-detailed-desc');
             const price = btn.getAttribute('data-price');
             const oldprice = btn.getAttribute('data-old-price');
             const type=btn.getAttribute('data-type')
             const subtype=btn.getAttribute('data-subtype')
             const category = btn.getAttribute('data-category');
             const feedback = btn.getAttribute('data-feedback');
+            const manufacturer = btn.getAttribute('data-manufacturer');
+            const sizes = btn.getAttribute('data-sizes');
 
             document.getElementById('productPageTitle').innerText = title;
             document.getElementById('productTitle').innerText = title;
@@ -605,6 +640,9 @@ const openProductModal=function(){
             document.getElementById('productType').innerHTML=`${type}`
             document.getElementById('productSubtype').innerHTML=`${subtype}`
             document.getElementById('productCategory').innerHTML=`${category.toUpperCase()}`
+            document.getElementById('productDetailedDesc').innerHTML=`${detailedDesc}`
+            document.getElementById('productManufacturer').innerHTML=`${manufacturer}`
+            document.getElementById('productSizes').innerHTML=`${(sizes.split(',').join(', '))}`;
 
             // For Feedback
             const starsContainer = document.getElementById('productStars');

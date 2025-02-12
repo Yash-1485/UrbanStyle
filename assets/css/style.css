@@ -218,7 +218,7 @@ nav{
 
 .modal-body .modal-main-content .product-img-container img{
     display: block;
-    width: 100%;
+    min-width: 100%;
     object-fit: cover;
 }
 
@@ -237,7 +237,7 @@ nav{
 
 .product-content-container strong{
     font-family: var(--font-family-2);
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
@@ -416,6 +416,15 @@ nav{
 
     .pricing-card .card .btn{
         font-size: 0.9rem !important;
+    }
+
+    /* Product Modal */
+    .modal-body .modal-main-content{
+        flex-direction: column;
+    }
+
+    .modal-body .modal-main-content .product-img-container{
+        width: 90%;
     }
     
 
