@@ -4,7 +4,11 @@ const body = document.querySelector('body')
 const quantity = document.querySelector('.shopping-quantity')
 const placeOrder = document.getElementById('placeOrder')
 const resultAll = document.getElementById('result-container-all-pricing-cards')
-resultAll.style.display='none'
+let close=document.getElementById('result-all-pricing-cards')
+if(document.getElementById('result-container-all-pricing-cards')){
+    resultAll.style.display='none'
+    close.innerHTML=''
+}
 
 let products = [
     // Men Footwear - 1
