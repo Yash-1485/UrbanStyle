@@ -280,9 +280,6 @@
                             <h5 class="card-title">Huarache(Sports Shoes)</h5>
                             <p class="card-text text-center ">Versatile, durable footwear for running, training, and
                                 sports activities, offering comfort, grip, and performance enhancement.</p>
-                            <button type="button" class="btn btn-warning" data-bs-target="#collapse-1"
-                                data-bs-toggle="collapse" onclick="showTypeCards('Sports Shoes','spshoes')">All Sports
-                                Shoes</button>
                         </div>
                     </div>
                 </div>
@@ -295,9 +292,6 @@
                             <h5 class="card-title">Sneakers</h5>
                             <p class="card-text text-center">Casual, stylish shoes with cushioned soles, blending
                                 fashion and comfort for daily wear and athletic activities.</p>
-                            <button type="button" class="btn btn-warning" data-bs-target="#collapse-2"
-                                data-bs-toggle="collapse" onclick="showTypeCards('Sneakers','sneakers')">All
-                                Sneakers</button>
                         </div>
                     </div>
                 </div>
@@ -310,8 +304,6 @@
                             <h5 class="card-title">Cleats</h5>
                             <p class="card-text text-center">Specialized shoes with studs for traction on grass or turf,
                                 perfect for soccer, football, and baseball.</p>
-                            <button type="button" class="btn btn-warning" data-bs-target="#collapse-3"
-                                data-bs-toggle="collapse" onclick="showTypeCards('Cleats','cleats')">All Cleats</button>
                         </div>
                     </div>
                 </div>
@@ -324,8 +316,6 @@
                             <h5 class="card-title">Crocs</h5>
                             <p class="card-text text-center">Lightweight, slip-on clogs with ventilation, ideal for
                                 casual wear, water-resistance, and all-day comfort.</p>
-                            <button type="button" class="btn btn-warning" data-bs-target="#collapse-4"
-                                data-bs-toggle="collapse" onclick="showTypeCards('Crocs','crocs')">All Crocs</button>
                         </div>
                     </div>
                 </div>
@@ -338,9 +328,6 @@
                             <h5 class="card-title">Sandals</h5>
                             <p class="card-text text-center">Open-toe footwear with straps, providing breathability,
                                 comfort, and style for casual or outdoor use.</p>
-                            <button type="button" class="btn btn-warning" data-bs-target="#collapse-5"
-                                data-bs-toggle="collapse" onclick="showTypeCards('Sandals','sandals')">All
-                                Sandals</button>
                         </div>
                     </div>
                 </div>
@@ -372,7 +359,7 @@
         </div>
 
         <!-- Pricing Section -->
-        <section class="category-wise-products" id="category-wise-products">
+        <!-- <section class="category-wise-products" id="category-wise-products">
             <div class="row collapse" id="collapse-1">
                 <div class="men-section category-section d-flex flex-column justify-content-center align-items-center"
                     id="spshoes-section">
@@ -473,91 +460,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="section pricing-all container-fluid p-5" id="pricing-section-all">
             <div class="btn-container text-center w-100">
                 <button type="button" id="showAllBtn" class="btn btn-warning w-75 text-white fw-bolder fs-3"
-                    onclick="showAllCards();openProductModal();">
+                    onclick="showAllCards();openProductModal();onceClickedBtnDisable(this);">
                     Show All Footwear Products
                 </button>
             </div>
-            <div class="result-all-pricing-cards p-5 text-justify" id="result-container-all-pricing-cards">
-                <div id="result-all-pricing-cards" class="p-5 text-justify row gap-3">
-                    <!-- Product Modal -->
-                    <div class="modal fade" id="productPage" data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="productPageTitle">
-                                    </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="modal-main-content">
-                                        <div class="product-img-container">
-                                            <img src="" alt="" id="productImage" class="img-fluid">
-                                        </div>
-                                        <div class="product-content-container">
-                                            <h1 id="productTitle"></h1>
-                                            <div class="product-price-container">
-                                                <div>
-                                                    <strong>Our Price: </strong>
-                                                    <span id="productPrice"></span>
-                                                </div>
-                                                <div>
-                                                    <strong>MRP: </strong>
-                                                    <span id="productOldPrice"></span>
-                                                </div>
-                                            </div>
-                                            <p id="productDescription"></p>
-                                            <p>
-                                                <strong>Product Type: </strong>
-                                                <span id="productType"></span>
-                                            </p>
-                                            <p>
-                                                <strong>Product Subtype: </strong>
-                                                <span id="productSubtype"></span>
-                                            </p>
-                                            <p>
-                                                <strong>Category: </strong>
-                                                <span id="productCategory"></span>
-                                            </p>
-                                            <p>
-                                                <strong>Manufacturer: </strong>
-                                                <span id="productManufacturer"></span>
-                                            </p>
-                                            <p>
-                                                <strong>Available Sizes: </strong>
-                                                <span id="productSizes"></span>
-                                            </p>
-                                            <p>
-                                                <strong>Detailed Description: </strong>
-                                                <span id="productDetailedDesc">
-                                                </span>
-                                            </p>
-                                            <p>
-                                                <strong>Rating: </strong>
-                                                <span id="productStars"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-container text-center w-100">
-                    <button type="button" class="btn btn-warning w-75 text-white fw-bolder fs-3"
-                        onclick="collapseShowAll();onceClickedBtnEnable(document.getElementById('showAllBtn'));">
-                        Collapse All
-                    </button>
-                </div>
+            <div class="result-all-pricing-cards p-5 text-justify" id="result-container-all-pricing-cards">                
             </div>
         </section>
         <section class="section pricing container-fluid p-5" id="pricing-section">

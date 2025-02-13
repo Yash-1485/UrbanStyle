@@ -4,11 +4,7 @@ const body = document.querySelector('body')
 const quantity = document.querySelector('.shopping-quantity')
 const placeOrder = document.getElementById('placeOrder')
 const resultAll = document.getElementById('result-container-all-pricing-cards')
-let close=document.getElementById('result-all-pricing-cards')
-if(document.getElementById('result-container-all-pricing-cards')){
-    resultAll.style.display='none'
-    close.innerHTML=''
-}
+const main = document.getElementById('main')
 
 let products = [
     // Men Footwear - 1
@@ -617,16 +613,21 @@ const initApp = () =>{
 }
 
 const showAllCards = () => {
-    resultAll.style.display="block"
-    document.getElementById('pricing-section').style.display='none'
+    let ps=document.getElementById('pricing-section')
+    localStorage.setItem('pricing-section',JSON.stringify(ps.outerHTML))
+    ps.remove()
+    const targetContainer_ = document.getElementById('result-container-all-pricing-cards');
+    const targetContainer = document.createElement('div')
+    targetContainer.id='result-all-pricing-cards'
+    targetContainer.classList.add('p-5')
+    targetContainer.classList.add('gap-3')
+    targetContainer.classList.add('row')
     products.forEach((value,key) => {
         let newDiv=document.createElement('div')
         newDiv.classList.add('pricing-card')
         newDiv.classList.add('col-2')
         newDiv.style.width="20rem"
         newDiv.style.height="fit-content"
-
-
         newDiv.innerHTML=`
         <div class="card h-100">
             <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px;">
@@ -671,10 +672,18 @@ const showAllCards = () => {
             </div> -->
         </div>
         `
-
-        const targetContainer = document.getElementById('result-all-pricing-cards');
         targetContainer.appendChild(newDiv);
     })
+    targetContainer.innerHTML+=modalCreator()
+    targetContainer.innerHTML+=`
+    <div class="btn-container text-center w-100">
+        <button type="button" class="btn btn-warning w-75 text-white fw-bolder fs-3"
+            onclick="collapseShowAll();onceClickedBtnEnable(document.getElementById('showAllBtn'));">
+            Collapse All
+        </button>
+    </div>
+    `
+    targetContainer_.appendChild(targetContainer)
 }
 
 const showTypeCards = (type,id) =>{
@@ -736,12 +745,89 @@ const showTypeCards = (type,id) =>{
     })
 }
 
+const modalCreator=()=>{
+    let div=document.createElement('div')
+    div.innerHTML=`
+    <!-- Product Modal -->
+    <div class="modal fade" id="productPage" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productPageTitle">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-main-content">
+                        <div class="product-img-container">
+                            <img src="" alt="" id="productImage" class="img-fluid">
+                        </div>
+                        <div class="product-content-container">
+                            <h1 id="productTitle"></h1>
+                            <div class="product-price-container">
+                                <div>
+                                    <strong>Our Price: </strong>
+                                    <span id="productPrice"></span>
+                                </div>
+                                <div>
+                                    <strong>MRP: </strong>
+                                    <span id="productOldPrice"></span>
+                                </div>
+                            </div>
+                            <p id="productDescription"></p>
+                            <p>
+                                <strong>Product Type: </strong>
+                                <span id="productType"></span>
+                            </p>
+                            <p>
+                                <strong>Product Subtype: </strong>
+                                <span id="productSubtype"></span>
+                            </p>
+                            <p>
+                                <strong>Category: </strong>
+                                <span id="productCategory"></span>
+                            </p>
+                            <p>
+                                <strong>Manufacturer: </strong>
+                                <span id="productManufacturer"></span>
+                            </p>
+                            <p>
+                                <strong>Available Sizes: </strong>
+                                <span id="productSizes"></span>
+                            </p>
+                            <p>
+                                <strong>Detailed Description: </strong>
+                                <span id="productDetailedDesc">
+                                </span>
+                            </p>
+                            <p>
+                                <strong>Rating: </strong>
+                                <span id="productStars"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    `
+    return div.innerHTML
+}
+
 const collapseShowAll=()=>{
-    let open=document.getElementById('pricing-section')
     let close=document.getElementById('result-all-pricing-cards')
     close.innerHTML=''
-    resultAll.style.display='none'
-    open.style.display="block"
+    close.remove()
+    main.insertAdjacentHTML("beforeend",`${JSON.parse(localStorage.getItem('pricing-section'))}`)
+    localStorage.removeItem('pricing-section')
+    location.reload()
+
 }
 
 const collapseAllOtherCards=(...args)=>{
@@ -805,8 +891,6 @@ function getSelectedValue(id) {
     return selectElement.value;
 }
 
-
-
 if(window.location.href.includes('Footwear.html')||window.location.href.includes('Clothing.html')){
     initApp()
     swiperInitializer(1)
@@ -828,10 +912,11 @@ const addToCart = (key) => {
     if (existingItem && (existingItem.size==check_size)) {
         // If the item exists, increase the quantity
         existingItem.quantity += 1;
-        existingItem.price = existingItem.quantity * products[key].price;  // Update price based on quantity
+        existingItem.new_price = existingItem.quantity * products[key].price;  // Update price based on quantity
+        console.log(existingItem.new_price,existingItem.price)
     } else {
         // If the item doesn't exist, add it to the cart with quantity 1
-        let newItem = {...products[key], quantity: 1,size:check_size};
+        let newItem = {...products[key], quantity: 1,size:check_size,new_price:products[key].price};
         listCards.push(newItem);  // Add the new item to the list
     }
     reloadCards();  // Reload the cart to reflect changes
@@ -844,7 +929,7 @@ const reloadCards = () => {
     let totalPrice = 0
 
     listCards.forEach((value,key) => {
-        totalPrice = totalPrice + value.price
+        totalPrice = totalPrice + value.new_price
         count = count + value.quantity
 
         if(value!=null){
@@ -863,10 +948,10 @@ const reloadCards = () => {
                                 Size: ${value.size}
                             </p>
                             <p class="rate">
-                                Rate: ₹${products[key].price}
+                                Rate: ₹${value.price}
                             </p>
                             <p class="price">
-                                Price: ₹${value.price.toLocaleString()}
+                                Price: ₹${value.new_price.toLocaleString()}
                             </p>
                             <button type="button" class="btn rounded-pill btn-outline-warning card-quantity-btn px-3" onclick="changeQuantity(${key},${value.quantity-1})">-</button>
                             <div class="cart-qty-count"> ${value.quantity} </div>
@@ -892,7 +977,7 @@ const changeQuantity = (key, qty) => {
         delete listCards[key]
     }else{
         listCards[key].quantity=qty
-        listCards[key].price=qty*products[key].price
+        listCards[key].new_price=qty*listCards[key].price
     }
     reloadCards()
 }
@@ -954,6 +1039,62 @@ const openProductModal=function(){
     });
 }
 openProductModal()
+
+const openProductModalAll=function(){
+    const productButtons = document.querySelectorAll('.product-btn');
+
+    productButtons.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+            const title = btn.getAttribute('data-title');
+            const image = btn.getAttribute('data-image');
+            const description = btn.getAttribute('data-desc');
+            const detailedDesc = btn.getAttribute('data-detailed-desc');
+            const price = btn.getAttribute('data-price');
+            const oldprice = btn.getAttribute('data-old-price');
+            const type=btn.getAttribute('data-type')
+            const subtype=btn.getAttribute('data-subtype')
+            const category = btn.getAttribute('data-category');
+            const feedback = btn.getAttribute('data-feedback');
+            const manufacturer = btn.getAttribute('data-manufacturer');
+            const sizes = btn.getAttribute('data-sizes');
+
+            document.getElementById('productPageTitle_all').innerText = title;
+            document.getElementById('productTitle_all').innerText = title;
+            document.getElementById('productImage_all').src = image;
+            document.getElementById('productImage_all').alt = title;
+            document.getElementById('productDescription_all').textContent = description;
+            document.getElementById('productPrice_all').innerHTML = `<ins>${price}</ins>`;
+            document.getElementById('productOldPrice_all').innerHTML = `<del>${oldprice}</del>`;
+            document.getElementById('productType_all').innerHTML=`${type}`
+            document.getElementById('productSubtype_all').innerHTML=`${subtype}`
+            document.getElementById('productCategory_all').innerHTML=`${category.toUpperCase()}`
+            document.getElementById('productDetailedDesc_all').innerHTML=`${detailedDesc}`
+            document.getElementById('productManufacturer_all').innerHTML=`${manufacturer}`
+            document.getElementById('productSizes_all').innerHTML=`${(sizes.split(',').join(', '))}`;
+
+            // For Feedback
+            const starsContainer = document.getElementById('productStars_all');
+            starsContainer.innerHTML = '';
+
+            const rating = parseInt(feedback, 10);
+            for (let i = 1; i <= 5; i++) {
+                const star = document.createElement('span');
+                // star.classList.add('star');
+                star.classList.add('fa', 'fa-star');
+                if (i <= rating) {
+                    // star.innerHTML = '&#9733;'; // Filled star (★)
+                    // star.style.color = 'gold';
+                    star.classList.add('checked-star')
+                } else {
+                    // star.innerHTML = '&#9734;'; // Empty star (☆)
+                    // star.style.color = 'gray';
+                    star.classList.add('unchecked-star')
+                }
+                starsContainer.appendChild(star);
+            }
+        });
+    });
+}
 
 // Checking For Cart is empty or not
 // Used for Cart at any page
