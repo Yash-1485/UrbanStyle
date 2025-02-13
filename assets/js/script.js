@@ -1137,13 +1137,3 @@ window.onload=()=>{
     }
 }
 window.onload()
-
-// // Placeorder
-// const checkout=()=>{
-//     console.log("Checkout")
-//     // localStorage.clear()
-//     // listCards=[]
-//     // quantity.innerText='0'
-//     // total.innerText='0'
-//     // reloadCards()
-// }
