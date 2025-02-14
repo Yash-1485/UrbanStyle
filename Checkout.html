@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="assets/css/checkout.css">
     <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="assets/images/Favicon/favicon.svg" type="image/x-icon">
+    <!-- Fontawesome Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="checkout container-fluid d-flex justify-content-center align-items-center flex-column">
@@ -35,7 +39,7 @@
                     <p id="quantity"></p>
                 </div>
                 <div class="checkout-btn">
-                    <button type="button" class="btn btn-warning text-white" onclick="checkout();">
+                    <button type="button" class="btn btn-warning text-white" onclick="checkout();onceClickedBtnDisable(this);">
                         Place Order
                     </button>
                 </div>

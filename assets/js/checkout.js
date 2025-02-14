@@ -531,19 +531,49 @@ const reloadCheckoutCards = () => {
     })
 }
 
-reloadCheckoutCards()
+if(cartItems){
+    reloadCheckoutCards()
+}
 // window.onload=()=>{
 //     if(localStorage.getItem("quantity")!=0){
 //         reloadCheckoutCards()
 //     }
 // }
 // window.onload()
+const redirect=(link)=>{
+    if(link){
+        window.location.assign(link)
+    }
+}
 
 const checkout=()=>{
     localStorage.clear()
     listCards=[]
     quantity.innerHTML='0'
     total.innerHTML='0'
-    reloadCheckoutCards()
+    if(cartItems){
+        reloadCheckoutCards()
+    }
+    // finalDetails()
     location.reload()//To reload Page
+}
+
+const finalDetails=()=>{
+    const ck=document.getElementById('checkout-cart-cards')
+    ck.innerHTML=''
+    ck.innerHTML=`
+        <p class="fs-3 fw-bold">Your cart<i class="fa-solid fa-cart-shopping text-primary"></i> is empty now!!</p>
+        <p class="fs-3 fw-bold">Your order has been placed successfully</p>
+        <button type="button" class="btn btn-warning text-white fw-bolder w-75 d-block p-3 m-3 " onclick="redirect('index.html')">Continue Shopping</button>
+    `
+}
+
+const onceClickedBtnDisable=(btn)=>{
+    btn.classList.add('disabled')
+}
+
+if(localStorage.length==0){
+    finalDetails()
+    total.innerHTML='0'
+    quantity.innerHTML='0'
 }
