@@ -2427,6 +2427,439 @@ let products = [
     feedback: 4.9,
     category: "women_handbag",
   },
+  {
+    id: 3002,
+    name: "Gucci Soho Disco Bag",
+    type: "Handbag",
+    subtype: "Crossbody",
+    desc: `A versatile crossbody bag with a minimalist design, ideal for casual outings and day-to-night transitions.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 30 × 7 × 20 cm; 830 g
+    <br><strong>Date First Available : </strong> 18 Dec 2022
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 830 g
+    <br><strong>Item Dimensions LxWxH :</strong> 30 × 7 × 20 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Gucci",
+    availabel_sizes: undefined,
+    price: 13499,
+    old_price: 14999,
+    image: "assets/images/Handbags/handbag-image/img-3002.jpg",
+    feedback: 4.8,
+    category: "women_handbag",
+  },
+  {
+    id: 3003,
+    name: "Gucci Diana Mini Tote",
+    type: "Mini Bag",
+    subtype: "Tote",
+    desc: `A chic and compact mini tote featuring bamboo handles, blending tradition with modern style.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 20 × 6 × 14 cm; 400 g
+    <br><strong>Date First Available : </strong> 18 July 2020
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 400 g
+    <br><strong>Item Dimensions LxWxH :</strong> 20 × 6 × 14 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Gucci",
+    availabel_sizes: undefined,
+    price: 18499,
+    old_price: 19999,
+    image: "assets/images/Handbags/handbag-image/img-3003.jpg",
+    feedback: 4.7,
+    category: "women",
+  },
+  {
+    id: 3004,
+    name: "Gucci Ophidia Small Bag",
+    type: "Handbag",
+    subtype: "Mini Bag",
+    desc: `An elegant mini bag with vintage accents, perfect for carrying your essentials in style.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 24 × 8 × 16 cm; 700 g
+    <br><strong>Date First Available : </strong> 18 July 2020
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 700 g
+    <br><strong>Item Dimensions LxWxH :</strong> 24 × 8 × 16 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Gucci",
+    availabel_sizes: undefined,
+    price: 1299,
+    old_price: 14999,
+    image: "assets/images/Handbags/handbag-image/img-3004.jpg",
+    feedback: 4.6,
+    category: "women_handbag",
+  },
+  {
+    id: 3005,
+    name: "Gucci Horsebit 1955 Bag",
+    type: "Handbag",
+    subtype: "Shoulder Bag",
+    desc: `A timeless shoulder bag featuring Gucci’s iconic horsebit detail, embodying elegance and tradition.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 26 × 9 × 18 cm; 450 g
+    <br><strong>Date First Available : </strong> 18 July 2020
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 450 g
+    <br><strong>Item Dimensions LxWxH :</strong> 26 × 9 × 18 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Gucci",
+    availabel_sizes: undefined,
+    price: 18999,
+    old_price: 20999,
+    image: "assets/images/Handbags/handbag-image/img-3005.jpg",
+    feedback: 4.9,
+    category: "women_handbag",
+  },
+  {
+    id: 3006,
+    name: "Chanel Classic Flap Bag",
+    type: "Handbag",
+    subtype: "Shoulder Bag",
+    desc: `A luxurious classic with signature quilting and a timeless design, perfect for any occasion.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 28 × 10 × 20 cm; 500 g
+    <br><strong>Date First Available : </strong> 18 July 2020
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 550 g
+    <br><strong>Item Dimensions LxWxH :</strong> 28 × 10 × 20 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Chanel",
+    availabel_sizes: undefined,
+    price: 21999,
+    old_price: 23999,
+    image: "assets/images/Handbags/handbag-image/img-3006.jpg",
+    feedback: 5.0,
+    category: "women_handbag",
+  },
+  {
+    id: 3007,
+    name: "Chanel Boy Bag",
+    type: "Handbag",
+    subtype: "Crossbody",
+    desc: `A modern classic, the Chanel Boy Bag adds an edgy yet sophisticated touch to your outfit.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 30 × 12 × 22 cm; 650 g
+    <br><strong>Date First Available : </strong> 18 July 2020
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 650 g
+    <br><strong>Item Dimensions LxWxH :</strong> 30 × 12 × 22 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Chanel",
+    availabel_sizes: undefined,
+    price: 19999,
+    old_price: 21999,
+    image: "assets/images/Handbags/handbag-image/img-3007.jpg",
+    feedback: 4.9,
+    category: "women_handbag",
+  },
+  {
+    id: 3008,
+    name: "Chanel 19 Handbag",
+    type: "Handbag",
+    subtype: "Shoulder Bag",
+    desc: `Bold and contemporary, this handbag features oversized quilting and the iconic interlocking CC clasp.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 42 × 16 × 32 cm; 1100 g
+    <br><strong>Date First Available : </strong> 20 July 2021
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 1100 g
+    <br><strong>Item Dimensions LxWxH :</strong> 42 × 16 × 32 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Chanel",
+    availabel_sizes: undefined,
+    price: 22999,
+    old_price: 24999,
+    image: "assets/images/Handbags/handbag-image/img-3008.jpg",
+    feedback: 4.8,
+    category: "women_handbag",
+  },
+  {
+    id: 3009,
+    name: "Chanel Vanity Case",
+    type: "Handbag",
+    subtype: "Mini Bag",
+    desc: `A sophisticated vanity case design, ideal for travel or adding a structured charm to your ensemble.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 34 × 10 × 26 cm; 350 g
+    <br><strong>Date First Available : </strong> 18 July 2020
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 350 g
+    <br><strong>Item Dimensions LxWxH :</strong> 34 × 10 × 26 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Chanel",
+    availabel_sizes: undefined,
+    price: 16999,
+    old_price: 18999,
+    image: "assets/images/Handbags/handbag-image/img-3009.jpg",
+    feedback: 4.7,
+    category: "women_handbag",
+  },
+  {
+    id: 3010,
+    name: "Chanel Gabrielle Hobo Bag",
+    type: "Handbag",
+    subtype: "Crossbody",
+    desc: `A stylish crossbody hobo bag combining Chanel’s signature elegance with everyday versatility.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 38 × 14 × 30 cm; 850 g
+    <br><strong>Date First Available : </strong> 8 Aug 2022
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 850 g
+    <br><strong>Item Dimensions LxWxH :</strong> 38 × 14 × 30 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Chanel",
+    availabel_sizes: undefined,
+    price: 18999,
+    old_price: 20999,
+    image: "assets/images/Handbags/handbag-image/img-3010.jpg",
+    feedback: 4.8,
+    category: "women_handbag",
+  },
+
+  // H&M Handbags (5)
+  {
+    id: 3011,
+    name: "H&M Faux Leather Tote",
+    type: "Handbag",
+    subtype: "Mini Bag",
+    desc: `A stylish faux leather tote with a sleek design, perfect for everyday use. Lightweight and spacious for all your essentials.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 32 × 14 × 24 cm; 430 g
+    <br><strong>Date First Available : </strong>   1 July 2022
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 430 g
+    <br><strong>Item Dimensions LxWxH :</strong> 32 × 14 × 24 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "H&M",
+    availabel_sizes: undefined,
+    price: 2499,
+    old_price: 2999,
+    image: "assets/images/Handbags/handbag-image/img-3011.jpg",
+    feedback: 4.5,
+    category: "women_handbag",
+  },
+  {
+    id: 3012,
+    name: "H&M Quilted Shoulder Bag",
+    type: "Handbag",
+    subtype: "Shoulder Bag",
+    desc: `A sophisticated quilted design that blends elegance with practicality. Ideal for both casual outings and formal events.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 42 × 16 × 32 cm; 900 g
+    <br><strong>Date First Available : </strong>   22 July 2023
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 900 g
+    <br><strong>Item Dimensions LxWxH :</strong> 42 × 16 × 32 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "H&M",
+    availabel_sizes: undefined,
+    price: 1899,
+    old_price: 2299,
+    image: "assets/images/Handbags/handbag-image/img-3012.jpg",
+    feedback: 4.3,
+    category: "women_handbag",
+  },
+  {
+    id: 3013,
+    name: "H&M Mini Crossbody",
+    type: "Handbag",
+    subtype: "Crossbody",
+    desc: `Compact and versatile, this crossbody bag is perfect for quick errands or nights out. Offers style without sacrificing space.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 30 × 7 × 20 cm; 800 g
+    <br><strong>Date First Available : </strong>   18 May 2020
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 800 g
+    <br><strong>Item Dimensions LxWxH :</strong> 30 × 7 × 20 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "H&M",
+    availabel_sizes: undefined,
+    price: 1599,
+    old_price: 1999,
+    image: "assets/images/Handbags/handbag-image/img-3013.jpg",
+    feedback: 4.4,
+    category: "women_handbag",
+  },
+  {
+    id: 3014,
+    name: "H&M Bucket Bag",
+    type: "Handbag",
+    subtype: "Bucket Bag",
+    desc: `A trendy bucket bag offering ample space with a modern silhouette. Ideal for making a bold fashion statement.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 60 × 30 × 50 cm; 950 g
+    <br><strong>Date First Available : </strong>   26 Mar 2024
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 950 g
+    <br><strong>Item Dimensions LxWxH :</strong> 60 × 30 × 50 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "H&M",
+    availabel_sizes: undefined,
+    price: 2199,
+    old_price: 2699,
+    image: "assets/images/Handbags/handbag-image/img-3014.jpg",
+    feedback: 4.6,
+    category: "women_handbag",
+  },
+  {
+    id: 3015,
+    name: "H&M Shopper Bag",
+    type: "Handbag",
+    subtype: "Shoulder Bag",
+    desc: `Spacious and durable, this shopper bag is perfect for busy days. Designed for both style and functionality.`,
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 42 × 16 × 32 cm; 1100 g
+    <br><strong>Date First Available : </strong>   20 July 2021
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 1100 g
+    <br><strong>Item Dimensions LxWxH :</strong> 42 × 16 × 32 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "H&M",
+    availabel_sizes: undefined,
+    price: 2799,
+    old_price: 3299,
+    image: "assets/images/Handbags/handbag-image/img-3015.jpg",
+    feedback: 4.7,
+    category: "women_handbag",
+  },
+  // Dior handbags(5)
+
+  {
+    id: 3016,
+    name: "Dior Lady Dior Bag",
+    type: "Handbag",
+    subtype: "Mini Bag",
+    description:
+      "An elegant mini bag with timeless appeal. Perfect for evening events and special occasions.",
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 32 × 14 × 24 cm; 430 g
+    <br><strong>Date First Available : </strong>   1 July 2022
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 430 g
+    <br><strong>Item Dimensions LxWxH :</strong> 32 × 14 × 24 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Dior",
+    availabel_sizes: undefined,
+    price: 18999,
+    old_price: 20999,
+    image: "assets/images/Handbags/handbag-image/img-3016.jpg",
+    feedback: 4.9,
+    category: "women_handbag",
+  },
+  {
+    id: 3017,
+    name: "Dior Saddle Bag",
+    type: "Handbag",
+    subtype: "Mini Bag",
+    description:
+      "A signature saddle bag combining modern style with classic Dior craftsmanship.",
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 22 × 7 × 15 cm; 330 g
+    <br><strong>Date First Available : </strong>   13 Jan 2022
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 330 g
+    <br><strong>Item Dimensions LxWxH :</strong> 22 × 7 × 15 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Dior",
+    availabel_sizes: undefined,
+    price: 17499,
+    old_price: 19499,
+    image: "assets/images/Handbags/handbag-image/img-3017.jpg",
+    feedback: 4.8,
+    category: "women_handbag",
+  },
+  {
+    id: 3018,
+    name: "Dior Book Tote",
+    type: "Handbag",
+    subtype: "Crossbody",
+    description:
+      "Spacious and stylish tote ideal for everyday use with a luxurious feel.",
+    detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 30 × 7 × 20 cm; 800 g
+    <br><strong>Date First Available : </strong>   13 May 2023
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 800 g
+    <br><strong>Item Dimensions LxWxH :</strong> 30 × 7 × 20 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Dior",
+    availabel_sizes: undefined,
+    price: 20499,
+    old_price: 22499,
+    image: "assets/images/Handbags/handbag-image/img-3018.jpg",
+    feedback: 4.9,
+    category: "women_handbag",
+  },
+  {
+    id: 3019,
+    name: "Dior Caro Bag",
+    type: "Handbag",
+    subtype: "Shoulder Bag",
+    description:
+      "A luxurious shoulder bag crafted with signature cannage stitching.",
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 40 × 16 × 32 cm; 1200 g
+    <br><strong>Date First Available : </strong>   20 July 2021
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 1200 g
+    <br><strong>Item Dimensions LxWxH :</strong> 40 × 16 × 32 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Dior",
+    availabel_sizes: undefined,
+    price: 18999,
+    old_price: 20999,
+    image: "assets/images/Handbags/handbag-image/img-3019.jpg",
+    feedback: 4.7,
+    category: "women_handbag",
+  },
+  {
+    id: 3020,
+    name: "Dior 30 Montaigne Bag",
+    type: "Handbag",
+    subtype: "Shoulder Bag",
+    description:
+      "A refined shoulder bag featuring Dior's iconic logo and elegance.",
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 42 × 12 × 32 cm; 1100 g
+    <br><strong>Date First Available : </strong>   11 April 2024
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 1100 g
+    <br><strong>Item Dimensions LxWxH :</strong> 42 × 12 × 32 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Dior",
+    availabel_sizes: undefined,
+    price: 15999,
+    old_price: 17999,
+    image: "assets/images/Handbags/handbag-image/img-3020.jpg",
+    feedback: 4.8,
+    category: "women_handbag",
+  },
+
+  // Mango handbags(5)
+
+  {
+    id: 3021,
+    name: "Mango Quilted Chain Bag",
+    type: "Handbag",
+    subtype: "Shoulder Bag",
+    description:
+      "A chic quilted shoulder bag featuring a stylish chain strap for an elegant touch.",
+    detailed_desc: `
+    <br><strong>Product Dimensions : </strong> 42 × 12 × 32 cm; 1100 g
+    <br><strong>Date First Available : </strong>   11 April 2024
+    <br><strong>Country of Origin :</strong> India
+    <br><strong>Item Weight :</strong> 1100 g
+    <br><strong>Item Dimensions LxWxH :</strong> 42 × 12 × 32 Centimeters
+    <br><strong>Net Quantity :</strong> 1 Count`,
+    manufacturer: "Mango",
+    availabel_sizes: undefined,
+    price: 3499,
+    old_price: 3999,
+    image: "assets/images/Handbags/handbag-image/img-3021.jpg",
+    feedback: 4.6,
+    category: "women_handbag",
+  },
 ];
 
 let listCards = [];
@@ -2601,89 +3034,96 @@ const showAllCards = () => {
   targetContainer.classList.add("p-5");
   targetContainer.classList.add("gap-3");
   targetContainer.classList.add("row");
-  products.forEach((value, key) => {    
-    let newDiv = document.createElement("div");
-    newDiv.classList.add("pricing-card");
-    newDiv.classList.add("col-2");
-    newDiv.style.width = "20rem";
-    newDiv.style.height = "fit-content";
-    const sizeSection =
-      value.availabel_sizes != undefined
-        ? `
+  targetContainer.classList.add("justify-content-center");
+  products.forEach((value, key) => {
+    if (
+      value.category == "men" ||
+      value.category == "women" ||
+      value.category == "kids"
+    ) {
+      let newDiv = document.createElement("div");
+      newDiv.classList.add("pricing-card");
+      newDiv.classList.add("col-2");
+      newDiv.style.width = "20rem";
+      newDiv.style.height = "fit-content";
+      const sizeSection =
+        value.availabel_sizes != undefined
+          ? `
                 <div class="sizeSelectList" id="sizeSelectList">
-                    <p>Select size:</p>
-                    ${generateSelectList(value.availabel_sizes, value.id)}
+                <p>Select size:</p>
+                ${generateSelectList(value.availabel_sizes, value.id)}
                 </div>
-              `
-        : ``;
-    newDiv.innerHTML = `
+                `
+          : ``;
+      newDiv.innerHTML = `
         <div class="card h-100">
-            <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px !important; width: 100%; overflow: hidden; position: relative;">
-                <img src="${
-                  value.image
-                }" class="card-img-top object-fit-cover" alt="...">
+        <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px !important; width: 100%; overflow: hidden; position: relative;">
+        <img src="${
+          value.image
+        }" class="card-img-top object-fit-cover" alt="...">
             </div>
             <div class="card-body">
-                <h5 class="card-title">${value.name}</h5>
-                <p class="card-text">${value.desc}</p>
+            <h5 class="card-title">${value.name}</h5>
+            <p class="card-text">${value.desc}</p>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <!-- Feedback Stars -->
-                    <span class="product-feedback-stars">${getRating(
-                      value.feedback
-                    )}</span>
-                </li>
-                <li class="list-group-item rate">
-                    <!-- Price -->
-                    <p class="price">
-                        Our Price: <ins>₹${value.price.toLocaleString()}</ins>                
-                    </p>
-                    <p class="old_price">
-                        MRP: <del>₹${value.old_price.toLocaleString()}</del>
-                    </p>
-                    ${sizeSection}
-                </li>
-                <li class="list-group-item">
-                    <button class="btn btn-outline-warning text-black" onclick="addToCart(${key});">
-                        Add to Cart
-                    </button>
-                    <!-- Button trigger modal for Product Page -->
-                    <button type="button" class="btn btn-warning product-btn" data-bs-toggle="modal" data-bs-target="#productPage" data-id="${
-                      value.id
-                    }" data-title="${value.name}" data-desc="${
-      value.desc
-    }" data-price="${value.price}" data-type="${value.type}" data-category="${
-      value.category
-    }" data-subtype="${value.subtype}" data-old-price="${
-      value.old_price
-    }" data-detailed-desc="${value.detailed_desc}"
-                    data-image="${value.image}" data-feedback="${
-      value.feedback
-    }" data-manufacturer="${value.manufacturer}" data-sizes="${
-      value.availabel_sizes
-    }">
-                        View More
-                    </button>
-                </li>
-            </ul>
-            <!-- <div class="card-body">
-                <a href="/detail.html?id=1" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div> -->
-        </div>
-        `;
-    targetContainer.appendChild(newDiv);
+            <li class="list-group-item">
+            <!-- Feedback Stars -->
+            <span class="product-feedback-stars">${getRating(
+              value.feedback
+            )}</span>
+            </li>
+            <li class="list-group-item rate">
+            <!-- Price -->
+            <p class="price">
+            Our Price: <ins>₹${value.price.toLocaleString()}</ins>                
+            </p>
+            <p class="old_price">
+            MRP: <del>₹${value.old_price.toLocaleString()}</del>
+            </p>
+            ${sizeSection}
+            </li>
+            <li class="list-group-item">
+            <button class="btn btn-outline-warning text-black" onclick="addToCart(${key});">
+            Add to Cart
+            </button>
+            <!-- Button trigger modal for Product Page -->
+            <button type="button" class="btn btn-warning product-btn" data-bs-toggle="modal" data-bs-target="#productPage" data-id="${
+              value.id
+            }" data-title="${value.name}" data-desc="${
+        value.desc
+      }" data-price="${value.price}" data-type="${value.type}" data-category="${
+        value.category
+      }" data-subtype="${value.subtype}" data-old-price="${
+        value.old_price
+      }" data-detailed-desc="${value.detailed_desc}"
+                            data-image="${value.image}" data-feedback="${
+        value.feedback
+      }" data-manufacturer="${value.manufacturer}" data-sizes="${
+        value.availabel_sizes
+      }">
+                                    View More
+                                    </button>
+                                    </li>
+                                    </ul>
+                                    <!-- <div class="card-body">
+                                    <a href="/detail.html?id=1" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                    </div> -->
+                                    </div>
+                                    `;
+      targetContainer.appendChild(newDiv);
+    }
   });
   targetContainer.innerHTML += modalCreator();
   targetContainer.innerHTML += `
-    <div class="btn-container text-center w-100">
-        <button type="button" class="btn btn-warning w-75 text-white fw-bolder fs-3"
-            onclick="collapseShowAll();onceClickedBtnEnable(document.getElementById('showAllBtn'));">
-            Collapse All
-        </button>
-    </div>
-    `;
+                                <div class="btn-container text-center w-100">
+                                <button type="button" class="btn btn-warning w-75 text-white fw-bolder fs-3"
+                                onclick="collapseShowAll();onceClickedBtnEnable(document.getElementById('showAllBtn'));">
+                                Collapse All
+                                </button>
+                                </div>
+                                `;
   targetContainer_.appendChild(targetContainer);
 };
 
@@ -2699,6 +3139,7 @@ const showAllClothingCards = () => {
   targetContainer.classList.add("p-5");
   targetContainer.classList.add("gap-3");
   targetContainer.classList.add("row");
+  targetContainer.classList.add("justify-content-center");
   products.forEach((value, key) => {
     if (
       value.category == "men_clothing" ||
@@ -2711,14 +3152,14 @@ const showAllClothingCards = () => {
       newDiv.style.width = "20rem";
       newDiv.style.height = "fit-content";
       const sizeSection =
-      value.availabel_sizes != undefined
-        ? `
+        value.availabel_sizes != undefined
+          ? `
                 <div class="sizeSelectList" id="sizeSelectList">
                     <p>Select size:</p>
                     ${generateSelectList(value.availabel_sizes, value.id)}
                 </div>
               `
-        : ``;
+          : ``;
       newDiv.innerHTML = `
             <div class="card h-100">
                 <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px; width: 100%; overflow: hidden; position: relative;">
@@ -2803,6 +3244,7 @@ const showAllWatchCards = () => {
   targetContainer.classList.add("p-5");
   targetContainer.classList.add("gap-3");
   targetContainer.classList.add("row");
+  targetContainer.classList.add("justify-content-center");
   products.forEach((value, key) => {
     if (
       value.category == "men_watches" ||
@@ -2815,14 +3257,14 @@ const showAllWatchCards = () => {
       newDiv.style.width = "20rem";
       newDiv.style.height = "fit-content";
       const sizeSection =
-      value.availabel_sizes != undefined
-        ? `
+        value.availabel_sizes != undefined
+          ? `
                 <div class="sizeSelectList" id="sizeSelectList">
                     <p>Select size:</p>
                     ${generateSelectList(value.availabel_sizes, value.id)}
                 </div>
               `
-        : ``;
+          : ``;
       newDiv.innerHTML = `
               <div class="card h-100">
                   <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px; width: 100%; overflow: hidden; position: relative;">
@@ -2895,6 +3337,96 @@ const showAllWatchCards = () => {
   targetContainer_.appendChild(targetContainer);
 };
 
+const showAllHandbagCards = () => {
+  const targetContainer_ = document.getElementById(
+    "result-container-all-pricing-cards"
+  );
+  const targetContainer = document.createElement("div");
+  targetContainer.id = "result-all-pricing-cards";
+  targetContainer.classList.add("p-5");
+  targetContainer.classList.add("gap-3");
+  targetContainer.classList.add("row");
+  targetContainer.classList.add("justify-content-center");
+  products.forEach((value, key) => {
+    if (value.category == "women_handbag") {
+      let newDiv = document.createElement("div");
+      newDiv.classList.add("pricing-card");
+      newDiv.classList.add("col-2");
+      newDiv.style.width = "20rem";
+      newDiv.style.height = "fit-content";
+      const sizeSection =
+        value.availabel_sizes != undefined
+          ? `
+                  <div class="sizeSelectList" id="sizeSelectList">
+                      <p>Select size:</p>
+                      ${generateSelectList(value.availabel_sizes, value.id)}
+                  </div>
+                `
+          : ``;
+      newDiv.innerHTML = `
+                <div class="card h-100">
+                    <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px; width: 100%; overflow: hidden; position: relative;">
+                        <img src="${
+                          value.image
+                        }" class="card-img-top object-fit-cover" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">${value.name}</h5>
+                        <p class="card-text">${value.desc}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <!-- Feedback Stars -->
+                            <span class="product-feedback-stars">${getRating(
+                              value.feedback
+                            )}</span>
+                        </li>
+                        <li class="list-group-item rate">
+                            <!-- Price -->
+                            <p class="price">
+                                Our Price: <ins>₹${value.price.toLocaleString()}</ins>                
+                            </p>
+                            <p class="old_price">
+                                MRP: <del>₹${value.old_price.toLocaleString()}</del>
+                            </p>
+                            ${sizeSection}
+                        </li>
+                        <li class="list-group-item">
+                            <button class="btn btn-outline-warning text-black" onclick="addToCart(${key});">
+                                Add to Cart
+                            </button>
+                            <!-- Button trigger modal for Product Page -->
+                            <button type="button" class="btn btn-warning product-btn" data-bs-toggle="modal" data-bs-target="#productPage" data-id="${
+                              value.id
+                            }" data-title="${value.name}" data-desc="${
+        value.desc
+      }" data-price="${value.price}" data-type="${value.type}" data-category="${
+        value.category
+      }" data-subtype="${value.subtype}" data-old-price="${
+        value.old_price
+      }" data-detailed-desc="${value.detailed_desc}"
+                            data-image="${value.image}" data-feedback="${
+        value.feedback
+      }" data-manufacturer="${value.manufacturer}" data-sizes="${
+        value.availabel_sizes
+      }">
+                                View More
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- <div class="card-body">
+                        <a href="/detail.html?id=1" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div> -->
+                </div>
+                `;
+      targetContainer.appendChild(newDiv);
+    }
+  });
+  targetContainer.innerHTML += modalCreator();
+  targetContainer_.appendChild(targetContainer);
+};
+
 const showTypeCards = (type, id) => {
   // resultAll.style.display="block"
   products
@@ -2905,7 +3437,7 @@ const showTypeCards = (type, id) => {
       newDiv.classList.add("swiper-slide");
       newDiv.style.width = "20rem";
       newDiv.style.height = "22rem";
-        
+
       newDiv.innerHTML = `
         <div class="card h-100">
             <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px;">
@@ -3140,6 +3672,10 @@ if (
   swiperInitializer(14);
   swiperInitializer(15);
   swiperInitializer(16);
+}
+
+if (window.location.href.includes("Handbags.html")) {
+  showAllHandbagCards();
 }
 
 // Add to Cart Method
