@@ -12,34 +12,16 @@
 
 /* Universal Selection */
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 /* Main Section */
 
-/* Carousel Section */
-.carousel-inner .carousel-item{
-    width: 100%;
-    height: 90vh;
-}
-
-.carousel-indicators{
-    padding: 1rem;
-}
-
-.carousel-indicators button{
-    margin: 0 1.2rem !important;
-}
-
-.carousel-indicators button img{
-    width: 4rem !important;
-}
-
-.carousel-indicators button.active img{
-    border: 2px solid #ddd;
-}
-
 /* Brand Section */
+.brand{
+    width: 100%;
+}
 .brand .row{
+    width: 100%;
     transition: var(--tr);
     box-shadow: var(--bs);
 }
@@ -72,7 +54,7 @@ body{
 }
 
 .brand .image-container svg{
-    height: 100px;
+    /* height: 100px; */
     display: block;
     opacity: 0.6;
     transition: var(--tr);
@@ -81,70 +63,4 @@ body{
 .brand .image-container svg:hover{
     opacity: 1;
     transform: scale(1.1);   
-}
-
-/* Category Section */
-.category .text-content .category-heading{
-    font-family: var(--font-family-1);
-    font-size: 4rem;
-    font-weight: 700;
-}
-
-.category .text-content .category-text{
-    font-family: var(--font-family-2);
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.category-card .card{
-    width: 100% !important;
-    height: 100% !important;
-    border: none !important;
-}
-
-.category-card .card img{
-    display: block;
-    width: 300px;
-    margin: auto;
-    object-fit: cover !important;
-    z-index: 10;
-}
-
-.category-card .card-image .card-img-bg{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #ddd;
-    position: absolute;
-    bottom: 50px;
-}
-
-.category-card .card .card-body .card-title{
-    font-family: var(--font-family-1);
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.category-card .card .card-body .card-text{
-    font-family: var(--font-family-3);
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-
-/* Shopping Category Section */
-.category-section{
-    margin-top: 5rem;
-}
-
-.category-section .shoes-category-heading{
-    font-family: var(--font-family-1);
-    font-size: 4rem;
-    font-weight: 700;
-}
-
-.category-section .shoes-category-text{
-    font-family: var(--font-family-2);
-    font-size: 1.5rem;
-    font-weight: 500;
 }
