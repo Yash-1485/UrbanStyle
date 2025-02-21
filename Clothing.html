@@ -9,7 +9,7 @@
     <!-- CSS Stylesheet Link -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/Footwear.css">
+    <link rel="stylesheet" href="assets/css/Clothing.css">
     <!-- <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" type="image/x-icon"> -->
     <link rel="shortcut icon" href="assets/images/Favicon/favicon.svg" type="image/x-icon">
 
@@ -53,7 +53,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#"
                                 onclick="redirect('index.html');">Home</a>
@@ -64,26 +64,27 @@
                                 Products
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#" onclick="redirect('Clothing.html');">Clothing</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirect('Footwear.html')">Footwear</a>
+                                </li>
                                 <li><a class="dropdown-item" href="#" onclick="redirect('Handbags.html');">Watches</a></li>
                                 <li><a class="dropdown-item" href="#" onclick="redirect('Watches.html');">Handbags</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Footwear</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="redirect('Clothing.html');">Clothing</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true">Contact</a>
                         </li>
                         <li class="nav-item">
                             <form class="d-flex" role="search">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                 <button class="btn btn-outline-primary" type="submit">Search</button>
                             </form>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Contact</a>
                         </li>
                     </ul>
                     <div class="shopping position-relative">
@@ -104,26 +105,20 @@
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active bg-success">
-                        <!-- <img src="assets/images/Footwear/Carousel_Preview/Preview_1.png"
-                            class="d-block w-100 object-fit-cover" alt="..."> -->
+                        class="active bg-primary" aria-current="true" aria-label="Slide 1">
                     </button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2" class="bg-success">
-                        <!-- <img src="assets/images/Footwear/Carousel_Preview/Preview_2.png"
-                            class="d-block w-100 object-fit-cover" alt="..."> -->
+                        aria-label="Slide 2" class=" bg-primary">
                     </button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3" class="bg-success">
-                        <!-- <img src="assets/images/Footwear/Carousel_Preview/Preview_3.png"
-                            class="d-block w-100 object-fit-cover" alt="..."> -->
+                        aria-label="Slide 3" class=" bg-primary">
                     </button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div
                             class="container-fluid carousel-data-container d-flex justify-content-center align-items-center">
-                            <div class="carousel-data-parts p-3">
+                            <div class="carousel-data-parts">
                                 <div
                                     class="carousel-data-content d-flex justify-content-center align-items-center flex-column">
                                     <div class="carousel-data-heading w-50">
@@ -142,7 +137,7 @@
                                     <div class="carousel-data-img-bg"></div>
                                     <img src="assets/images/Footwear/Sneakers_Shoes/img1.png"
                                         class="d-block w-100 position-relative carousel-data-img carousel-data-img-1"
-                                        alt="...">
+                                        alt="..." style="top: 3rem;">
                                 </div>
                             </div>
                         </div>
@@ -169,7 +164,7 @@
                                     <div class="carousel-data-img-bg"></div>
                                     <img src="assets/images/Footwear/Sport_Shoes/img4.png"
                                         class="d-block w-100 position-relative carousel-data-img carousel-data-img-2"
-                                        alt="...">
+                                        alt="..." style="top: 7rem;">
                                 </div>
                             </div>
                         </div>
@@ -196,7 +191,7 @@
                                     <div class="carousel-data-img-bg"></div>
                                     <img src="assets/images/Footwear/Sandals/img32.png"
                                         class="d-block w-100 position-relative carousel-data-img carousel-data-img-3"
-                                        alt="...">
+                                        alt="..." style="top: 5rem;left: 5rem;max-width: 70% !important;">
                                 </div>
                             </div>
                         </div>
@@ -218,45 +213,45 @@
         <!-- Brand Section -->
         <section class="brand container-fluid p-0">
             <div class="row">
-                <div class="brand col-6 col-sm-6 col-md-6 col-lg">
+                <div class="brand col">
                     <div class="image-container">
                         <!-- <img src="assets/images/Footwear/Brands/adidas_in.png" alt="" onmouseover="this.src='assets/images/Footwear/Brands/adidas_fn.png';this.style.opacity=1;" onmouseout="this.src='assets/images/Footwear/Brands/adidas_in.png'"> -->
                         <img src="assets/images/Footwear/Brands/adidas_in.png" alt="">
                     </div>
                 </div>
-                <!-- <div class="brand col">
+                <div class="brand col">
                     <div class="image-container">
                         <img src="assets/images/Footwear/Brands/skechers_out.png" alt=""
                             class="d-block w-100 h-100 mt-3" style="margin-top: 0.5rem !important;">
                     </div>
-                </div> -->
-                <div class="brand col-6 col-sm-6 col-md-6 col-lg">
+                </div>
+                <div class="brand col">
                     <div class="image-container">
                         <!-- <img src="assets/images/Footwear/Brands/puma_in.svg" alt="" onmouseover="this.src='assets/images/Footwear/Brands/puma_fn.svg';this.style.opacity=1;" onmouseout="this.src='assets/images/Footwear/Brands/puma_in.svg'"> -->
                         <img src="assets/images/Footwear/Brands/puma_in.svg" alt="">
                     </div>
                 </div>
-                <div class="brand col-6 col-sm-6 col-md-6 col-lg">
+                <div class="brand col">
                     <div class="image-container">
                         <img src="assets/images/Footwear/Brands/nike_in.png" alt="">
                     </div>
                 </div>
-                <div class="brand col-6 col-sm-6 col-md-6 col-lg">
+                <div class="brand col">
                     <div class="image-container">
                         <img src="assets/images/Footwear/Brands/crocs_in.png" alt="">
                     </div>
                 </div>
-                <div class="brand col-6 col-sm-6 col-md-6 col-lg">
+                <div class="brand col">
                     <div class="image-container">
                         <img src="assets/images/Footwear/Brands/reebok_in.svg" alt="">
                     </div>
                 </div>
-                <!-- <div class="brand col">
+                <div class="brand col">
                     <div class="image-container">
                         <img src="assets/images/Footwear/Brands/power_in.png" alt="" class="d-block w-50 h-25 mt-4"
                             style="margin-top: 2.2rem !important;">
                     </div>
-                </div> -->
+                </div>
             </div>
         </section>
 
@@ -273,61 +268,62 @@
                 <div class="col category-card">
                     <div class="card h-100 border">
                         <div class="card-image h-75 position-relative d-flex justify-content-center">
-                            <img src="assets/images/Footwear/Sport_Shoes/img4.png" class="card-img-top" alt="...">
+                            <img src="assets/images/Clothes/Shirts/img1.png" class="card-img-top" alt="...">
                             <!-- <div class="card-img-bg"></div> -->
                         </div>
                         <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                            <h5 class="card-title">Huarache(Sports Shoes)</h5>
-                            <p class="card-text text-center ">Versatile, durable footwear for running, training, and
-                                sports activities, offering comfort, grip, and performance enhancement.</p>
+                            <h5 class="card-title">Shirts</h5>
+                            <p class="card-text text-center ">Classic, stylish, and comfortable shirts designed for
+                                everyday wear, offering a perfect blend of breathability, durability, and modern
+                                fashion.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col category-card">
                     <div class="card h-100 border">
                         <div class="card-image h-75">
-                            <img src="assets/images/Footwear/Sneakers_Shoes/img1.png" class="card-img-top" alt="...">
+                            <img src="assets/images/Clothes/Tshirts/img7.png" class="card-img-top" alt="...">
                         </div>
                         <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                            <h5 class="card-title">Sneakers</h5>
-                            <p class="card-text text-center">Casual, stylish shoes with cushioned soles, blending
-                                fashion and comfort for daily wear and athletic activities.</p>
+                            <h5 class="card-title">Tshirts</h5>
+                            <p class="card-text text-center">Casual, trendy, and breathable t-shirts designed for
+                                everyday comfort, featuring stylish prints, soft fabrics, and a relaxed fit.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col category-card">
                     <div class="card h-100 border">
                         <div class="card-image h-75">
-                            <img src="assets/images/Footwear/Cleats/img1.jpg" class="card-img-top" alt="...">
+                            <img src="assets/images/Clothes/Jackets/img20.png" class="card-img-top" alt="...">
                         </div>
                         <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                            <h5 class="card-title">Cleats</h5>
-                            <p class="card-text text-center">Specialized shoes with studs for traction on grass or turf,
-                                perfect for soccer, football, and baseball.</p>
+                            <h5 class="card-title">Jackets</h5>
+                            <p class="card-text text-center">Fashionable and functional jackets designed for warmth,
+                                protection, and style, perfect for layering in all seasons.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col category-card">
                     <div class="card h-100 border">
                         <div class="card-image h-75">
-                            <img src="assets/images/Footwear/Crocs/img_1.jpg" class="card-img-top" alt="...">
+                            <img src="assets/images/Clothes/Jeans/img13.png" class="card-img-top" alt="...">
                         </div>
                         <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                            <h5 class="card-title">Crocs</h5>
-                            <p class="card-text text-center">Lightweight, slip-on clogs with ventilation, ideal for
-                                casual wear, water-resistance, and all-day comfort.</p>
+                            <h5 class="card-title">Jeans</h5>
+                            <p class="card-text text-center">Durable, stylish, and versatile jeans crafted for all-day
+                                wear, offering a perfect balance of comfort, stretch, and classic denim appeal.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col category-card">
                     <div class="card h-100 border">
                         <div class="card-image h-75">
-                            <img src="assets/images/Footwear/Sandals/img1.jpg" class="card-img-top" alt="...">
+                            <img src="assets/images/Clothes/Track/img25.png" class="card-img-top" alt="...">
                         </div>
                         <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                            <h5 class="card-title">Sandals</h5>
-                            <p class="card-text text-center">Open-toe footwear with straps, providing breathability,
-                                comfort, and style for casual or outdoor use.</p>
+                            <h5 class="card-title">Tracks</h5>
+                            <p class="card-text text-center">Lightweight, breathable, and flexible tracks designed for
+                                comfort and performance, ideal for sports, workouts, or casual wear.</p>
                         </div>
                     </div>
                 </div>
@@ -358,183 +354,74 @@
             </div>
         </div>
 
-        <!-- Pricing Section -->
-        <!-- <section class="category-wise-products" id="category-wise-products">
-            <div class="row collapse" id="collapse-1">
-                <div class="men-section category-section d-flex flex-column justify-content-center align-items-center"
-                    id="spshoes-section">
-                    <div class="shoes-category-heading">
-                        Sports Shoes
-                    </div>
-                    <p class="shoes-category-text w-50 text-center">
-
-                    <div class="swiper-outer-container swiper">
-                        <div class="slider-wrapper slider-4 mb-1 p-5">
-                            <div class="pricing-card-list swiper-wrapper" id="spshoes">
-                            </div>
-                        </div>
-
-                        <div class="swiper-button-next next-4"></div>
-                        <div class="swiper-button-prev prev-4"></div>
-                        <div class="swiper-pagination pagination-4"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row collapse" id="collapse-2">
-                <div class="men-section category-section d-flex flex-column justify-content-center align-items-center"
-                    id="spshoes-section">
-                    <div class="shoes-category-heading">
-                        Sneakers
-                    </div>
-                    <p class="shoes-category-text w-50 text-center">
-
-                    <div class="swiper-outer-container swiper">
-                        <div class="slider-wrapper slider-5 mb-1 p-5">
-                            <div class="pricing-card-list swiper-wrapper" id="sneakers">
-                            </div>
-                        </div>
-
-                        <div class="swiper-button-next next-5"></div>
-                        <div class="swiper-button-prev prev-5"></div>
-                        <div class="swiper-pagination pagination-5"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row collapse" id="collapse-3">
-                <div class="men-section category-section d-flex flex-column justify-content-center align-items-center"
-                    id="spshoes-section">
-                    <div class="shoes-category-heading">
-                        Cleats
-                    </div>
-                    <p class="shoes-category-text w-50 text-center">
-
-                    <div class="swiper-outer-container swiper">
-                        <div class="slider-wrapper slider-6 mb-1 p-5">
-                            <div class="pricing-card-list swiper-wrapper" id="cleats">
-                            </div>
-                        </div>
-
-                        <div class="swiper-button-next next-6"></div>
-                        <div class="swiper-button-prev prev-6"></div>
-                        <div class="swiper-pagination pagination-6"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row collapse" id="collapse-4">
-                <div class="men-section category-section d-flex flex-column justify-content-center align-items-center"
-                    id="spshoes-section">
-                    <div class="shoes-category-heading">
-                        Crocs
-                    </div>
-                    <p class="shoes-category-text w-50 text-center">
-
-                    <div class="swiper-outer-container swiper">
-                        <div class="slider-wrapper slider-7 mb-1 p-5">
-                            <div class="pricing-card-list swiper-wrapper" id="crocs">
-                            </div>
-                        </div>
-
-                        <div class="swiper-button-next next-7"></div>
-                        <div class="swiper-button-prev prev-7"></div>
-                        <div class="swiper-pagination pagination-7"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row collapse" id="collapse-5">
-                <div class="men-section category-section d-flex flex-column justify-content-center align-items-center"
-                    id="spshoes-section">
-                    <div class="shoes-category-heading">
-                        Sandals
-                    </div>
-                    <p class="shoes-category-text w-50 text-center">
-
-                    <div class="swiper-outer-container swiper">
-                        <div class="slider-wrapper slider-8 mb-1 p-5">
-                            <div class="pricing-card-list swiper-wrapper" id="sandals">
-                            </div>
-                        </div>
-
-                        <div class="swiper-button-next next-8"></div>
-                        <div class="swiper-button-prev prev-8"></div>
-                        <div class="swiper-pagination pagination-8"></div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+        <!-- Pricing Section -->        
         <section class="section pricing-all container-fluid p-5" id="pricing-section-all">
             <div class="btn-container text-center w-100">
                 <button type="button" id="showAllBtn" class="btn btn-warning w-75 text-white fw-bolder fs-3"
-                    onclick="showAllCards();openProductModal();onceClickedBtnDisable(this);">
-                    Show All Footwear Products
+                    onclick="showAllClothingCards();openProductModal();onceClickedBtnDisable(this);">
+                    Show All Clothing Products
                 </button>
             </div>
-            <div class="result-all-pricing-cards p-2 text-justify" id="result-container-all-pricing-cards">                
+            <div class="result-all-pricing-cards p-2 text-justify" id="result-container-all-pricing-cards">
             </div>
         </section>
         <section class="section pricing container-fluid p-5" id="pricing-section">
-            <!-- <div class="text-content d-flex justify-content-center align-items-center flex-column">
-                <div class="category-heading">
-                    Best Seller Products
-                </div>
-                <p class="category-text w-50 text-center">In a professional context it often happens that private or
-                    corporate clients corder a publication to be made and presented.</p>
-            </div> -->
             <div class="card-content p-3">
                 <div class="men-section category-section d-flex flex-column justify-content-center align-items-center"
                     id="men-section">
-                    <div class="shoes-category-heading category-heading">
+                    <div class="category-heading">
                         Men's Section
                     </div>
-                    <p class="shoes-category-text w-sm-50 text-center category-text">
+                    <p class="category-text w-50 text-center">
                         In a professional context it often happens that private or corporate clients corder a
                         publication to be made and presented.</p>
                     <div class="swiper-outer-container swiper">
-                        <div class="slider-wrapper slider-1 mb-1 p-5">
-                            <div class="pricing-card-list swiper-wrapper" id="men">
+                        <div class="slider-wrapper slider-11 mb-1 p-5">
+                            <div class="pricing-card-list swiper-wrapper" id="men_clothing">
                             </div>
                         </div>
 
-                        <div class="swiper-button-next next-1"></div>
-                        <div class="swiper-button-prev prev-1"></div>
-                        <div class="swiper-pagination pagination-1"></div>
+                        <div class="swiper-button-next next-11"></div>
+                        <div class="swiper-button-prev prev-11"></div>
+                        <div class="swiper-pagination pagination-11"></div>
                     </div>
                 </div>
                 <div class="women-section category-section d-flex flex-column justify-content-center align-items-center"
                     id="women-section">
-                    <div class="shoes-category-heading">
+                    <div class="category-heading">
                         Women's Section
                     </div>
-                    <p class="shoes-category-text w-50 text-center">In a professional context it often happens that
+                    <p class="category-text w-50 text-center">In a professional context it often happens that
                         private or
                         corporate clients corder a publication to be made and presented.</p>
                     <div class="swiper-outer-container swiper">
-                        <div class="slider-wrapper slider-2 mb-2 p-5">
-                            <div class="pricing-card-list swiper-wrapper" id="women">
+                        <div class="slider-wrapper slider-12 mb-2 p-5">
+                            <div class="pricing-card-list swiper-wrapper" id="women_clothing">
                             </div>
                         </div>
 
-                        <div class="swiper-button-next next-2"></div>
-                        <div class="swiper-button-prev prev-2"></div>
-                        <div class="swiper-pagination pagination-2"></div>
+                        <div class="swiper-button-next next-12"></div>
+                        <div class="swiper-button-prev prev-12"></div>
+                        <div class="swiper-pagination pagination-12"></div>
                     </div>
                 </div>
                 <div class="kids-section category-section d-flex flex-column justify-content-center align-items-center"
                     id="kids-section">
-                    <div class="shoes-category-heading">
+                    <div class="category-heading">
                         Kids's Section
                     </div>
-                    <p class="shoes-category-text w-50 text-center">In a professional context it often happens that
+                    <p class="category-text w-50 text-center">In a professional context it often happens that
                         private or
                         corporate clients corder a publication to be made and presented.</p>
                     <div class="swiper-outer-container swiper">
-                        <div class="slider-wrapper-3 slider-3 mb-2 p-5">
-                            <div class="pricing-card-list swiper-wrapper" id="kids">
+                        <div class="slider-wrapper slider-13 mb-2 p-5">
+                            <div class="pricing-card-list swiper-wrapper" id="kids_clothing">
                             </div>
                         </div>
 
-                        <div class="swiper-button-next next-3"></div>
-                        <div class="swiper-button-prev prev-3"></div>
-                        <div class="swiper-pagination pagination-3"></div>
+                        <div class="swiper-button-next next-13"></div>
+                        <div class="swiper-button-prev prev-13"></div>
+                        <div class="swiper-pagination pagination-13"></div>
                     </div>
                 </div>
 

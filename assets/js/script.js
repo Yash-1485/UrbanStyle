@@ -483,6 +483,623 @@ let products = [
         feedback: 5,
         category: 'kids'
     },
+
+    // Clothing
+
+    {
+        id: 1001,
+        name: 'Linen Casual Shirt',
+        type: 'Shirt',
+        subtype: 'Casual Shirt',
+        desc: 'Lightweight linen shirt, designed for breathable comfort in warm weather.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 26 x 19 x 6 cm; 320 g
+            <br><strong>Date First Available : </strong> 5 May 2022
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 320 g
+            <br><strong>Item Dimensions LxWxH :</strong> 26 x 19 x 6 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Allen Solly',
+        availabel_sizes: ['S', 'M', 'L', 'XL'],
+        price: 1099,
+        old_price: 1399,
+        image: 'assets/images/Clothes/Shirts/img2.png',
+        feedback: 4.5,
+        category: 'men_clothing'
+    },
+    {
+        id: 1002,
+        name: 'Floral Print Shirt',
+        type: 'Shirt',
+        subtype: 'Casual Shirt',
+        desc: 'Elegant floral printed shirt with a soft fabric for all-day comfort.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 24 x 17 x 4 cm; 280 g
+            <br><strong>Date First Available : </strong> 15 April 2021
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 280 g
+            <br><strong>Item Dimensions LxWxH :</strong> 24 x 17 x 4 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'FabIndia',
+        availabel_sizes: ['XS', 'S', 'M', 'L'],
+        price: 799,
+        old_price: 1099,
+        image: 'assets/images/Clothes/Shirts/img3.png',
+        feedback: 4.6,
+        category: 'women_clothing'
+    },
+    {
+        id: 1003,
+        name: 'Silk Blend Shirt',
+        type: 'Shirt',
+        subtype: 'Party Wear Shirt',
+        desc: 'Premium silk-blend shirt for an elegant and classy look at special events.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 27 x 20 x 5 cm; 350 g
+            <br><strong>Date First Available : </strong> 22 June 2021
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 350 g
+            <br><strong>Item Dimensions LxWxH :</strong> 27 x 20 x 5 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Van Heusen',
+        availabel_sizes: ['XS', 'S', 'M', 'L'],
+        price: 1299,
+        old_price: 1699,
+        image: 'assets/images/Clothes/Shirts/img4.png',
+        feedback: 4.8,
+        category: 'women_clothing'
+    },
+    {
+        id: 1004,
+        name: 'Kids Checkered Shirt',
+        type: 'Shirt',
+        subtype: 'Casual Shirt',
+        desc: 'Soft cotton checkered shirt for kids, perfect for playtime and outings.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 3 cm; 200 g
+            <br><strong>Date First Available : </strong> 12 February 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 200 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 3 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'U.S. Polo Assn.',
+        availabel_sizes: ['XS', 'S', 'M'],
+        price: 599,
+        old_price: 899,
+        image: 'assets/images/Clothes/Shirts/img5.png',
+        feedback: 4.9,
+        category: 'kids_clothing'
+    },
+    {
+        id: 1005,
+        name: 'Kids Cartoon Print Shirt',
+        type: 'Shirt',
+        subtype: 'Casual Shirt',
+        desc: 'Colorful cartoon-printed shirt, making everyday dressing fun for kids.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 22 x 16 x 3 cm; 210 g
+            <br><strong>Date First Available : </strong> 1 January 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 210 g
+            <br><strong>Item Dimensions LxWxH :</strong> 22 x 16 x 3 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'H&M Kids',
+        availabel_sizes: ['XS', 'S', 'M'],
+        price: 499,
+        old_price: 799,
+        image: 'assets/images/Clothes/Shirts/img6.png',
+        feedback: 4.7,
+        category: 'kids_clothing'
+    },
+    // Tshirts Section
+    {
+        id: 1006,
+        name: 'Classic Cotton T-Shirt',
+        type: 'T-Shirt',
+        subtype: 'Casual T-Shirt',
+        desc: 'A soft and breathable cotton T-shirt, perfect for daily wear.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 24 x 18 x 3 cm; 250 g
+            <br><strong>Date First Available : </strong> 10 April 2022
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 250 g
+            <br><strong>Item Dimensions LxWxH :</strong> 24 x 18 x 3 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Nike',
+        availabel_sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+        price: 699,
+        old_price: 999,
+        image: 'assets/images/Clothes/Tshirts/img7.png',
+        feedback: 4.7,
+        category: 'men_clothing'
+    },
+    {
+        id: 1007,
+        name: 'Striped Polo T-Shirt',
+        type: 'T-Shirt',
+        subtype: 'Polo T-Shirt',
+        desc: 'A stylish striped polo T-shirt with a comfortable fit for any occasion.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 26 x 19 x 4 cm; 280 g
+            <br><strong>Date First Available : </strong> 5 June 2022
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 280 g
+            <br><strong>Item Dimensions LxWxH :</strong> 26 x 19 x 4 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Adidas',
+        availabel_sizes: ['S', 'M', 'L', 'XL'],
+        price: 899,
+        old_price: 1199,
+        image: 'assets/images/Clothes/Tshirts/img8.png',
+        feedback: 4.6,
+        category: 'men_clothing'
+    },
+    {
+        id: 1008,
+        name: 'Graphic Print T-Shirt',
+        type: 'T-Shirt',
+        subtype: 'Casual T-Shirt',
+        desc: 'Trendy graphic print T-shirt designed for casual street style.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 23 x 17 x 3 cm; 220 g
+            <br><strong>Date First Available : </strong> 15 March 2021
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 220 g
+            <br><strong>Item Dimensions LxWxH :</strong> 23 x 17 x 3 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'H&M',
+        availabel_sizes: ['XS', 'S', 'M', 'L'],
+        price: 599,
+        old_price: 899,
+        image: 'assets/images/Clothes/Tshirts/img9.png',
+        feedback: 4.5,
+        category: 'women_clothing'
+    },
+    {
+        id: 1009,
+        name: 'V-Neck Stretch T-Shirt',
+        type: 'T-Shirt',
+        subtype: 'Fitted T-Shirt',
+        desc: 'A soft stretchable V-neck T-shirt for a perfect fit and comfort.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 25 x 18 x 3 cm; 260 g
+            <br><strong>Date First Available : </strong> 20 July 2021
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 260 g
+            <br><strong>Item Dimensions LxWxH :</strong> 25 x 18 x 3 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Zara',
+        availabel_sizes: ['XS', 'S', 'M', 'L'],
+        price: 799,
+        old_price: 1099,
+        image: 'assets/images/Clothes/Tshirts/img10.png',
+        feedback: 4.8,
+        category: 'women_clothing'
+    },
+    {
+        id: 1010,
+        name: 'Cartoon Print Kids T-Shirt',
+        type: 'T-Shirt',
+        subtype: 'Casual T-Shirt',
+        desc: 'Bright and colorful cartoon-printed T-shirt for kids.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 20 x 15 x 3 cm; 180 g
+            <br><strong>Date First Available : </strong> 12 August 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 180 g
+            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 3 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Puma Kids',
+        availabel_sizes: ['XS', 'S', 'M'],
+        price: 499,
+        old_price: 799,
+        image: 'assets/images/Clothes/Tshirts/img11.png',
+        feedback: 4.9,
+        category: 'kids_clothing'
+    },
+    {
+        id: 1011,
+        name: 'Superhero Kids T-Shirt',
+        type: 'T-Shirt',
+        subtype: 'Casual T-Shirt',
+        desc: 'Soft cotton superhero-printed T-shirt for fun and style.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 22 x 16 x 3 cm; 190 g
+            <br><strong>Date First Available : </strong> 5 September 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 190 g
+            <br><strong>Item Dimensions LxWxH :</strong> 22 x 16 x 3 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Marvel Kids',
+        availabel_sizes: ['XS', 'S', 'M'],
+        price: 599,
+        old_price: 899,
+        image: 'assets/images/Clothes/Tshirts/img12.png',
+        feedback: 4.7,
+        category: 'kids_clothing'
+    },
+    // Jeans
+    {
+        id: 1012,
+        name: 'Slim Fit Denim Jeans',
+        type: 'Jeans',
+        subtype: 'Slim Fit',
+        desc: 'Classic slim fit jeans with a stretchable fabric for maximum comfort.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 30 x 20 x 5 cm; 500 g
+            <br><strong>Date First Available : </strong> 15 May 2022
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 500 g
+            <br><strong>Item Dimensions LxWxH :</strong> 30 x 20 x 5 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Levi’s',
+        availabel_sizes: ['28', '30', '32', '34', '36'],
+        price: 1599,
+        old_price: 1999,
+        image: 'assets/images/Clothes/Jeans/img13.png',
+        feedback: 4.8,
+        category: 'men_clothing'
+    },
+    {
+        id: 1013,
+        name: 'Straight Fit Blue Jeans',
+        type: 'Jeans',
+        subtype: 'Straight Fit',
+        desc: 'Classic straight fit blue jeans made from premium denim.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 32 x 22 x 5 cm; 550 g
+            <br><strong>Date First Available : </strong> 10 June 2022
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 550 g
+            <br><strong>Item Dimensions LxWxH :</strong> 32 x 22 x 5 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Wrangler',
+        availabel_sizes: ['30', '32', '34', '36', '38'],
+        price: 1699,
+        old_price: 2199,
+        image: 'assets/images/Clothes/Jeans/img14.png',
+        feedback: 4.7,
+        category: 'men_clothing'
+    },
+    {
+        id: 1014,
+        name: 'High Waist Skinny Jeans',
+        type: 'Jeans',
+        subtype: 'Skinny Fit',
+        desc: 'Trendy high-waist skinny jeans designed for a perfect fit and sleek look.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 28 x 18 x 4 cm; 480 g
+            <br><strong>Date First Available : </strong> 25 July 2022
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 480 g
+            <br><strong>Item Dimensions LxWxH :</strong> 28 x 18 x 4 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'H&M',
+        availabel_sizes: ['26', '28', '30', '32', '34'],
+        price: 1799,
+        old_price: 2299,
+        image: 'assets/images/Clothes/Jeans/img15.png',
+        feedback: 4.6,
+        category: 'women_clothing'
+    },
+    {
+        id: 1015,
+        name: 'Ripped Mom Jeans',
+        type: 'Jeans',
+        subtype: 'Relaxed Fit',
+        desc: 'Stylish ripped mom jeans for a casual and comfortable look.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 29 x 19 x 5 cm; 490 g
+            <br><strong>Date First Available : </strong> 18 August 2022
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 490 g
+            <br><strong>Item Dimensions LxWxH :</strong> 29 x 19 x 5 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Zara',
+        availabel_sizes: ['26', '28', '30', '32', '34'],
+        price: 1899,
+        old_price: 2399,
+        image: 'assets/images/Clothes/Jeans/img16.png',
+        feedback: 4.8,
+        category: 'women_clothing'
+    },
+    {
+        id: 1016,
+        name: 'Boys Regular Fit Jeans',
+        type: 'Jeans',
+        subtype: 'Regular Fit',
+        desc: 'Durable and stylish regular fit jeans designed for active kids.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 26 x 16 x 4 cm; 420 g
+            <br><strong>Date First Available : </strong> 8 September 2022
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 420 g
+            <br><strong>Item Dimensions LxWxH :</strong> 26 x 16 x 4 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Puma Kids',
+        availabel_sizes: ['2-3Y', '4-5Y', '6-7Y', '8-9Y'],
+        price: 899,
+        old_price: 1199,
+        image: 'assets/images/Clothes/Jeans/img17.png',
+        feedback: 4.9,
+        category: 'kids_clothing'
+    },
+    {
+        id: 1017,
+        name: 'Girls Flared Jeans',
+        type: 'Jeans',
+        subtype: 'Flared Fit',
+        desc: 'Trendy flared jeans designed for stylish young girls.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 27 x 17 x 4 cm; 430 g
+            <br><strong>Date First Available : </strong> 12 October 2022
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 430 g
+            <br><strong>Item Dimensions LxWxH :</strong> 27 x 17 x 4 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'H&M Kids',
+        availabel_sizes: ['2-3Y', '4-5Y', '6-7Y', '8-9Y'],
+        price: 999,
+        old_price: 1299,
+        image: 'assets/images/Clothes/Jeans/img18.png',
+        feedback: 4.7,
+        category: 'kids_clothing'
+    },
+    // Jackets
+    {
+        id: 1018,
+        name: 'Men\'s Leather Jacket',
+        type: 'Jacket',
+        subtype: 'Leather',
+        desc: 'Premium quality leather jacket with a stylish and durable design.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 35 x 25 x 10 cm; 800 g
+            <br><strong>Date First Available : </strong> 5 January 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 800 g
+            <br><strong>Item Dimensions LxWxH :</strong> 35 x 25 x 10 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Zara',
+        availabel_sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+        price: 3999,
+        old_price: 4599,
+        image: 'assets/images/Clothes/Jackets/img19.png',
+        feedback: 4.8,
+        category: 'men_clothing'
+    },
+    {
+        id: 1019,
+        name: 'Men\'s Bomber Jacket',
+        type: 'Jacket',
+        subtype: 'Bomber',
+        desc: 'Trendy bomber jacket with a modern fit and lightweight fabric.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 34 x 24 x 9 cm; 750 g
+            <br><strong>Date First Available : </strong> 10 February 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 750 g
+            <br><strong>Item Dimensions LxWxH :</strong> 34 x 24 x 9 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'H&M',
+        availabel_sizes: ['S', 'M', 'L', 'XL'],
+        price: 3499,
+        old_price: 3999,
+        image: 'assets/images/Clothes/Jackets/img20.png',
+        feedback: 4.7,
+        category: 'men_clothing'
+    },
+    {
+        id: 1020,
+        name: 'Women\'s Puffer Jacket',
+        type: 'Jacket',
+        subtype: 'Puffer',
+        desc: 'Warm and stylish puffer jacket for winter wear.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 33 x 23 x 8 cm; 700 g
+            <br><strong>Date First Available : </strong> 15 March 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 700 g
+            <br><strong>Item Dimensions LxWxH :</strong> 33 x 23 x 8 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Forever 21',
+        availabel_sizes: ['XS', 'S', 'M', 'L', 'XL'],
+        price: 2999,
+        old_price: 3599,
+        image: 'assets/images/Clothes/Jackets/img21.png',
+        feedback: 4.9,
+        category: 'women_clothing'
+    },
+    {
+        id: 1021,
+        name: 'Women\'s Denim Jacket',
+        type: 'Jacket',
+        subtype: 'Denim',
+        desc: 'Classic denim jacket with a comfortable and relaxed fit.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 32 x 22 x 7 cm; 680 g
+            <br><strong>Date First Available : </strong> 20 April 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 680 g
+            <br><strong>Item Dimensions LxWxH :</strong> 32 x 22 x 7 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Levi’s',
+        availabel_sizes: ['XS', 'S', 'M', 'L', 'XL'],
+        price: 2499,
+        old_price: 2999,
+        image: 'assets/images/Clothes/Jackets/img22.png',
+        feedback: 4.8,
+        category: 'women_clothing'
+    },
+    {
+        id: 1022,
+        name: 'Kids Hooded Winter Jacket',
+        type: 'Jacket',
+        subtype: 'Hooded',
+        desc: 'Soft and cozy hooded winter jacket for kids.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 30 x 20 x 6 cm; 600 g
+            <br><strong>Date First Available : </strong> 25 May 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 600 g
+            <br><strong>Item Dimensions LxWxH :</strong> 30 x 20 x 6 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Puma Kids',
+        availabel_sizes: ['2-3Y', '4-5Y', '6-7Y', '8-9Y'],
+        price: 1799,
+        old_price: 2199,
+        image: 'assets/images/Clothes/Jackets/img23.png',
+        feedback: 4.9,
+        category: 'kids_clothing'
+    },
+    {
+        id: 1023,
+        name: 'Kids Lightweight Rain Jacket',
+        type: 'Jacket',
+        subtype: 'Rain Jacket',
+        desc: 'Waterproof and breathable rain jacket for kids.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 28 x 18 x 5 cm; 550 g
+            <br><strong>Date First Available : </strong> 30 June 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 550 g
+            <br><strong>Item Dimensions LxWxH :</strong> 28 x 18 x 5 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Nike Kids',
+        availabel_sizes: ['2-3Y', '4-5Y', '6-7Y', '8-9Y'],
+        price: 1599,
+        old_price: 1999,
+        image: 'assets/images/Clothes/Jackets/img24.png',
+        feedback: 4.8,
+        category: 'kids_clothing'
+    },    
+    // Tracks
+
+    {
+        id: 1024,
+        name: 'Men\'s Sports Track',
+        type: 'Track',
+        subtype: 'Sports',
+        desc: 'Lightweight and breathable sports track with moisture-wicking fabric for maximum comfort.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 40 x 30 x 5 cm; 500 g
+            <br><strong>Date First Available : </strong> 12 January 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 500 g
+            <br><strong>Item Dimensions LxWxH :</strong> 40 x 30 x 5 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Nike',
+        availabel_sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+        price: 2499,
+        old_price: 2999,
+        image: 'assets/images/Clothes/Track/img25.png',
+        feedback: 4.7,
+        category: 'men_clothing'
+    },
+    {
+        id: 1025,
+        name: 'Men\'s Casual Track',
+        type: 'Track',
+        subtype: 'Casual',
+        desc: 'Soft fabric casual track, perfect for everyday wear and lounging.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 42 x 32 x 5 cm; 520 g
+            <br><strong>Date First Available : </strong> 5 March 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 520 g
+            <br><strong>Item Dimensions LxWxH :</strong> 42 x 32 x 5 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Adidas',
+        availabel_sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+        price: 2199,
+        old_price: 2699,
+        image: 'assets/images/Clothes/Track/img26.png',
+        feedback: 4.6,
+        category: 'men_clothing'
+    },
+    {
+        id: 1026,
+        name: 'Women\'s Fitness Track',
+        type: 'Track',
+        subtype: 'Fitness',
+        desc: 'Stretchable fitness track designed for gym and workouts.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 38 x 28 x 4 cm; 450 g
+            <br><strong>Date First Available : </strong> 20 February 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 450 g
+            <br><strong>Item Dimensions LxWxH :</strong> 38 x 28 x 4 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Puma',
+        availabel_sizes: ['XS', 'S', 'M', 'L', 'XL'],
+        price: 1999,
+        old_price: 2399,
+        image: 'assets/images/Clothes/Track/img27.png',
+        feedback: 4.8,
+        category: 'women_clothing'
+    },
+    {
+        id: 1027,
+        name: 'Women\'s Slim Fit Track',
+        type: 'Track',
+        subtype: 'Slim Fit',
+        desc: 'Stylish and trendy slim fit track for women, suitable for casual and sportswear.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 40 x 30 x 4 cm; 470 g
+            <br><strong>Date First Available : </strong> 10 April 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 470 g
+            <br><strong>Item Dimensions LxWxH :</strong> 40 x 30 x 4 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Reebok',
+        availabel_sizes: ['XS', 'S', 'M', 'L', 'XL'],
+        price: 2299,
+        old_price: 2799,
+        image: 'assets/images/Clothes/Track/img28.png',
+        feedback: 4.5,
+        category: 'women_clothing'
+    },
+    {
+        id: 1028,
+        name: 'Kids\' Running Track',
+        type: 'Track',
+        subtype: 'Running',
+        desc: 'Comfortable and flexible running track for kids with sweat-resistant fabric.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 35 x 25 x 3 cm; 400 g
+            <br><strong>Date First Available : </strong> 18 May 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 400 g
+            <br><strong>Item Dimensions LxWxH :</strong> 35 x 25 x 3 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Decathlon',
+        availabel_sizes: ['S', 'M', 'L'],
+        price: 1499,
+        old_price: 1799,
+        image: 'assets/images/Clothes/Track/img29.png',
+        feedback: 4.9,
+        category: 'kids_clothing'
+    },
+    {
+        id: 1029,
+        name: 'Kids\' Cotton Track',
+        type: 'Track',
+        subtype: 'Casual',
+        desc: 'Soft cotton casual track for kids, perfect for daily wear and comfort.',
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 36 x 26 x 3 cm; 390 g
+            <br><strong>Date First Available : </strong> 25 June 2023
+            <br><strong>Country of Origin :</strong> India
+            <br><strong>Item Weight :</strong> 390 g
+            <br><strong>Item Dimensions LxWxH :</strong> 36 x 26 x 3 cm
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: 'Zara Kids',
+        availabel_sizes: ['S', 'M', 'L'],
+        price: 1299,
+        old_price: 1599,
+        image: 'assets/images/Clothes/Track/img30.png',
+        feedback: 4.7,
+        category: 'kids_clothing'
+    }
 ]
 
 let listCards=[]
@@ -504,6 +1121,9 @@ const categoryMap = {
     men: document.getElementById('men'),
     women: document.getElementById('women'),
     kids: document.getElementById('kids'),
+    men_clothing:document.getElementById('men_clothing'),
+    women_clothing:document.getElementById('women_clothing'),
+    kids_clothing:document.getElementById('kids_clothing'),
 };
 
 const subtypeMap = {
@@ -562,8 +1182,8 @@ const initApp = () =>{
 
         newDiv.innerHTML=`
         <div class="card h-100">
-            <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px;">
-                <img src="${value.image}" class="card-img-top object-fit-cover" alt="...">
+            <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px !important; width: 100%; overflow: hidden; position: relative;">
+                <img src="${value.image}" class="card-img-top object-fit-cover fit-image" alt="...">
             </div>
             <div class="card-body">
                 <h5 class="card-title">${value.name}</h5>
@@ -630,7 +1250,7 @@ const showAllCards = () => {
         newDiv.style.height="fit-content"
         newDiv.innerHTML=`
         <div class="card h-100">
-            <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px;">
+            <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px !important; width: 100%; overflow: hidden; position: relative;">
                 <img src="${value.image}" class="card-img-top object-fit-cover" alt="...">
             </div>
             <div class="card-body">
@@ -673,6 +1293,82 @@ const showAllCards = () => {
         </div>
         `
         targetContainer.appendChild(newDiv);
+    })
+    targetContainer.innerHTML+=modalCreator()
+    targetContainer.innerHTML+=`
+    <div class="btn-container text-center w-100">
+        <button type="button" class="btn btn-warning w-75 text-white fw-bolder fs-3"
+            onclick="collapseShowAll();onceClickedBtnEnable(document.getElementById('showAllBtn'));">
+            Collapse All
+        </button>
+    </div>
+    `
+    targetContainer_.appendChild(targetContainer)
+}
+
+const showAllClothingCards = () => {
+    let ps=document.getElementById('pricing-section')
+    localStorage.setItem('pricing-section',JSON.stringify(ps.outerHTML))
+    ps.remove()
+    const targetContainer_ = document.getElementById('result-container-all-pricing-cards');
+    const targetContainer = document.createElement('div')
+    targetContainer.id='result-all-pricing-cards'
+    targetContainer.classList.add('p-5')
+    targetContainer.classList.add('gap-3')
+    targetContainer.classList.add('row')
+    products.forEach((value,key) => {
+        if(value.category=='men_clothing'||value.category=='women_clothing'||value.category=='kids_clothing'){    
+            let newDiv=document.createElement('div')
+            newDiv.classList.add('pricing-card')
+            newDiv.classList.add('col-2')
+            newDiv.style.width="20rem"
+            newDiv.style.height="fit-content"
+            newDiv.innerHTML=`
+            <div class="card h-100">
+                <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px; width: 100%; overflow: hidden; position: relative;">
+                    <img src="${value.image}" class="card-img-top object-fit-cover" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">${value.name}</h5>
+                    <p class="card-text">${value.desc}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <!-- Feedback Stars -->
+                        <span class="product-feedback-stars">${getRating(value.feedback)}</span>
+                    </li>
+                    <li class="list-group-item rate">
+                        <!-- Price -->
+                        <p class="price">
+                            Our Price: <ins>₹${value.price.toLocaleString()}</ins>                
+                        </p>
+                        <p class="old_price">
+                            MRP: <del>₹${value.old_price.toLocaleString()}</del>
+                        </p>
+                        <div class="sizeSelectList" id="sizeSelectList">
+                            <p>Select size: </p>
+                            ${generateSelectList(value.availabel_sizes,value.id)}
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <button class="btn btn-outline-warning text-black" onclick="addToCart(${key});">
+                            Add to Cart
+                        </button>
+                        <!-- Button trigger modal for Product Page -->
+                        <button type="button" class="btn btn-warning product-btn" data-bs-toggle="modal" data-bs-target="#productPage" data-id="${value.id}" data-title="${value.name}" data-desc="${value.desc}" data-price="${value.price}" data-type="${value.type}" data-category="${value.category}" data-subtype="${value.subtype}" data-old-price="${value.old_price}" data-detailed-desc="${value.detailed_desc}"
+                        data-image="${value.image}" data-feedback="${value.feedback}" data-manufacturer="${value.manufacturer}" data-sizes="${value.availabel_sizes}">
+                            View More
+                        </button>
+                    </li>
+                </ul>
+                <!-- <div class="card-body">
+                    <a href="/detail.html?id=1" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div> -->
+            </div>
+            `
+            targetContainer.appendChild(newDiv);
+        }
     })
     targetContainer.innerHTML+=modalCreator()
     targetContainer.innerHTML+=`
@@ -762,7 +1458,7 @@ const modalCreator=()=>{
                 <div class="modal-body">
                     <div class="modal-main-content">
                         <div class="product-img-container">
-                            <img src="" alt="" id="productImage" class="img-fluid">
+                            <img src="" alt="" id="productImage" class="img-fluid" style="height: 230px; width: 100%; overflow: hidden; position: relative;">
                         </div>
                         <div class="product-content-container">
                             <h1 id="productTitle"></h1>
@@ -901,6 +1597,9 @@ if(window.location.href.includes('Footwear.html')||window.location.href.includes
     swiperInitializer(6)
     swiperInitializer(7)
     swiperInitializer(8)
+    swiperInitializer(11)
+    swiperInitializer(12)
+    swiperInitializer(13)
 }
 
 // Add to Cart Method

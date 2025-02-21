@@ -113,14 +113,24 @@ nav{
 }
 
 .list-card .cart-card-item .card-image{
-    width: 100%;
-    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    overflow: hidden !important; 
+    position: relative !important;
 }
 
+.list-card .cart-card-item .card-image .fit-image {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+/* 
 .list-card .cart-card-item .card-image img{
     display: block;
-    max-width: 100%;
-}
+    max-width: 100% !important;
+} */
 
 .list-card .cart-card-body .card-title{
     font-family: var(--font-family-1);
