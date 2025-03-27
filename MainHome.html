@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Urban Style</title>
+    
+        <!-- CSS Stylesheet Link -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/homestyle.css">
+        <!-- <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" type="image/x-icon"> -->
+        <link rel="shortcut icon" href="assets/images/Favicon/favicon.svg" type="image/x-icon">
+    
+        <!-- Fontawesome Icon Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- Bootstrap Icon Link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+        <!-- Remix Icon Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+            integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <style>
+            @media (max-width: 991px) {  /* Hide large screen carousel on small screens */
+                   #large-screen-carousel1 {
+                       display: none;
+                   }
+                   #large-screen-carousel2 {
+                       display: none;
+                   }
+               }
+           
+               @media (min-width: 992px) {  /* Hide small screen carousel on large screens */
+                   #small-screen-carousel1 {
+                       display: none;
+                   }
+                   #small-screen-carousel2 {
+                       display: none;
+                   }
+               }
+               .carousel {
+                width: 100%;
+                min-height: 550px; /* Increase height */
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 5%;
+                display: flex;
+                align-items: center;
+            }
+    
+           .card {
+               border: none;
+               border-radius: 10px;
+               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+               transition: transform 0.3s;
+               background-color: #ffffff;
+           }
+           .card:hover {
+               transform: translateY(-5px);
+           }
+           .card-header img {
+               border-top-left-radius: 10px;
+               border-top-right-radius: 10px;
+               width: 100%;
+               height: 200px;
+               object-fit: contain;
+           }
+           .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 250px; /* Ensure enough space for buttons */
+           }
+           .cardbutton.visit {
+            width: 100%; /* Ensure full width */
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px; /* Provide space */
+           }
+           .card-title {
+               font-weight: bold;
+               /* color: #0d47a1; */
+           }
+           .card-text {
+               color: #37474f;
+           }
+           .cardbutton {
+               display: inline-block;
+               padding: 10px 15px;
+               border-radius: 5px;
+               text-decoration: none;
+               font-weight: bold;
+               margin-top: 10px;
+           }
+           .view-more {
+               background-color: yellow;
+               border: none;
+           }
+           .view-more:hover {
+               background-color: gold;
+           }
+           .visit {
+               background-color: red;
+               color: white;
+               border: none;
+           }
+           .visit:hover {
+               background-color: darkred;
+           }
+           .carousel-control-prev-icon, .carousel-control-next-icon {
+               background-color: rgba(0, 0, 0, 0.5);
+               border-radius: 50%;
+           }
+           .product-modal-img {
+               max-width: 150px;  /* Controls image size */
+               height: auto;
+               display: block;
+               margin: 0 auto;
+           }
+           /* Responsive Design */
+        @media (max-width: 768px) {
+            .card-header img {
+                height: 150px;
+            }
+            .card-body {
+                padding: 10px;
+                min-height: 200px;
+            }
+            .cardbutton.visit {
+            font-size: 14px;
+            padding: 8px 10px;
+            display: block;
+            }
+            .card-title {
+                font-size: 16px;
+            }
+            .card-text {
+                font-size: 14px;
+            }
+            .cardbutton {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+        </style>
+      </head>
+<body>
+  <!-- Navbar Section -->
+  <section class="header container-fluid sticky-top p-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="MainHome.html">
+                <div class="navbar-brand-main">
+                    Urban
+                    <div class="navbar-brand-text">
+                        Style
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="MainHome.html"
+                            onclick="redirect('MainHome.html');">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Footwear.html" onclick="redirect('Footwear.html')">Footwear</a>
+                            </li>
+                            <li><a class="dropdown-item" href="Watches.html" onclick="redirect('Watches.html');">Watches</a>
+                            </li>
+                            <li><a class="dropdown-item" href="Handbags.html" onclick="redirect('Handbags.html');">Handbags</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="Clothing.html" onclick="redirect('Clothing.html');">Clothing</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true" href="contactus.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="shopping position-relative">
+                    <!-- <i class="ri-shopping-cart-line" onmouseover="this.classList.add('ri-shopping-cart-fill');this.classList.remove('ri-shopping-cart-line')" onmouseout="this.classList.add('ri-shopping-cart-line');this.classList.remove('ri-shopping-cart-fill')"></i> -->
+                    <a href="#cart" data-bs-toggle="offcanvas" data-bs-target="#cart" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <span class="shopping-quantity">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+    <div class="container-fluid carousel carousel-fade carousel-slide" data-bs-ride="carousel" data-bs-interval="2000" id="home1">
+        <div class="carousel-inner">
+            <!-- <div class="carousel-indicators">
+                <button class="active" data-bs-slide-to="0" data-bs-target="#home1"></button>
+                <button data-bs-slide-to="1" data-bs-target="#home1"></button>
+                <button data-bs-slide-to="2" data-bs-target="#home1"></button>
+                <button data-bs-slide-to="3" data-bs-target="#home1"></button>
+            </div> -->
+            <div class="carousel-item active">
+                <video class="d-block w-100" autoplay loop muted>
+                    <source src="assets/images/cloth.crdownload" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay loop muted>
+                    <source src="assets/images/footwear.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay loop muted>
+                    <source src="assets/images/watch.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay loop muted>
+                    <source src="assets/images/handbag.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="carousel-control-prev" data-bs-target="#home1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </div>
+            <div class="carousel-control-next" data-bs-target="#home1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="mb-5 mt-3 d-flex justify-content-center">What do we have</h1>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="banner" id="ban1">
+                        <div class="title">Clothing</div>
+                      <div class="heading">Upgrade Your Style with Trendy Outfits</div>
+                      <div class="description">
+                        Discover the latest fashion trends with our exclusive collection of clothing. 
+                        Elevate your wardrobe with stylish and comfortable outfits.
+                        </div>
+                        <a href="Clothing.html" class="btn shopnow">Shop Now</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="banner" id="ban2">
+                    <div class="title">Foot Wear</div>
+                  <div class="heading">Upgrade Your Style with Trendy Outfits</div>
+                  <div class="description">
+                    Discover the latest fashion trends with our exclusive collection of clothing. 
+                    Elevate your wardrobe with stylish and comfortable outfits.
+                    </div>
+                    <a href="Footwear.html" class="btn shopnow">Shop Now</a>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="banner" id="ban3">
+                    <div class="title">Watches</div>
+                  <div class="heading">Upgrade Your Style with Trendy Outfits</div>
+                  <div class="description">
+                    Discover the latest fashion trends with our exclusive collection of clothing. 
+                    Elevate your wardrobe with stylish and comfortable outfits.
+                    </div>
+                    <a href="Watches.html" class="btn shopnow">Shop Now</a>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="banner" id="ban4">
+                    <div class="title">Hand Bags</div>
+                  <div class="heading">Upgrade Your Style with Trendy Outfits</div>
+                  <div class="description">
+                    Discover the latest fashion trends with our exclusive collection of clothing. 
+                    Elevate your wardrobe with stylish and comfortable outfits.
+                    </div>
+                    <a href="HandBags.html" class="btn shopnow">Shop Now</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- sign up -->
+    <div class="modal fade mt-5" id="userFormModal" tabindex="-1" aria-labelledby="userFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="userFormModalLabel">Enter Your Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Form inside the modal -->
+                    <form id="userForm">
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                                <div class="invalid-feedback" id="firstNameError"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="middleName" class="form-label">Middle Name</label>
+                                <input type="text" class="form-control" id="middleName">
+                                <div class="invalid-feedback" id="middleNameError"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                                <div class="invalid-feedback" id="lastNameError"></div>
+                            </div>
+                        </div>
+    
+                        <!-- Mobile, Email, and Password in One Row -->
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label for="mobileNumber" class="form-label">Mobile Number</label>
+                                <input type="tel" class="form-control" id="mobileNumber" required>
+                                <div class="invalid-feedback" id="mobileNumberError"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback" id="emailError"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" required>
+                                <div class="invalid-feedback" id="passwordError"></div>
+                            </div>
+                        </div>
+    
+                        <!-- Address Section -->
+                        <div class="mb-3">
+                            <h4><b>Address</b></h4>
+                        </div>
+                        <div class="mb-3">
+                            <label for="streetAddress" class="form-label">Street Address</label>
+                            <input type="text" class="form-control" id="streetAddress" required>
+                            <div class="invalid-feedback" id="streetAddressError"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="city" class="form-label">City</label>
+                                <input type="text" class="form-control" id="city" required>
+                                <div class="invalid-feedback" id="cityError"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">State</label>
+                                <input type="text" class="form-control" id="state" required>
+                                <div class="invalid-feedback" id="stateError"></div>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="zipCode" class="form-label">Zip Code</label>
+                                <input type="text" class="form-control" id="zipCode" required>
+                                <div class="invalid-feedback" id="zipCodeError"></div>
+                            </div>
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" id="submitForm">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- Login Modal -->
+    <div class="modal fade mt-5" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" required>
+                        <div class="invalid-feedback" id="loginEmailError"></div>
+                    </div>
+                    <div class="mb-3 position-relative">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="invalid-feedback" id="loginPasswordError"></div>
+                    </div>
+                    <div class="text-end">
+                        <a id="forgotPassword" onclick="">Forgot Password?</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Log In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     </div>
+     <!-- offer -->
+     <div class="exclusive-deals text-center mt-5 w-100">
+        <div class="spotlight"></div>
+        <h1 class="mb-4 deals">Exclusive Deals - Limited Time Offers</h1>
+        <p class="subtitle">Hurry up! Grab the best deals before time runs out.</p>
+        
+        <div class="countdown-timer" id="countdown"></div>
+        
+        <div class="discount-codes mt-3">
+            <div class="code-container">
+                <p>Use code <strong class="promo-code">FIRST50</strong> for 50% off on your first purchase!</p>
+                <p>Use code <strong class="promo-code">FLASH20</strong> for 20% off today!</p>
+            </div>
+        </div>
+        
+        <button class="btn shop-btn mt-3">
+            Shop Now
+            <span class="btn-shine"></span>
+        </button>
+    </div>
+      <!-- carousel -->
+        <h1 class="mb-5 mt-5">Today's Trending</h1>
+        
+        <div id="large-screen-carousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="assets/images/Clothes/Jeans/img17.png" class="card-img-top img-fluid" alt="Kids Regular Fit Jeans">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Kids Regular Fit Jeans</h5>
+                                    <p class="card-text">Type: Jeans</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Puma Kids</p>
+                                    <p class="card-text">Price: <s>₹1199</s> <strong>₹899</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (4.9)</p>
+                                    <button class="cardbutton view-more" data-id="9">View More</button>
+                                    <a class="cardbutton visit" href="Clothing.html">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 (Updated to Adidas Oxo Sports) -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                <img src="assets/images/Footwear/Sport_Shoes/img3.png" class="card-img-top img-fluid" alt="Adidas Oxo Sports">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Adidas Oxo Sports</h5>
+                                    <p class="card-text">Type: Sports Shoes</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Adidas</p>
+                                    <p class="card-text">Price: <s>₹1599</s> <strong>₹1299</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5)</p>
+                                    <button class="cardbutton view-more" data-id="1">View More</button>
+                                    <a href="Footwear.html#men-section" class="cardbutton visit" >Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                <img src="assets/images/Watches/Premium_Watches/img1.png" class="card-img-top img-fluid" alt="Puma Fast Runner">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Rolex</h5>
+                                    <p class="card-text">Type: Men Watch</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Rolex</p>
+                                    <p class="card-text">Price: <s>₹99999</s> <strong>₹89999</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5)</p>
+                                    <button class="cardbutton view-more" data-id="5">View More</button>
+                                    <a class="cardbutton visit" href="Watches.html#men_watches">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="assets/images/Handbags/handbag-image/img-3006.jpg" class="card-img-top img-fluid" alt="Chanel Classic Flap Bag">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Chanel Classic Flap Bag</h5>
+                                    <p class="card-text">Type: Shoulder Bag</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Chanel</p>
+                                    <p class="card-text">Price: <s>₹23999</s> <strong>₹21999</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5.0)</p>
+                                    <button class="cardbutton view-more" data-id="13">View More</button>
+                                    <a class="cardbutton visit" href="HandBags.html">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="assets/images/Clothes/Shirts/img5.png" class="card-img-top img-fluid" alt="Kids Checkered Shirt">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Kids Checkered Shirt</h5>
+                                    <p class="card-text">Type: Shirt</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> U.S. Polo Assn.</p>
+                                    <p class="card-text">Price: <s>₹899</s> <strong>₹599</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (4.9)</p>
+                                    <button class="cardbutton view-more" data-id="10">View More</button>
+                                    <a class="cardbutton visit" href="Clothing.html">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 (Updated to Power Evo Shoes) -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                <img src="assets/images/Footwear/Sport_Shoes/img6.png" class="card-img-top img-fluid" alt="Power Evo Shoes">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Power Evo Shoes</h5>
+                                    <p class="card-text">Type: Running Shoes</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Power</p>
+                                    <p class="card-text">Price: <s>₹1799</s> <strong>₹1399</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5)</p>
+                                    <button class="cardbutton view-more" data-id="2">View More</button>
+                                    <a href="Footwear.html#men-section" class="cardbutton visit">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                <img src="assets/images/Watches/Premium_Watches/img8.png" class="card-img-top img-fluid" alt="ASICS Gel Pro">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Tissot</h5>
+                                    <p class="card-text">Type: Women Watch</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Tissot</p>
+                                    <p class="card-text">Price: <s>₹14999</s> <strong>₹12999</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5)</p>
+                                    <button class="cardbutton view-more" data-id="6">View More</button>
+                                    <a class="cardbutton visit" href="Watches.html#women_watches">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <img src="assets/images/Handbags/handbag-image/img-3001.jpg" class="card-img-top img-fluid" alt="Gucci GG Marmont Matelassé">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Gucci GG Marmont Matelassé</h5>
+                                    <p class="card-text">Type: Shoulder Bag</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Gucci</p>
+                                    <p class="card-text">Price: <s>₹17999</s> <strong>₹15999</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (4.9)</p>
+                                    <button class="cardbutton view-more" data-id="14">View More</button>
+                                    <a class="cardbutton visit" href="HandBags.html">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#large-screen-carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#large-screen-carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        
+        <!-- Small Screen Carousel -->
+        <div id="small-screen-carousel1" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 - Adidas Oxo Sports -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <img src="assets/images/Clothes/Shirts/img5.png" class="card-img-top img-fluid" alt="Kids Checkered Shirt">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Kids Checkered Shirt</h5>
+                                    <p class="card-text">Type: Shirt</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> U.S. Polo Assn.</p>
+                                    <p class="card-text">Price: <s>₹899</s> <strong>₹599</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (4.9)</p>
+                                    <button class="cardbutton view-more" data-id="10">View More</button>
+                                    <a class="cardbutton visit" href="Clothing.html">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Slide 2 - Adidas Oxo Sports (Again) -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="card">
+                                <div class="card-header">
+                                <img src="assets/images/Footwear/Sport_Shoes/img6.png" class="card-img-top img-fluid" alt="Power Evo Shoes">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Power Evo Shoes</h5>
+                                    <p class="card-text">Type: Running Shoes</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Power</p>
+                                    <p class="card-text">Price: <s>₹1799</s> <strong>₹1399</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5)</p>
+                                    <button class="cardbutton view-more" data-id="2">View More</button>
+                                    <a href="Footwear.html#men-section" class="cardbutton visit">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 - Puma RS-X -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="card">
+                                <div class="card-header">
+                                <img src="assets/images/Watches/Premium_Watches/img1.png" class="card-img-top img-fluid" alt="Puma Fast Runner">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Rolex</h5>
+                                    <p class="card-text">Type: Men Watch</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Rolex</p>
+                                    <p class="card-text">Price: <s>₹99999</s> <strong>₹89999</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5)</p>
+                                    <button class="cardbutton view-more" data-id="5">View More</button>
+                                    <a class="cardbutton visit" href="Watches.html#men_watches">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Slide 4 - New Balance 574 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <img src="assets/images/Handbags/handbag-image/img-3001.jpg" class="card-img-top img-fluid" alt="Gucci GG Marmont Matelassé">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Gucci GG Marmont Matelassé</h5>
+                                    <p class="card-text">Type: Shoulder Bag</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Gucci</p>
+                                    <p class="card-text">Price: <s>₹17999</s> <strong>₹15999</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (4.9)</p>
+                                    <button class="cardbutton view-more" data-id="14">View More</button>
+                                    <a class="cardbutton visit" href="HandBags.html">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#small-screen-carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#small-screen-carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <!-- best seller products -->
+        <h1 class="mb-5 mt-5">Best Seller</h1>
+        
+        <div id="large-screen-carousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <img src="assets/images/Clothes/Shirts/img4.png" class="card-img-top img-fluid" alt="Silk Blend Shirt">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Silk Blend Shirt</h5>
+                                    <p class="card-text">Type: Party Wear Shirt</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Van Heusen</p>
+                                    <p class="card-text">Price: <s>₹1699</s> <strong>₹1299</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐ (4.8)</p>
+                                    <button class="cardbutton view-more" data-id="11">View More</button>
+                                    <a class="cardbutton visit" href="Clothing.html">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 (Updated to Adidas Oxo Sports) -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                <img src="assets/images/Footwear/Sneakers_Shoes/img32.jpg" class="card-img-top img-fluid" alt="Puma High Hill Sneakers">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Puma High Hill Sneakers</h5>
+                                    <p class="card-text">Type: Sneakers</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Puma</p>
+                                    <p class="card-text">Price: <s>₹2999</s> <strong>₹2899</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5)</p>
+                                    <button class="cardbutton view-more" data-id="4">View More</button>
+                                    <a href="Footwear.html#women-section" class="cardbutton visit">Visit</a>
+                                </div>
+                            </div>
+                        </div>                        
+                        <!-- Card 3 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-header">
+                                <img src="assets/images/Watches/Premium_Watches/img11.png" class="card-img-top img-fluid" alt="Puma Fast Runner">
+                                    </div>
+                                    <h5 class="card-title">Omega</h5>
+                                    <p class="card-text">Type: Men Watch</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Omega</p>
+                                    <p class="card-text">Price: <s>₹99999</s> <strong>₹89999</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5)</p>
+                                    <button class="cardbutton view-more" data-id="7">View More</button>
+                                    <a class="cardbutton visit" href="Watches.html#men_watches">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <img src="assets/images/Handbags/handbag-image/img-3018.jpg" class="card-img-top img-fluid" alt="Dior Book Tote">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Dior Book Tote</h5>
+                                    <p class="card-text">Type: Crossbody</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Dior</p>
+                                    <p class="card-text">Price: <s>₹22499</s> <strong>₹20499</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (4.9)</p>
+                                    <button class="cardbutton view-more" data-id="16">View More</button>
+                                    <a class="cardbutton visit" href="HandBags.html">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <img src="assets/images/Clothes/Jeans/img13.png" class="card-img-top img-fluid" alt="Slim Fit Denim Jeans">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Slim Fit Denim Jeans</h5>
+                                    <p class="card-text">Type: Jeans</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Levi’s</p>
+                                    <p class="card-text">Price: <s>₹1999</s> <strong>₹1599</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐ (4.8)</p>
+                                    <button class="cardbutton view-more" data-id="12">View More</button>
+                                    <a class="cardbutton visit" href="Clothing.html">Visit</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- Card 2 (Updated to Power Evo Shoes) -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                <img src="assets/images/Footwear/Crocs/img2.jpg" class="card-img-top img-fluid" alt="Crocs Blue Style">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Crocs Blue Style</h5>
+                                    <p class="card-text">Type: Shoes</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Adidas</p>
+                                    <p class="card-text">Price: <s>₹999</s> <strong>₹799</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5)</p>
+                                    <button class="cardbutton view-more" data-id="3">View More</button>
+                                    <a href="Footwear.html#men-section" class="cardbutton visit">Visit</a>
+                                </div>
+                            </div>
+                        </div>                        
+                        <!-- Card 3 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                <img src="assets/images/Watches/Casual_Watches/img17.png" class="card-img-top img-fluid" alt="ASICS Gel Pro">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Benyar</h5>
+                                    <p class="card-text">Type: Men Watch</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Benyar</p>
+                                    <p class="card-text">Price: <s>₹99999</s> <strong>₹89999</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5)</p>
+                                    <button class="cardbutton view-more" data-id="8">View More</button>
+                                    <a class="cardbutton visit" href="Watches.html#men_watches">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <img src="assets/images/Handbags/handbag-image/img-3005.jpg" class="card-img-top img-fluid" alt="Gucci Horsebit 1955 Bag">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Gucci Horsebit 1955 Bag</h5>
+                                    <p class="card-text">Type: Shoulder Bag</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Gucci</p>
+                                    <p class="card-text">Price: <s>₹20999</s> <strong>₹18999</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (4.9)</p>
+                                    <button class="cardbutton view-more" data-id="15">View More</button>
+                                    <a class="cardbutton visit" href="HandBags.html">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#large-screen-carousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#large-screen-carousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        
+        <!-- Small Screen Carousel -->
+        <div id="small-screen-carousel2" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 - cloth -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <img src="assets/images/Clothes/Jeans/img13.png" class="card-img-top img-fluid" alt="Slim Fit Denim Jeans">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Slim Fit Denim Jeans</h5>
+                                    <p class="card-text">Type: Jeans</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Levi’s</p>
+                                    <p class="card-text">Price: <s>₹1999</s> <strong>₹1599</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐ (4.8)</p>
+                                    <button class="cardbutton view-more" data-id="12">View More</button>
+                                    <a class="cardbutton visit" href="Clothing.html">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 - Crocs Blue Style -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="card">
+                                <div class="card-header">
+                                <img src="assets/images/Footwear/Sneakers_Shoes/img32.jpg" class="card-img-top img-fluid" alt="Puma High Hill Sneakers">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Puma High Hill Sneakers</h5>
+                                    <p class="card-text">Type: Sneakers</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Puma</p>
+                                    <p class="card-text">Price: <s>₹2999</s> <strong>₹2899</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5)</p>
+                                    <button class="cardbutton view-more" data-id="4">View More</button>
+                                    <a href="Footwear.html#women-section" class="cardbutton visit">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 - WATCH -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="card">
+                                <div class="card-header">
+                                <img src="assets/images/Watches/Casual_Watches/img17.png" class="card-img-top img-fluid" alt="ASICS Gel Pro">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Benyar</h5>
+                                    <p class="card-text">Type: Men Watch</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Benyar</p>
+                                    <p class="card-text">Price: <s>₹99999</s> <strong>₹89999</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (5)</p>
+                                    <button class="cardbutton view-more" data-id="8">View More</button>
+                                    <a class="cardbutton visit" href="Watches.html#men_watches">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 - New Balance 574 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <img src="assets/images/Handbags/handbag-image/img-3018.jpg" class="card-img-top img-fluid" alt="Dior Book Tote">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Dior Book Tote</h5>
+                                    <p class="card-text">Type: Crossbody</p>
+                                    <p class="card-text"><strong>Manufacturer:</strong> Dior</p>
+                                    <p class="card-text">Price: <s>₹22499</s> <strong>₹20499</strong></p>
+                                    <p class="card-text">⭐⭐⭐⭐⭐ (4.9)</p>
+                                    <button class="cardbutton view-more" data-id="16">View More</button>
+                                    <a class="cardbutton visit" href="HandBags.html">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#small-screen-carousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#small-screen-carousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="productModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <!-- Left Column: Product Image -->
+                            <div class="col-md-5 text-center">
+                                <img id="product-image" src="" class="img-fluid product-modal-img mb-3" alt="Product Image">
+                            </div>
+                        
+                            <!-- Right Column: Product Info -->
+                            <div class="col-md-7">
+                                <h4 id="product-name" class="mb-2"></h4>
+                                <p id="product-desc" class="text-muted"></p>
+                                <p><strong>Price:</strong> <span id="product-price"></span></p>
+                                <p><strong>Available Sizes:</strong> <span id="product-sizes"></span></p>
+                                <p><strong>Manufacturer:</strong> <span id="product-manufacturer"></span></p>
+                                <p><strong>Customer Rating:</strong> <span id="product-rating"></span> ⭐</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- off canvas -->
+         <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="cart"
+         aria-labelledby="offcanvasWithBothOptionsLabel" data-bs-backdrop="true">
+         <div class="offcanvas-header">
+             <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Cart</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         </div>
+         <div class="offcanvas-body overflow-hidden">
+             <div class="checkout">
+                 <div class="total">
+                     <span>Total: ₹</span>
+                     <div class="cart-total" onchange="checkCart()"> 0 </div>
+                 </div>
+                 <div class="close-Shopping"></div>
+             </div>
+         </div>
+         <ul class="list-card position-relative"></ul>
+         <div class="d-grid col-12 cart-order w-100 bottom-0 mt-2 mb-2 p-3">
+             <button type="button" class="btn btn-warning text-white fw-bolder fs-5" id="placeOrder"
+                 onclick="redirect('Checkout.html');">Place
+                 Order</button>
+         </div>
+     </div>
+     <footer class="container-fluid border-top border-2 border-black">
+        <!-- Full-width Background -->
+        <div class="footer container-fluid p-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Column 1 -->
+                    <div class="col-md-4 col-12 text-center text-md-start mb-4 mb-md-0">
+                        <div class="d-flex navbar-brand justify-content-center justify-content-md-start">
+                            <div class="navbar-brand-main">
+                                Urban
+                                <div class="navbar-brand-text">
+                                    Style
+                                </div>
+                            </div>
+                        </div>
+                        <span class="w-75 text-justify ps-4 d-block">All information is deemed reliable but not
+                            guaranteed and should be independently reviewed
+                            and verified.</span>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="col-md-3 col-12 text-center text-md-start mb-4 mb-md-0">
+                        <h3 class="footer-heading">Visit us</h3>
+                        <span class="d-block">Head Office:</span>
+                        <span class="d-block">MyTower,Iskon,380059</span>
+                        <span class="d-block">Ahmedabad-Gujarat</span>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="col-md-3 col-12 text-center text-md-start mb-4 mb-md-0">
+                        <h3 class="footer-heading">Contact us</h3>
+                        <span>Tel:- 1234567890</span><br>
+                        <span class="d-block">Email:- <a href="#"
+                                class="footerlink text-decoration-none text-black position-relative">mycompany192@gmail.com</a></span>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="col-md-2 col-12 text-center text-md-start">
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <span>
+                            <a href="Clothing.html" class="footerlink text-decoration-none d-block text-black position-relative">
+                                Clothing
+                            </a>
+                            <a href="Footwear.html" class="footerlink text-decoration-none d-block text-black position-relative">
+                                Footwear
+                            </a>
+                            <a href="Watches.html" class="footerlink text-decoration-none d-block text-black position-relative">
+                                Watches
+                            </a>
+                            <a href="Handbags.html" class="footerlink text-decoration-none d-block text-black position-relative">
+                                Hand bags
+                            </a>
+                            <a href="contactus.html" class="footerlink text-decoration-none d-block text-black position-relative">
+                                Contact us
+                            </a>
+                            <a href="aboutus.html" class="footerlink text-decoration-none d-block text-black position-relative">
+                                About us
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Footer Bottom Section -->
+        <div
+            class="footer-bottom container-fluid d-flex justify-content-between align-items-center border-top border-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-12 text-center d-flex justify-content-center align-items-center copyright">
+                        <i class="bi bi-c-circle"></i>
+                        All rights reserved.
+                    </div>
+                    <div class="col-md-4 col-12 text-center d-flex justify-content-center align-items-center">
+                        <a href="terms&condition.html"
+                            class="legal footerlink text-decoration-none d-block text-black position-relative">
+                            Terms of Use & Privacy Policy
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex justify-content-center">
+                        <a href="#" class="btn-link ps-3 pe-3 p-3 fs-2 text-black position-relative">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn-link ps-3 pe-3 p-3 fs-2 text-black position-relative">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="btn-link ps-3 pe-3 p-3 fs-2 text-black position-relative">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn-link ps-3 pe-3 p-3 fs-2 text-black position-relative">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/Footwear.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+  <script>
+// 
+    function startCountdown(durationInMinutes) {
+        let countdownElement = document.getElementById("countdown");
+        let timeLeft = durationInMinutes * 60;
+        
+        function updateCountdown() {
+            let minutes = Math.floor(timeLeft / 60);
+            let seconds = timeLeft % 60;
+            countdownElement.innerHTML = `<h2><span class='timer-box'>${String(minutes).padStart(2, '0')}</span>m <span class='timer-box'>${String(seconds).padStart(2, '0')}</span>s Left</h2>`;
+            if (timeLeft > 0) {
+                timeLeft--;
+                setTimeout(updateCountdown, 1000);
+            } else {
+                countdownElement.innerHTML = "<h2 class='expired-text'>Deal Expired</h2>";
+            }
+        }
+        updateCountdown();
+    }
+    startCountdown(30);
+
+    // Add spotlight effect
+    const deals = document.querySelector('.exclusive-deals');
+    deals.addEventListener('mousemove', (e) => {
+        const spotlight = document.querySelector('.spotlight');
+        const rect = deals.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        spotlight.style.transform = `translate(${x}px, ${y}px)`;
+    });
+</script>
+<script>
+    const bestseller=[
+        {
+            id: 1,
+            name: 'Adidas Oxo Sports',
+            type: 'Shoes',
+            subtype: 'Sports Shoes',
+            desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+            detailed_desc:`
+                <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+                <br><strong>Date First Available : </strong>   18 July 2020
+                <br><strong>Country of Origin :</strong> India
+                <br><strong>Item Weight :</strong> 450 g
+                <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+                <br><strong>Net Quantity :</strong> 2 Count`,
+            manufacturer: 'Adidas',
+            available_sizes: ['6UK','7UK','8UK','9UK','10UK'],
+            price: 1299,
+            old_price: 1599,
+            image: 'assets/images/Footwear/Sport_Shoes/img3.png',
+            feedback: 5,
+            category: 'men'
+        },
+        {
+            id: 2,
+            name: 'Power Evo Shoes',
+            type: 'Shoes',
+            subtype: 'Sports Shoes',
+            desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+            detailed_desc:`
+                <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+                <br><strong>Date First Available : </strong>   18 July 2020
+                <br><strong>Country of Origin :</strong> India
+                <br><strong>Item Weight :</strong> 450 g
+                <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+                <br><strong>Net Quantity :</strong> 2 Count`,
+            manufacturer: 'Adidas',
+            available_sizes: ['6UK','7UK','8UK','9UK','10UK'],
+            price: 1399,
+            old_price: 1799,
+            image: 'assets/images/Footwear/Sport_Shoes/img6.png',
+            feedback: 5,
+            category: 'men'
+        },
+        {
+            id: 3,
+            name: 'Crocs Blue Style',
+            type: 'Shoes',
+            subtype: 'Crocs',
+            desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+            detailed_desc:`
+                <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
+                <br><strong>Date First Available : </strong>   18 July 2020
+                <br><strong>Country of Origin :</strong> India
+                <br><strong>Item Weight :</strong> 450 g
+                <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
+                <br><strong>Net Quantity :</strong> 2 Count`,
+            manufacturer: 'Adidas',
+            available_sizes: ['6UK','7UK','8UK','9UK','10UK'],
+            price: 799,
+            old_price: 999,
+            image: 'assets/images/Footwear/Crocs/img2.jpg',
+            feedback: 5,
+            category: 'men'
+        },
+        {
+        id: 4,
+        name: 'Puma High Hill Sneakers',
+        type: 'Shoes',
+        subtype: 'Sports Shoes',
+        desc: 'Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.',
+        manufacturer: 'Puma',
+        available_sizes: ['6UK','7UK','8UK','9UK','10UK'],
+        price: 2899,
+        old_price: 2999,
+        image: 'assets/images/Footwear/Sneakers_Shoes/img32.jpg',
+        feedback: 5,
+        category: 'women'
+        },
+        {
+          id: 5,
+          name: 'Rolex',
+          type: 'Watch',
+          subtype: 'Premium',
+          desc: 'Elevate your style with our luxurious and sophisticated timepieces, crafted for elegance and precision.',
+          manufacturer: 'Rolex',
+          available_sizes:['18+ Year'],
+          price: 89999,
+          old_price: 99999,
+          image: 'assets/images/Watches/Premium_Watches/img1.png',
+          feedback: 5,
+          category: 'men_watches'
+        },
+        {
+          id: 6,
+          name: 'Tissot',
+          type: 'Watch',
+          subtype: 'Premium',
+          desc: 'Elevate your style with our luxurious and sophisticated timepieces, crafted for elegance and precision.',
+          manufacturer: 'Tissot',
+          available_sizes:['18+ Year'],
+          price: 12999,
+          old_price: 14999,
+          image: 'assets/images/Watches/Premium_Watches/img8.png',
+          feedback: 4,
+          category: 'women_watches'
+        },
+        {
+          id: 7,
+          name: 'Omega',
+          type: 'Watch',
+          subtype: 'Premium',
+          desc: 'Elevate your style with our luxurious and sophisticated timepieces, crafted for elegance and precision.',
+          manufacturer: 'Omega',
+          available_sizes:['18+ Year'],
+          price: 89999,
+          old_price: 99999,
+          image: 'assets/images/Watches/Premium_Watches/img11.png',
+          feedback: 5,
+          category: 'men_watches'
+        },
+        {
+          id: 8,
+          name: 'Benyar',
+          type: 'Watch',
+          subtype: 'Casual',
+          desc: 'Stay stylish every day with our trendy and comfortable casual watches, perfect for any occasion.',
+          manufacturer: 'Benyar',
+          available_sizes:['18+ Year'],
+          price: 89999,
+          old_price: 99999,
+          image: 'assets/images/Watches/Casual_Watches/img17.png',
+          feedback: 5,
+          category: 'men_watches'
+        },
+        {
+            id: 9,
+            name: "Kids Regular Fit Jeans",
+            type: "Jeans",
+            subtype: "Regular Fit",
+            desc: "Comfortable and stylish jeans for kids, perfect for everyday wear.",
+            manufacturer: "Puma Kids",
+            available_sizes: ["2-3 Years", "4-5 Years", "6-7 Years", "8-9 Years"],
+            price: 899,
+            old_price: 1199,
+            image: "assets/images/Clothes/Jeans/img17.png",
+            feedback: 4.9,
+            category: "kids_clothing"
+          },
+          {
+            id: 10,
+            name: "Kids Checkered Shirt",
+            type: "Shirt",
+            subtype: "Casual Shirt",
+            desc: "Stylish checkered shirt for kids, great for casual outings and playtime.",
+            manufacturer: "U.S. Polo Assn.",
+            available_sizes: ["2-3 Years", "4-5 Years", "6-7 Years", "8-9 Years"],
+            price: 599,
+            old_price: 899,
+            image: "assets/images/Clothes/Shirts/img5.png",
+            feedback: 4.9,
+            category: "kids_clothing"
+          },
+          {
+            id: 11,
+            name: "Silk Blend Shirt",
+            type: "Shirt",
+            subtype: "Party Wear Shirt",
+            desc: "Elegant silk blend shirt, perfect for parties and special occasions.",
+            manufacturer: "Van Heusen",
+            available_sizes: ["S", "M", "L", "XL"],
+            price: 1299,
+            old_price: 1699,
+            image: "assets/images/Clothes/Shirts/img4.png",
+            feedback: 4.8,
+            category: "women_clothing"
+          },
+          {
+            id: 12,
+            name: "Slim Fit Denim Jeans",
+            type: "Jeans",
+            subtype: "Slim Fit",
+            desc: "Trendy slim-fit denim jeans for men, perfect for casual and smart looks.",
+            manufacturer: "Levi’s",
+            available_sizes: ["30", "32", "34", "36"],
+            price: 1599,
+            old_price: 1999,
+            image: "assets/images/Clothes/Jeans/img13.png",
+            feedback: 4.8,
+            category: "men_clothing"
+          },
+          {
+        id: 13,
+        name: "Chanel Classic Flap Bag",
+        type: "Handbag",
+        subtype: "Shoulder Bag",
+        desc: "The iconic Chanel flap bag with diamond quilting and gold-tone hardware.",
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 30 x 20 x 10 cm; 800 g
+            <br><strong>Date First Available : </strong> 10 March 2021
+            <br><strong>Country of Origin :</strong> France
+            <br><strong>Item Weight :</strong> 800 g
+            <br><strong>Item Dimensions LxWxH :</strong> 30 x 20 x 10 Centimeters
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: "Chanel",
+        available_sizes: ["Standard"],
+        price: 21999,
+        old_price: 23999,
+        image: "assets/images/Handbags/handbag-image/img-3006.jpg",
+        feedback: 5.0,
+        category: "women_handbag"
+    },
+    {
+        id: 14,
+        name: "Gucci GG Marmont Matelassé",
+        type: "Handbag",
+        subtype: "Shoulder Bag",
+        desc: "A luxurious shoulder bag with quilted leather and signature GG logo.",
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 28 x 18 x 9 cm; 750 g
+            <br><strong>Date First Available : </strong> 5 May 2021
+            <br><strong>Country of Origin :</strong> Italy
+            <br><strong>Item Weight :</strong> 750 g
+            <br><strong>Item Dimensions LxWxH :</strong> 28 x 18 x 9 Centimeters
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: "Gucci",
+        available_sizes: ["Standard"],
+        price: 15999,
+        old_price: 17999,
+        image: "assets/images/Handbags/handbag-image/img-3001.jpg",
+        feedback: 4.9,
+        category: "women_handbag"
+    },
+    {
+        id: 15,
+        name: "Gucci Horsebit 1955 Bag",
+        type: "Handbag",
+        subtype: "Shoulder Bag",
+        desc: "A structured bag with an archival-inspired horsebit detail.",
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 27 x 19 x 8 cm; 780 g
+            <br><strong>Date First Available : </strong> 12 April 2021
+            <br><strong>Country of Origin :</strong> Italy
+            <br><strong>Item Weight :</strong> 780 g
+            <br><strong>Item Dimensions LxWxH :</strong> 27 x 19 x 8 Centimeters
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: "Gucci",
+        available_sizes: ["Standard"],
+        price: 18999,
+        old_price: 20999,
+        image: "assets/images/Handbags/handbag-image/img-3005.jpg",
+        feedback: 4.9,
+        category: "women_handbag"
+    },
+    {
+        id: 16,
+        name: "Dior Book Tote",
+        type: "Handbag",
+        subtype: "Crossbody",
+        desc: "A spacious tote bag featuring the iconic Dior Oblique pattern.",
+        detailed_desc: `
+            <br><strong>Product Dimensions : </strong> 35 x 28 x 12 cm; 900 g
+            <br><strong>Date First Available : </strong> 20 June 2021
+            <br><strong>Country of Origin :</strong> France
+            <br><strong>Item Weight :</strong> 900 g
+            <br><strong>Item Dimensions LxWxH :</strong> 35 x 28 x 12 Centimeters
+            <br><strong>Net Quantity :</strong> 1 Count`,
+        manufacturer: "Dior",
+        available_sizes: ["Standard"],
+        price: 20499,
+        old_price: 22499,
+        image: "assets/images/Handbags/handbag-image/img-3018.jpg",
+        feedback: 4.9,
+        category: "women_handbag"
+    }
+    ]
+    document.querySelectorAll('.view-more').forEach(button => {
+    button.addEventListener('click', function () {
+        let productId = parseInt(this.getAttribute('data-id'));
+        let product = bestseller.find(item => item.id === productId);
+
+        if (product) {
+            document.getElementById('product-image').src = product.image;
+            document.getElementById('product-name').innerText = product.name;
+            document.getElementById('product-desc').innerText = product.desc;
+            document.getElementById('product-price').innerHTML = `₹${product.price} <s>₹${product.old_price}</s>`;
+            document.getElementById('product-sizes').innerText = product.available_sizes.join(', ');
+            document.getElementById('product-manufacturer').innerText = product.manufacturer;
+            document.getElementById('product-rating').innerText = product.feedback;
+
+            let modal = new bootstrap.Modal(document.getElementById('productModal'));
+            modal.show();
+        }
+    });
+});
+
+</script>
+</html>

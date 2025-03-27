@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Style</title>
+
+    <!-- CSS Stylesheet Link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aboutusstyle.css">
+    <script src="assets/js/aboutus.js"></script>
+    <!-- <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="assets/images/Favicon/favicon.svg" type="image/x-icon">
+
+    <!-- Fontawesome Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap Icon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Remix Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+        <!-- Navbar Section -->
+        <section class="header container-fluid sticky-top p-0">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="MainHome.html">
+                      <div class="navbar-brand-main">
+                          Urban
+                          <div class="navbar-brand-text">
+                              Style
+                          </div>
+                      </div>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between">
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="MainHome.html"
+                                  onclick="redirect('MainHome.html');">Home</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                  aria-expanded="false">
+                                  Products
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="Footwear.html" onclick="redirect('Footwear.html')">Footwear</a>
+                                  </li>
+                                  <li><a class="dropdown-item" href="Watches.html" onclick="redirect('Watches.html');">Watches</a>
+                                  </li>
+                                  <li><a class="dropdown-item" href="Handbags.html" onclick="redirect('Handbags.html');">Handbags</a>
+                                  </li>
+                                  <li>
+                                      <hr class="dropdown-divider">
+                                  </li>
+                                  <li><a class="dropdown-item" href="Clothing.html" onclick="redirect('Clothing.html');">Clothing</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="nav-item">
+                              <form class="d-flex" role="search">
+                                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                              </form>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" aria-disabled="true" href="blog.html">Blog</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" aria-disabled="true" href="contactus.html">Contact</a>
+                          </li>
+                      </ul>
+                      <div class="shopping position-relative">
+                          <!-- <i class="ri-shopping-cart-line" onmouseover="this.classList.add('ri-shopping-cart-fill');this.classList.remove('ri-shopping-cart-line')" onmouseout="this.classList.add('ri-shopping-cart-line');this.classList.remove('ri-shopping-cart-fill')"></i> -->
+                          <a href="#cart" data-bs-toggle="offcanvas" data-bs-target="#cart" class="cart-btn">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                          <span class="shopping-quantity">0</span>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+      </section>
+      <!-- sign up -->
+      <div class="modal fade mt-5" id="userFormModal" tabindex="-1" aria-labelledby="userFormModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="userFormModalLabel">Enter Your Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <!-- Form inside the modal -->
+                  <form id="userForm">
+                      <div class="row mb-3">
+                          <div class="col-md-4">
+                              <label for="firstName" class="form-label">First Name</label>
+                              <input type="text" class="form-control" id="firstName" required>
+                              <div class="invalid-feedback" id="firstNameError"></div>
+                          </div>
+                          <div class="col-md-4">
+                              <label for="middleName" class="form-label">Middle Name</label>
+                              <input type="text" class="form-control" id="middleName">
+                              <div class="invalid-feedback" id="middleNameError"></div>
+                          </div>
+                          <div class="col-md-4">
+                              <label for="lastName" class="form-label">Last Name</label>
+                              <input type="text" class="form-control" id="lastName" required>
+                              <div class="invalid-feedback" id="lastNameError"></div>
+                          </div>
+                      </div>
+  
+                      <!-- Mobile, Email, and Password in One Row -->
+                      <div class="row mb-3">
+                          <div class="col-md-4">
+                              <label for="mobileNumber" class="form-label">Mobile Number</label>
+                              <input type="tel" class="form-control" id="mobileNumber" required>
+                              <div class="invalid-feedback" id="mobileNumberError"></div>
+                          </div>
+                          <div class="col-md-4">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="email" required>
+                              <div class="invalid-feedback" id="emailError"></div>
+                          </div>
+                          <div class="col-md-4">
+                              <label for="password" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="password" required>
+                              <div class="invalid-feedback" id="passwordError"></div>
+                          </div>
+                      </div>
+  
+                      <!-- Address Section -->
+                      <div class="mb-3">
+                          <h4><b>Address</b></h4>
+                      </div>
+                      <div class="mb-3">
+                          <label for="streetAddress" class="form-label">Street Address</label>
+                          <input type="text" class="form-control" id="streetAddress" required>
+                          <div class="invalid-feedback" id="streetAddressError"></div>
+                      </div>
+                      <div class="row mb-3">
+                          <div class="col-md-6">
+                              <label for="city" class="form-label">City</label>
+                              <input type="text" class="form-control" id="city" required>
+                              <div class="invalid-feedback" id="cityError"></div>
+                          </div>
+                          <div class="col-md-4">
+                              <label for="state" class="form-label">State</label>
+                              <input type="text" class="form-control" id="state" required>
+                              <div class="invalid-feedback" id="stateError"></div>
+                          </div>
+                          <div class="col-md-2">
+                              <label for="zipCode" class="form-label">Zip Code</label>
+                              <input type="text" class="form-control" id="zipCode" required>
+                              <div class="invalid-feedback" id="zipCodeError"></div>
+                          </div>
+                      </div>
+  
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="submit" class="btn btn-primary" id="submitForm">Submit</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      </div>
+      <!-- Login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" required>
+                        <div class="invalid-feedback" id="loginEmailError"></div>
+                    </div>
+                    <div class="mb-3 position-relative">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="invalid-feedback" id="loginPasswordError"></div>
+                    </div>
+                    <div class="text-end">
+                        <a id="forgotPassword" onclick="">Forgot Password?</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Log In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+      </div>
+      <h1 class="text-center py-5">About Us</h1>
+      <div class="container about-us">
+            <div class="row">
+                <div class="col-md-6 col-12"><img src="https://corporate.flipkart.net/assets/images/technology-image.png" alt="Twitter Logo"></div>
+                <div class="col-md-6 col-12">
+                    <div class="topic">
+                        <div class="heading">What we do</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, reprehenderit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat totam corporis voluptatibus ad maxime dicta? </p>
+                    </div>
+                    <div class="topic">
+                        <div class="heading">Our Mission</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, reprehenderit.</p>
+                    </div>
+                    <div class="topic">
+                        <div class="heading">Our Vision</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, reprehenderit.</p>
+                    </div>
+                    <div class="topic">
+                        <div class="heading">Customer Focus</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, reprehenderit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <div class="p-3">
+                  <div class="task clothing">
+                    <h3 class="counter" data-target="165">0</h3>
+                    <p>Cloth Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="p-3">
+                  <div class="task footwear">
+                    <h3 class="counter" data-target="252">0</h3>
+                    <p>Footwear sold this Month</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <div class="p-3">
+                  <div class="task watches">
+                    <h3 class="counter" data-target="101">0</h3>
+                    <p>New Watches Added</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="p-3">
+                  <div class="task handbags">
+                    <h3 class="counter" data-target="14">0</h3>
+                    <p>Handbags available in various colors</p>
+                  </div>
+                </div>
+              </div>
+            </div>            
+      </div>
+      <div class="container-fluid question">
+        <h1 class="mb-5 mt-3">Frequently asked Questions</h1>
+        <div data-bs-toggle="collapse" class="que m-2" data-bs-target="#q1">What is Your return Policy?</div>
+        <div class="collapse ans m-2" id="q1">We accept returns within 30 days of purchase.</div>
+        <div data-bs-toggle="collapse" class="que m-2" data-bs-target="#q2">Do you offer free shipping?</div>
+        <div class="collapse ans m-2" id="q2">Yes, we offer free shipping on orders over Rs.1000/-.</div>
+        <div data-bs-toggle="collapse" class="que m-2" data-bs-target="#q3">How can I track my order?</div>
+        <div class="collapse ans m-2" id="q3">You will receive a tracking number via email once your order ships.</div>
+        <div data-bs-toggle="collapse" class="que m-2" data-bs-target="#q4">Can I modify or cancel my order?</div>
+        <div class="collapse ans m-2" id="q4">Orders can be modified or canceled within 24 hours of placement.</div>
+    </div>
+     <!-- off canvas -->
+     <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="cart"
+     aria-labelledby="offcanvasWithBothOptionsLabel" data-bs-backdrop="true">
+     <div class="offcanvas-header">
+         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Cart</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+     </div>
+     <div class="offcanvas-body overflow-hidden">
+         <div class="checkout">
+             <div class="total">
+                 <span>Total: ₹</span>
+                 <div class="cart-total" onchange="checkCart()"> 0 </div>
+             </div>
+             <div class="close-Shopping"></div>
+         </div>
+     </div>
+     <ul class="list-card position-relative"></ul>
+     <div class="d-grid col-12 cart-order w-100 bottom-0 mt-2 mb-2 p-3">
+         <button type="button" class="btn btn-warning text-white fw-bolder fs-5" id="placeOrder"
+             onclick="redirect('Checkout.html');">Place
+             Order</button>
+     </div>
+ </div>
+    <footer class="container-fluid border-top border-2 border-black">
+      <!-- Full-width Background -->
+      <div class="footer container-fluid p-4">
+          <div class="container">
+              <div class="row">
+                  <!-- Column 1 -->
+                  <div class="col-md-4 col-12 text-center text-md-start mb-4 mb-md-0">
+                      <div class="d-flex navbar-brand justify-content-center justify-content-md-start">
+                          <div class="navbar-brand-main">
+                              Urban
+                              <div class="navbar-brand-text">
+                                  Style
+                              </div>
+                          </div>
+                      </div>
+                      <span class="w-75 text-justify ps-4 d-block">All information is deemed reliable but not
+                          guaranteed and should be independently reviewed
+                          and verified.</span>
+                  </div>
+                  <!-- Column 2 -->
+                  <div class="col-md-3 col-12 text-center text-md-start mb-4 mb-md-0">
+                      <h3 class="footer-heading">Visit us</h3>
+                      <span class="d-block">Head Office:</span>
+                      <span class="d-block">MyTower,Iskon,380059</span>
+                      <span class="d-block">Ahmedabad-Gujarat</span>
+                  </div>
+                  <!-- Column 3 -->
+                  <div class="col-md-3 col-12 text-center text-md-start mb-4 mb-md-0">
+                      <h3 class="footer-heading">Contact us</h3>
+                      <span>Tel:- 1234567890</span><br>
+                      <span class="d-block">Email:- <a href="#"
+                              class="footerlink text-decoration-none text-black position-relative">mycompany192@gmail.com</a></span>
+                  </div>
+                  <!-- Column 4 -->
+                  <div class="col-md-2 col-12 text-center text-md-start">
+                      <h3 class="footer-heading">Quick Links</h3>
+                      <span>
+                          <a href="Clothing.html" class="footerlink text-decoration-none d-block text-black position-relative">
+                              Clothing
+                          </a>
+                          <a href="Footwear.html" class="footerlink text-decoration-none d-block text-black position-relative">
+                              Footwear
+                          </a>
+                          <a href="Watches.html" class="footerlink text-decoration-none d-block text-black position-relative">
+                              Watches
+                          </a>
+                          <a href="Handbags.html" class="footerlink text-decoration-none d-block text-black position-relative">
+                              Hand bags
+                          </a>
+                          <a href="contactus.html" class="footerlink text-decoration-none d-block text-black position-relative">
+                              Contact us
+                          </a>
+                          <a href="aboutus.html" class="footerlink text-decoration-none d-block text-black position-relative">
+                              About us
+                          </a>
+                      </span>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Footer Bottom Section -->
+      <div
+          class="footer-bottom container-fluid d-flex justify-content-between align-items-center border-top border-2">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4 col-12 text-center d-flex justify-content-center align-items-center copyright">
+                      <i class="bi bi-c-circle"></i>
+                      All rights reserved.
+                  </div>
+                  <div class="col-md-4 col-12 text-center d-flex justify-content-center align-items-center">
+                      <a href="terms&condition.html"
+                          class="legal footerlink text-decoration-none d-block text-black position-relative">
+                          Terms of Use & Privacy Policy
+                      </a>
+                  </div>
+                  <div class="col-md-4 col-12 d-flex justify-content-center">
+                      <a href="#" class="btn-link ps-3 pe-3 p-3 fs-2 text-black position-relative">
+                          <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a href="#" class="btn-link ps-3 pe-3 p-3 fs-2 text-black position-relative">
+                          <i class="fa-brands fa-facebook"></i>
+                      </a>
+                      <a href="#" class="btn-link ps-3 pe-3 p-3 fs-2 text-black position-relative">
+                          <i class="fa-brands fa-twitter"></i>
+                      </a>
+                      <a href="#" class="btn-link ps-3 pe-3 p-3 fs-2 text-black position-relative">
+                          <i class="fa-brands fa-whatsapp"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/Footwear.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -2517,7 +2517,7 @@ const finalDetails = () => {
   ck.innerHTML = `
         <p class="fs-3 fw-bold">Your cart<i class="fa-solid fa-cart-shopping text-primary"></i> is empty now!!</p>
         <p class="fs-3 fw-bold">Your order has been placed successfully</p>
-        <button type="button" class="btn btn-warning text-white fw-bolder w-75 d-block p-3 m-3 " onclick="redirect('index.html')">Continue Shopping</button>
+        <button type="button" class="btn btn-warning text-white fw-bolder w-75 d-block p-3 m-3 " onclick="redirect('Mainhome.html')">Continue Shopping</button>
     `;
 };
 

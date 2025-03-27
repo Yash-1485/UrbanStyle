@@ -13,14 +13,14 @@ let products = [
     name: "Adidas Oxo Sports",
     type: "Shoes",
     subtype: "Sports Shoes",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Experience unmatched comfort and style with Adidas Oxo Sports, designed for peak performance.",
     detailed_desc: `
-            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
-            <br><strong>Date First Available : </strong>   18 July 2020
-            <br><strong>Country of Origin :</strong> India
-            <br><strong>Item Weight :</strong> 450 g
-            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
-            <br><strong>Net Quantity :</strong> 2 Count`,
+        <br><strong>Product Dimensions:</strong> 20 x 15 x 10 cm; 450 g
+        <br><strong>Date First Available:</strong> 18 July 2020
+        <br><strong>Country of Origin:</strong> India
+        <br><strong>Item Weight:</strong> 450 g
+        <br><strong>Material:</strong> High-quality synthetic upper with durable rubber sole
+        <br><strong>Net Quantity:</strong> 2 Count`,
     manufacturer: "Adidas",
     availabel_sizes: ["6UK", "7UK", "8UK", "9UK", "10UK"],
     price: 1299,
@@ -34,14 +34,14 @@ let products = [
     name: "Adidas Hex Sports",
     type: "Shoes",
     subtype: "Sports Shoes",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Step up your game with Adidas Hex Sports, engineered for superior grip and agility on the court.",
     detailed_desc: `
-            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
-            <br><strong>Date First Available : </strong>   18 July 2020
-            <br><strong>Country of Origin :</strong> India
-            <br><strong>Item Weight :</strong> 450 g
-            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
-            <br><strong>Net Quantity :</strong> 2 Count`,
+        <br><strong>Product Dimensions:</strong> 20 x 15 x 10 cm; 450 g
+        <br><strong>Date First Available:</strong> 18 July 2020
+        <br><strong>Country of Origin:</strong> India
+        <br><strong>Item Weight:</strong> 450 g
+        <br><strong>Material:</strong> Lightweight mesh with enhanced breathability
+        <br><strong>Net Quantity:</strong> 2 Count`,
     manufacturer: "Adidas",
     availabel_sizes: ["6UK", "7UK", "8UK", "9UK", "10UK"],
     price: 999,
@@ -55,15 +55,15 @@ let products = [
     name: "Skechers Free Style",
     type: "Shoes",
     subtype: "Sports Shoes",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Stay active and stylish with Skechers Free Style, offering flexibility and comfort for every move.",
     detailed_desc: `
-            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
-            <br><strong>Date First Available : </strong>   18 July 2020
-            <br><strong>Country of Origin :</strong> India
-            <br><strong>Item Weight :</strong> 450 g
-            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
-            <br><strong>Net Quantity :</strong> 2 Count`,
-    manufacturer: "Adidas",
+        <br><strong>Product Dimensions:</strong> 20 x 15 x 10 cm; 450 g
+        <br><strong>Date First Available:</strong> 18 July 2020
+        <br><strong>Country of Origin:</strong> India
+        <br><strong>Item Weight:</strong> 450 g
+        <br><strong>Material:</strong> Soft knit fabric with cushioned midsole
+        <br><strong>Net Quantity:</strong> 2 Count`,
+    manufacturer: "Skechers",
     availabel_sizes: ["6UK", "7UK", "8UK", "9UK", "10UK"],
     price: 899,
     old_price: 1099,
@@ -76,14 +76,14 @@ let products = [
     name: "Power Evo Shoes",
     type: "Shoes",
     subtype: "Sports Shoes",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Unleash your potential with Power Evo Shoes, crafted for durability and enhanced performance.",
     detailed_desc: `
-            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
-            <br><strong>Date First Available : </strong>   18 July 2020
-            <br><strong>Country of Origin :</strong> India
-            <br><strong>Item Weight :</strong> 450 g
-            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
-            <br><strong>Net Quantity :</strong> 2 Count`,
+        <br><strong>Product Dimensions:</strong> 20 x 15 x 10 cm; 450 g
+        <br><strong>Date First Available:</strong> 18 July 2020
+        <br><strong>Country of Origin:</strong> India
+        <br><strong>Item Weight:</strong> 450 g
+        <br><strong>Material:</strong> Breathable mesh upper with slip-resistant sole
+        <br><strong>Net Quantity:</strong> 2 Count`,
     manufacturer: "Adidas",
     availabel_sizes: ["6UK", "7UK", "8UK", "9UK", "10UK"],
     price: 1399,
@@ -97,15 +97,15 @@ let products = [
     name: "Nike Sneakers",
     type: "Shoes",
     subtype: "Sneakers",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Make a bold statement with Nike Sneakers, blending classic design with modern comfort.",
     detailed_desc: `
-            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
-            <br><strong>Date First Available : </strong>   18 July 2020
-            <br><strong>Country of Origin :</strong> India
-            <br><strong>Item Weight :</strong> 450 g
-            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
-            <br><strong>Net Quantity :</strong> 2 Count`,
-    manufacturer: "Adidas",
+        <br><strong>Product Dimensions:</strong> 20 x 15 x 10 cm; 450 g
+        <br><strong>Date First Available:</strong> 18 July 2020
+        <br><strong>Country of Origin:</strong> India
+        <br><strong>Item Weight:</strong> 450 g
+        <br><strong>Material:</strong> Premium leather upper with cushioned sole
+        <br><strong>Net Quantity:</strong> 2 Count`,
+    manufacturer: "Nike",
     availabel_sizes: ["6UK", "7UK", "8UK", "9UK", "10UK"],
     price: 2999,
     old_price: 3599,
@@ -118,14 +118,14 @@ let products = [
     name: "Adidas Wooden Sneakers",
     type: "Shoes",
     subtype: "Sneakers",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Elevate your casual style with Adidas Wooden Sneakers, designed for everyday wear and comfort.",
     detailed_desc: `
-            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
-            <br><strong>Date First Available : </strong>   18 July 2020
-            <br><strong>Country of Origin :</strong> India
-            <br><strong>Item Weight :</strong> 450 g
-            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
-            <br><strong>Net Quantity :</strong> 2 Count`,
+        <br><strong>Product Dimensions:</strong> 20 x 15 x 10 cm; 450 g
+        <br><strong>Date First Available:</strong> 18 July 2020
+        <br><strong>Country of Origin:</strong> India
+        <br><strong>Item Weight:</strong> 450 g
+        <br><strong>Material:</strong> Textured canvas with wooden detailing
+        <br><strong>Net Quantity:</strong> 2 Count`,
     manufacturer: "Adidas",
     availabel_sizes: ["6UK", "7UK", "8UK", "9UK", "10UK"],
     price: 2199,
@@ -133,21 +133,21 @@ let products = [
     image: "assets/images/Footwear/Sneakers_Shoes/img1.png",
     feedback: 4,
     category: "men",
-  },
+  },  
   {
     id: 7,
     name: "Puma Sneakers",
     type: "Shoes",
     subtype: "Sneakers",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Experience unmatched comfort with Puma’s stylish and durable sneakers.",
     detailed_desc: `
-            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
-            <br><strong>Date First Available : </strong>   18 July 2020
-            <br><strong>Country of Origin :</strong> India
-            <br><strong>Item Weight :</strong> 450 g
-            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
-            <br><strong>Net Quantity :</strong> 2 Count`,
-    manufacturer: "Adidas",
+          <br><strong>Product Dimensions :</strong> 22 x 16 x 12 cm; 500 g
+          <br><strong>Date First Available :</strong> 10 August 2021
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 500 g
+          <br><strong>Item Dimensions LxWxH :</strong> 22 x 16 x 12 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Puma",
     availabel_sizes: ["6UK", "7UK", "8UK", "9UK", "10UK"],
     price: 3599,
     old_price: 4099,
@@ -160,15 +160,15 @@ let products = [
     name: "Reebok Cleats",
     type: "Shoes",
     subtype: "Cleats",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "High-performance cleats built for speed and grip on the field.",
     detailed_desc: `
-            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
-            <br><strong>Date First Available : </strong>   18 July 2020
-            <br><strong>Country of Origin :</strong> India
-            <br><strong>Item Weight :</strong> 450 g
-            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
-            <br><strong>Net Quantity :</strong> 2 Count`,
-    manufacturer: "Adidas",
+          <br><strong>Product Dimensions :</strong> 25 x 18 x 12 cm; 600 g
+          <br><strong>Date First Available :</strong> 5 May 2021
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 600 g
+          <br><strong>Item Dimensions LxWxH :</strong> 25 x 18 x 12 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Reebok",
     availabel_sizes: ["6UK", "7UK", "8UK", "9UK", "10UK"],
     price: 2799,
     old_price: 3199,
@@ -181,15 +181,15 @@ let products = [
     name: "Nivia Football Cleats",
     type: "Shoes",
     subtype: "Cleats",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Designed for optimal traction, perfect for every football enthusiast.",
     detailed_desc: `
-            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
-            <br><strong>Date First Available : </strong>   18 July 2020
-            <br><strong>Country of Origin :</strong> India
-            <br><strong>Item Weight :</strong> 450 g
-            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
-            <br><strong>Net Quantity :</strong> 2 Count`,
-    manufacturer: "Adidas",
+          <br><strong>Product Dimensions :</strong> 24 x 17 x 11 cm; 550 g
+          <br><strong>Date First Available :</strong> 12 June 2021
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 550 g
+          <br><strong>Item Dimensions LxWxH :</strong> 24 x 17 x 11 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Nivia",
     availabel_sizes: ["6UK", "7UK", "8UK", "9UK", "10UK"],
     price: 1899,
     old_price: 2199,
@@ -202,15 +202,15 @@ let products = [
     name: "Crocs Blue Style",
     type: "Shoes",
     subtype: "Crocs",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Lightweight and breathable crocs designed for all-day comfort.",
     detailed_desc: `
-            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
-            <br><strong>Date First Available : </strong>   18 July 2020
-            <br><strong>Country of Origin :</strong> India
-            <br><strong>Item Weight :</strong> 450 g
-            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
-            <br><strong>Net Quantity :</strong> 2 Count`,
-    manufacturer: "Adidas",
+          <br><strong>Product Dimensions :</strong> 23 x 16 x 10 cm; 400 g
+          <br><strong>Date First Available :</strong> 20 July 2021
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 400 g
+          <br><strong>Item Dimensions LxWxH :</strong> 23 x 16 x 10 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Crocs",
     availabel_sizes: ["6UK", "7UK", "8UK", "9UK", "10UK"],
     price: 799,
     old_price: 999,
@@ -223,22 +223,22 @@ let products = [
     name: "Campus Men Sandals",
     type: "Sandals",
     subtype: "Sandals",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Casual sandals offering maximum comfort for daily wear.",
     detailed_desc: `
-            <br><strong>Product Dimensions : </strong> 20 x 15 x 10 cm; 450 g
-            <br><strong>Date First Available : </strong>   18 July 2020
-            <br><strong>Country of Origin :</strong> India
-            <br><strong>Item Weight :</strong> 450 g
-            <br><strong>Item Dimensions LxWxH :</strong> 20 x 15 x 10 Centimeters
-            <br><strong>Net Quantity :</strong> 2 Count`,
-    manufacturer: "Adidas",
+          <br><strong>Product Dimensions :</strong> 22 x 15 x 9 cm; 350 g
+          <br><strong>Date First Available :</strong> 1 March 2021
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 350 g
+          <br><strong>Item Dimensions LxWxH :</strong> 22 x 15 x 9 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Campus",
     availabel_sizes: ["6UK", "7UK", "8UK", "9UK", "10UK"],
     price: 659,
     old_price: 799,
     image: "assets/images/Footwear/Sandals/img1.jpg",
     feedback: 5,
     category: "men",
-  },
+  },  
 
   // Women Footwear - 31
   {
@@ -246,7 +246,16 @@ let products = [
     name: "Campus Running Shoes",
     type: "Shoes",
     subtype: "Sports Shoes",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Lightweight running shoes designed for comfort and durability.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 24 x 16 x 10 cm; 400 g
+          <br><strong>Date First Available :</strong> 5 January 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 400 g
+          <br><strong>Item Dimensions LxWxH :</strong> 24 x 16 x 10 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Campus",
+    availabel_sizes: ["4UK", "5UK", "6UK", "7UK", "8UK"],
     price: 799,
     old_price: 999,
     image: "assets/images/Footwear/Sport_Shoes/img31.jpg",
@@ -258,7 +267,16 @@ let products = [
     name: "Skechers Running Shoes",
     type: "Shoes",
     subtype: "Sports Shoes",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Performance-driven shoes for running and everyday comfort.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 26 x 18 x 12 cm; 500 g
+          <br><strong>Date First Available :</strong> 10 February 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 500 g
+          <br><strong>Item Dimensions LxWxH :</strong> 26 x 18 x 12 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Skechers",
+    availabel_sizes: ["4UK", "5UK", "6UK", "7UK", "8UK"],
     price: 2199,
     old_price: 2599,
     image: "assets/images/Footwear/Sport_Shoes/img32.jpg",
@@ -270,7 +288,16 @@ let products = [
     name: "Asian Running Shoes",
     type: "Shoes",
     subtype: "Sports Shoes",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Flexible and supportive shoes perfect for daily workouts.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 23 x 15 x 10 cm; 380 g
+          <br><strong>Date First Available :</strong> 15 March 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 380 g
+          <br><strong>Item Dimensions LxWxH :</strong> 23 x 15 x 10 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Asian",
+    availabel_sizes: ["4UK", "5UK", "6UK", "7UK", "8UK"],
     price: 745,
     old_price: 859,
     image: "assets/images/Footwear/Sport_Shoes/img33.jpg",
@@ -282,7 +309,16 @@ let products = [
     name: "Puma High Hill Sneakers",
     type: "Shoes",
     subtype: "Sports Shoes",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Elevate your style with trendy high-heel sneakers from Puma.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 25 x 17 x 11 cm; 480 g
+          <br><strong>Date First Available :</strong> 20 April 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 480 g
+          <br><strong>Item Dimensions LxWxH :</strong> 25 x 17 x 11 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Puma",
+    availabel_sizes: ["4UK", "5UK", "6UK", "7UK", "8UK"],
     price: 2899,
     old_price: 2999,
     image: "assets/images/Footwear/Sneakers_Shoes/img32.jpg",
@@ -294,19 +330,37 @@ let products = [
     name: "Asian Women Sneakers",
     type: "Shoes",
     subtype: "Sneakers",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Stylish sneakers designed for everyday casual wear. Best for every girl.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 24 x 16 x 10 cm; 420 g
+          <br><strong>Date First Available :</strong> 25 May 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 420 g
+          <br><strong>Item Dimensions LxWxH :</strong> 24 x 16 x 10 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Asian",
+    availabel_sizes: ["4UK", "5UK", "6UK", "7UK", "8UK"],
     price: 1799,
     old_price: 2199,
     image: "assets/images/Footwear/Sneakers_Shoes/img33.jpg",
     feedback: 4,
     category: "women",
-  },
+  },  
   {
     id: 36,
     name: "Skechers Sneakers",
     type: "Shoes",
     subtype: "Sneakers",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Trendy and comfortable sneakers for casual outings. Best fit for all.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 25 x 17 x 12 cm; 450 g
+          <br><strong>Date First Available :</strong> 10 June 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 450 g
+          <br><strong>Item Dimensions LxWxH :</strong> 25 x 17 x 12 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Skechers",
+    availabel_sizes: ["4UK", "5UK", "6UK", "7UK", "8UK"],
     price: 1899,
     old_price: 2199,
     image: "assets/images/Footwear/Sneakers_Shoes/img31.jpg",
@@ -318,7 +372,16 @@ let products = [
     name: "Crocs Ladies Sandals",
     type: "Shoes",
     subtype: "Sandals",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Comfortable and lightweight sandals for everyday wear. Best fit for all.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 23 x 16 x 10 cm; 300 g
+          <br><strong>Date First Available :</strong> 15 June 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 300 g
+          <br><strong>Item Dimensions LxWxH :</strong> 23 x 16 x 10 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Crocs",
+    availabel_sizes: ["4UK", "5UK", "6UK", "7UK", "8UK"],
     price: 1659,
     old_price: 1799,
     image: "assets/images/Footwear/Sandals/img31.jpg",
@@ -330,7 +393,16 @@ let products = [
     name: "Power Women Sandals",
     type: "Shoes",
     subtype: "Sandals",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Durable sandals designed for comfort and style. Best fit for all.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 24 x 16 x 10 cm; 350 g
+          <br><strong>Date First Available :</strong> 20 June 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 350 g
+          <br><strong>Item Dimensions LxWxH :</strong> 24 x 16 x 10 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Power",
+    availabel_sizes: ["4UK", "5UK", "6UK", "7UK", "8UK"],
     price: 2199,
     old_price: 2599,
     image: "assets/images/Footwear/Sandals/img32.jpg",
@@ -342,7 +414,16 @@ let products = [
     name: "Adidas Women Sandals",
     type: "Shoes",
     subtype: "Sandals",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Stylish Adidas sandals for a perfect casual look. Best fit for all.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 23 x 15 x 9 cm; 340 g
+          <br><strong>Date First Available :</strong> 25 June 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 340 g
+          <br><strong>Item Dimensions LxWxH :</strong> 23 x 15 x 9 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Adidas",
+    availabel_sizes: ["4UK", "5UK", "6UK", "7UK", "8UK"],
     price: 1459,
     old_price: 1699,
     image: "assets/images/Footwear/Sandals/img33.jpg",
@@ -354,21 +435,38 @@ let products = [
     name: "Crocs Women Wear",
     type: "Shoes",
     subtype: "Crocs",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Lightweight and breathable Crocs for all-day comfort. Best fit for all.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 22 x 15 x 9 cm; 320 g
+          <br><strong>Date First Available :</strong> 30 June 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 320 g
+          <br><strong>Item Dimensions LxWxH :</strong> 22 x 15 x 9 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Crocs",
+    availabel_sizes: ["4UK", "5UK", "6UK", "7UK", "8UK"],
     price: 699,
     old_price: 899,
     image: "assets/images/Footwear/Crocs/img31.jpg",
     feedback: 4,
     category: "women",
-  },
-
+  },  
   // Kids Footwear - 61
   {
     id: 61,
     name: "Asian Boy's VAYU-09",
     type: "Shoes",
     subtype: "Sports Shoes",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Durable and breathable sports shoes for active kids. Best fit for all kids.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 20 x 14 x 8 cm; 300 g
+          <br><strong>Date First Available :</strong> 5 July 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 300 g
+          <br><strong>Item Dimensions LxWxH :</strong> 20 x 14 x 8 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Asian",
+    availabel_sizes: ["1UK", "2UK", "3UK", "4UK", "5UK"],
     price: 620,
     old_price: 699,
     image: "assets/images/Footwear/Sport_Shoes/img61.jpg",
@@ -380,7 +478,16 @@ let products = [
     name: "Puma Kynder Shoes",
     type: "Shoes",
     subtype: "Sports Shoes",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Stylish and comfortable shoes perfect for sports practice.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 22 x 15 x 9 cm; 350 g
+          <br><strong>Date First Available :</strong> 10 July 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 350 g
+          <br><strong>Item Dimensions LxWxH :</strong> 22 x 15 x 9 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Puma",
+    availabel_sizes: ["1UK", "2UK", "3UK", "4UK", "5UK"],
     price: 1099,
     old_price: 1299,
     image: "assets/images/Footwear/Sport_Shoes/img62.jpg",
@@ -392,7 +499,16 @@ let products = [
     name: "Asian Wonder-07",
     type: "Shoes",
     subtype: "Sports Shoes",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Lightweight shoes for everyday wear and play. Best fit for all kids.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 19 x 13 x 8 cm; 280 g
+          <br><strong>Date First Available :</strong> 15 July 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 280 g
+          <br><strong>Item Dimensions LxWxH :</strong> 19 x 13 x 8 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Asian",
+    availabel_sizes: ["1UK", "2UK", "3UK", "4UK", "5UK"],
     price: 499,
     old_price: 699,
     image: "assets/images/Footwear/Sport_Shoes/img63.jpg",
@@ -404,7 +520,16 @@ let products = [
     name: "Asian Boy's Sneakers",
     type: "Shoes",
     subtype: "Sneakers",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Trendy sneakers for school and casual outings. Best fit for all kids.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 21 x 14 x 8 cm; 310 g
+          <br><strong>Date First Available :</strong> 20 July 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 310 g
+          <br><strong>Item Dimensions LxWxH :</strong> 21 x 14 x 8 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Asian",
+    availabel_sizes: ["1UK", "2UK", "3UK", "4UK", "5UK"],
     price: 599,
     old_price: 699,
     image: "assets/images/Footwear/Sneakers_Shoes/img61.jpg",
@@ -416,19 +541,37 @@ let products = [
     name: "Puma Sneakers",
     type: "Shoes",
     subtype: "Sneakers",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Classic Puma sneakers designed for everyday comfort. Best fit for all kids.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 22 x 15 x 9 cm; 320 g
+          <br><strong>Date First Available :</strong> 25 July 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 320 g
+          <br><strong>Item Dimensions LxWxH :</strong> 22 x 15 x 9 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Puma",
+    availabel_sizes: ["1UK", "2UK", "3UK", "4UK", "5UK"],
     price: 1299,
     old_price: 1499,
     image: "assets/images/Footwear/Sneakers_Shoes/img62.png",
     feedback: 4,
     category: "kids",
-  },
+  },  
   {
     id: 66,
     name: "Puma Girl's Sneakers",
     type: "Shoes",
     subtype: "Sneakers",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Trendy and comfy sneakers designed for everyday wear.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 21 x 15 x 9 cm; 310 g
+          <br><strong>Date First Available :</strong> 10 August 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 310 g
+          <br><strong>Item Dimensions LxWxH :</strong> 21 x 15 x 9 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Puma",
+    availabel_sizes: ["1UK", "2UK", "3UK", "4UK", "5UK"],
     price: 1899,
     old_price: 2199,
     image: "assets/images/Footwear/Sneakers_Shoes/img63.jpg",
@@ -440,7 +583,16 @@ let products = [
     name: "Skechers Kids Crocs",
     type: "Shoes",
     subtype: "Crocs",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Lightweight crocs perfect for casual wear and playtime.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 19 x 13 x 8 cm; 250 g
+          <br><strong>Date First Available :</strong> 15 August 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 250 g
+          <br><strong>Item Dimensions LxWxH :</strong> 19 x 13 x 8 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Skechers",
+    availabel_sizes: ["1UK", "2UK", "3UK", "4UK"],
     price: 999,
     old_price: 1299,
     image: "assets/images/Footwear/Crocs/img61.jpg",
@@ -452,7 +604,16 @@ let products = [
     name: "Crocs Girls Crocs",
     type: "Shoes",
     subtype: "Crocs",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Comfortable and durable crocs for everyday fun. Best fit for all kids.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 20 x 14 x 8 cm; 270 g
+          <br><strong>Date First Available :</strong> 20 August 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 270 g
+          <br><strong>Item Dimensions LxWxH :</strong> 20 x 14 x 8 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Crocs",
+    availabel_sizes: ["1UK", "2UK", "3UK", "4UK"],
     price: 1299,
     old_price: 1499,
     image: "assets/images/Footwear/Crocs/img62.jpg",
@@ -464,7 +625,16 @@ let products = [
     name: "Crocs Unisex-Clog",
     type: "Shoes",
     subtype: "Crocs",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Classic clogs designed for ultimate comfort and durability.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 22 x 15 x 9 cm; 320 g
+          <br><strong>Date First Available :</strong> 25 August 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 320 g
+          <br><strong>Item Dimensions LxWxH :</strong> 22 x 15 x 9 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Crocs",
+    availabel_sizes: ["1UK", "2UK", "3UK", "4UK", "5UK"],
     price: 2099,
     old_price: 2199,
     image: "assets/images/Footwear/Crocs/img63.jpg",
@@ -476,14 +646,22 @@ let products = [
     name: "Crocs Unisex Sandals",
     type: "Shoes",
     subtype: "Sandals",
-    desc: "Built for basketball, adopted by hip hop and skate, the classic leather Superstar changed the game the moment it stepped off the court.",
+    desc: "Breathable unisex sandals for comfort and casual style.",
+    detailed_desc: `
+          <br><strong>Product Dimensions :</strong> 24 x 16 x 9 cm; 350 g
+          <br><strong>Date First Available :</strong> 30 August 2022
+          <br><strong>Country of Origin :</strong> India
+          <br><strong>Item Weight :</strong> 350 g
+          <br><strong>Item Dimensions LxWxH :</strong> 24 x 16 x 9 Centimeters
+          <br><strong>Net Quantity :</strong> 1 Pair`,
+    manufacturer: "Crocs",
+    availabel_sizes: ["1UK", "2UK", "3UK", "4UK", "5UK"],
     price: 3099,
     old_price: 3599,
     image: "assets/images/Footwear/Sandals/img61.jpg",
     feedback: 5,
     category: "kids",
   },
-
   // Clothing
 
   {
@@ -1436,7 +1614,7 @@ let products = [
     manufacturer: "Guess",
     price: 89999,
     old_price: 99999,
-    image: "assets/images/Watches/Casual_Watches/img1.png",
+    image: "assets/images/Watches/Casual_Watches/img1 (2).png",
     feedback: 5,
     category: "women_watches",
   },
@@ -2955,10 +3133,10 @@ const initApp = () => {
 
     newDiv.innerHTML = `
         <div class="card h-100">
-            <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px !important; width: 100%; overflow: hidden; position: relative;">
-                <img src="${
-                  value.image
-                }" class="card-img-top object-fit-cover fit-image" alt="...">
+            <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 350px !important; width: 100%; overflow-y: hidden; position: relative;">
+        <img src="${
+          value.image
+        }" class="card-img-top object-fit-cover" style="height:'fit-to-content'; width:'auto'" alt="...">
             </div>
             <div class="card-body">
                 <h5 class="card-title">${value.name}</h5>
@@ -3057,7 +3235,7 @@ const showAllCards = () => {
           : ``;
       newDiv.innerHTML = `
         <div class="card h-100">
-        <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 230px !important; width: 100%; overflow: hidden; position: relative;">
+        <div class="card-image w-100 d-flex justify-content-center align-items-center" style="height: 350px !important; width: 100%; overflow: hidden; position: relative;">
         <img src="${
           value.image
         }" class="card-img-top object-fit-cover" alt="...">

@@ -36,11 +36,10 @@
 
 <body>
     
-     <!-- Navbar Section -->
     <section class="header container-fluid sticky-top p-0">
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="MainHome.html">
                     <div class="navbar-brand-main">
                         Urban
                         <div class="navbar-brand-text">
@@ -54,10 +53,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"
-                                onclick="redirect('index.html');">Home</a>
+                            <a class="nav-link active" aria-current="page" href="MainHome.html"
+                                onclick="redirect('MainHome.html');">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -65,26 +64,30 @@
                                 Products
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#" onclick="redirect('Clothing.html');">Clothing</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="redirect('Handbags.html');">Watches</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="redirect('Handbags.html');">Handbags</a></li>
+                                <li><a class="dropdown-item" href="Footwear.html" onclick="redirect('Footwear.html')">Footwear</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Watches.html" onclick="redirect('Watches.html');">Watches</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Handbags.html" onclick="redirect('Handbags.html');">Handbags</a>
+                                </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#" onclick="redirect('Footwear.html');">Footwear</a></li>
+                                <li><a class="dropdown-item" href="Clothing.html" onclick="redirect('Clothing.html');">Clothing</a>
+                                </li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true">Contact</a>
                         </li>
                         <li class="nav-item">
                             <form class="d-flex" role="search">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                 <button class="btn btn-outline-primary" type="submit">Search</button>
                             </form>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="contactus.html">Contact</a>
                         </li>
                     </ul>
                     <div class="shopping position-relative">
@@ -122,11 +125,11 @@
                                 <div
                                     class="carousel-data-content d-flex justify-content-center align-items-center flex-column">
                                     <div class="carousel-data-heading w-50">
-                                        Up to 50% Off on Sneakers
+                                        Up to 20% Off on Mini Bags
                                     </div>
                                     <p class="carousel-data-text w-50 text-justify">In a
                                         Limited Time Only!
-                                        <a href="#pricing-section"
+                                        <a href="#handbag-section"
                                             class="d-block w-100 mt-2 fs-1 btn btn-warning text-white fw-bolder">Shop
                                             Now</a>
                                     </p>
@@ -135,7 +138,7 @@
                             <div class="carousel-data-parts">
                                 <div class="carousel-data-image d-flex align-items-center">
                                     <div class="carousel-data-img-bg"></div>
-                                    <img src="assets/images/Handbags/handbag-image/img-1.jpg"
+                                    <img src="assets/images/Handbags/handbag-image/img-3016.jpg"
                                         class="d-block w-75 position-relative carousel-data-img carousel-data-img-1"
                                         alt="..." style="top: 3rem;">
                                 </div>
@@ -149,11 +152,11 @@
                                 <div
                                     class="carousel-data-content d-flex justify-content-center align-items-center flex-column">
                                     <div class="carousel-data-heading w-50">
-                                        Exclusive Sports Shoes
+                                        Exclusive Shoulder Bag Collection
                                     </div>
                                     <p class="carousel-data-text w-50 text-justify">
-                                        Starting at just ₹999!
-                                        <a href="#men-section"
+                                        Starting at just ₹1999!
+                                        <a href="#handbag-section"
                                             class="d-block w-100 mt-2 fs-1 btn btn-warning text-white fw-bolder">Explore
                                             More</a>
                                     </p>
@@ -162,9 +165,9 @@
                             <div class="carousel-data-parts">
                                 <div class="carousel-data-image">
                                     <div class="carousel-data-img-bg"></div>
-                                    <img src="assets/images/Handbags/handbag-image/img-2.png"
+                                    <img src="assets/images/Handbags/handbag-image/img-3019.jpg"
                                         class="d-block w-100 position-relative carousel-data-img carousel-data-img-2"
-                                        alt="..." style="top: 7rem;">
+                                        alt="..." style="top: -1rem;right:1rem;">
                                 </div>
                             </div>
                         </div>
@@ -176,11 +179,11 @@
                                 <div
                                     class="carousel-data-content d-flex justify-content-center align-items-center flex-column">
                                     <div class="carousel-data-heading w-50">
-                                        Trending Sandals for Women
+                                        Trending New Arrivals
                                     </div>
                                     <p class="carousel-data-text w-50 text-justify">
-                                        30% Off!
-                                        <a href="#women-section"
+                                        Get 15%% Off!
+                                        <a href="#handbag-section"
                                             class="d-block w-100 mt-2 fs-1 btn btn-warning text-white fw-bolder">Shop
                                             Now</a>
                                     </p>
@@ -189,9 +192,9 @@
                             <div class="carousel-data-parts">
                                 <div class="carousel-data-image">
                                     <div class="carousel-data-img-bg"></div>
-                                    <img src="assets/images/Footwear/Sandals/img32.png"
+                                    <img src="assets/images/Handbags/handbag-image/img-3030.jpg"
                                         class="d-block w-100 position-relative carousel-data-img carousel-data-img-3"
-                                        alt="..." style="top: 5rem;left: 5rem;max-width: 70% !important;">
+                                        alt="..." style="top: 0rem;left: 2rem;max-width: 70% !important;">
                                 </div>
                             </div>
                         </div>
@@ -378,22 +381,22 @@
                     <div class="col-md-2 col-12 text-center text-md-start">
                         <h3 class="footer-heading">Quick Links</h3>
                         <span>
-                            <a href="#" class="footerlink text-decoration-none d-block text-black position-relative">
+                            <a href="Clothing.html" class="footerlink text-decoration-none d-block text-black position-relative">
                                 Clothing
                             </a>
-                            <a href="#" class="footerlink text-decoration-none d-block text-black position-relative">
+                            <a href="Footwear.html" class="footerlink text-decoration-none d-block text-black position-relative">
                                 Footwear
                             </a>
-                            <a href="#" class="footerlink text-decoration-none d-block text-black position-relative">
+                            <a href="Watches.html" class="footerlink text-decoration-none d-block text-black position-relative">
                                 Watches
                             </a>
-                            <a href="#" class="footerlink text-decoration-none d-block text-black position-relative">
+                            <a href="Handbags.html" class="footerlink text-decoration-none d-block text-black position-relative">
                                 Hand bags
                             </a>
-                            <a href="#" class="footerlink text-decoration-none d-block text-black position-relative">
+                            <a href="contactus.html" class="footerlink text-decoration-none d-block text-black position-relative">
                                 Contact us
                             </a>
-                            <a href="#" class="footerlink text-decoration-none d-block text-black position-relative">
+                            <a href="aboutus.html" class="footerlink text-decoration-none d-block text-black position-relative">
                                 About us
                             </a>
                         </span>
@@ -401,7 +404,7 @@
                 </div>
             </div>
         </div>
-
+  
         <!-- Footer Bottom Section -->
         <div
             class="footer-bottom container-fluid d-flex justify-content-between align-items-center border-top border-2">
@@ -412,7 +415,7 @@
                         All rights reserved.
                     </div>
                     <div class="col-md-4 col-12 text-center d-flex justify-content-center align-items-center">
-                        <a href="http://127.0.0.1:5500/terms&condition.html"
+                        <a href="terms&condition.html"
                             class="legal footerlink text-decoration-none d-block text-black position-relative">
                             Terms of Use & Privacy Policy
                         </a>
